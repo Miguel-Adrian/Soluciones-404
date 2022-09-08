@@ -1,1 +1,18 @@
-style
+
+nav{
+    background-color:#6F1D1B;
+}
+    
+
+.navInf a{
+    color:white
+}
+
+.navInf img{
+    height:50px;
+    background-color: white;
+}
+
+
+
+
