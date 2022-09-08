@@ -1,1 +1,85 @@
-style
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../Fonts/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('./Fonts/Lato/'),
+         url('../fonts/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+        }
+
+
+/* baloo-2-regular - latin */
+@font-face {
+    font-family: 'Balo';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/baloo-2-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('./Fonts/balo'),
+         url('../fonts/baloo-2-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/baloo-2-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/baloo-2-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/baloo-2-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/baloo-2-v14-latin-regular.svg#Baloo2') format('svg'); /* Legacy iOS */
+  }
+
+
+.container{
+    width: 55%;
+    background-color: antiquewhite ;
+    
+    margin-left: 20%;
+}
+
+       h1{text-align: center;padding: 0.5em;color:#7F3122; font-size: 45px; font-family:"Balo";}
+  h2{ margin-left: 100px;   color:#7F3122; margin-top:55px;font-family:"Balo";}  
+        article h3{margin-left: 40px;   color:#7F3122;font-family: "Balo";}
+        article p{margin-left: 40px;   color:black;font-family: "Balo";font-weight: 400;}
+        section p{text-align:justify; font-family: serif; font-family: "Lato"; }
+       
+       
+        .p-2 bd-highlight{
+           
+            background-color: antiquewhite;
+           }
+
+        
+
+        .cont2{
+            margin-top: 20px; 
+        }
+
+        .cont3{
+            margin-top: 20px; 
+        }
+        .cont4{
+            margin-top: 20px; 
+        }
+/* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
+
+.bd-highlight{
+    background-color:#F0BC56;
+    
+}
+.somosq h1{
+ color:#7F3122; font-size: 35px; font-family:"Balo";
+   text-align: center;
+
+   }
+   
+   .gatito{
+   
+    width: 280px;
+    height: 280px;
+    margin-top: -150px;
+    margin-left: 20%;
+
+   }
+   .gatito img{
+    width: 280px;
+    height: 280px;
+   } 
