@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+let inputdireccion = document.getElementById("validationServer03.1");
+let check = true;
+let btn = document.getElementById("btncheck");
+
+
+
+
+
+
+  function isEmailValid(email) {
+    let regex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    return !!regex.exec(email);
+  }
+
+
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (isEmailValid(inputdireccion.value)) {
+      inputdireccion.classList.remove("is-invalid");
+      inputdireccion.classList.add("is-valid");
+    } else {
+      inputdireccion.classList.remove("is-valid");
+      inputdireccion.classList.add("is-invalid");
+=======
 
 let camposNombre = (campoName.campoApe);
 camposNombre.addEventListener("blur", function (e){
@@ -106,7 +132,44 @@ btnEnviar.addEventListener("click", function (e){
     }else{
         TyC.classList.remove("is-valid");
         TyC.classList.add("is-invalid");
+>>>>>>> e08b85e3b8a8db393e36ba669a89746d258b2aaa
     }
 });
 
 
+<<<<<<< HEAD
+
+
+
+/* let inputdireccion= document.getElementById("validationServer03.1");
+let check = true;
+let btn=document.getElementsById("btncheck");
+
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+
+if (ValidateEmail(inputdireccion.value)) {
+    inputdireccion.classList.remove("is-invalid");
+    inputdireccion.classList.add("is-valid");
+  } else {
+    inputdireccion.classList.remove("is-valid");
+    inputdireccion.classList.add("is-invalid");
+    check = false;
+
+  }
+ 
+   function ValidateEmail(input) {
+    let valid =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+    if (input.match(valid)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+ 
+ 
+  }); */
+=======
+>>>>>>> e08b85e3b8a8db393e36ba669a89746d258b2aaa
