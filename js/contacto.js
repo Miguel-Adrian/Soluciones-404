@@ -45,6 +45,8 @@ let btn = document.getElementById("btncheck");
     } else {
       inputdireccion.classList.remove("is-valid");
       inputdireccion.classList.add("is-invalid");
+    }
+  });
 
 
 let camposNombre = (campoName.campoApe);
@@ -163,34 +165,31 @@ btnEnviar.addEventListener("click", function (e){
 
 
 
-/* let inputdireccion= document.getElementById("validationServer03.1");
-let check = true;
-let btn=document.getElementsById("btncheck");
-
-btn.addEventListener("click", function (e) {
-  e.preventDefault();
 
 
-if (ValidateEmail(inputdireccion.value)) {
-    inputdireccion.classList.remove("is-invalid");
-    inputdireccion.classList.add("is-valid");
-  } else {
-    inputdireccion.classList.remove("is-valid");
-    inputdireccion.classList.add("is-invalid");
-    check = false;
 
-  }
- 
-   function ValidateEmail(input) {
-    let valid =/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  
-    if (input.match(valid)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
- 
- 
-  }); */
+
+let btnSubmit = document.getElementById("btnSubmit");
+
+btnSubmit.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    let campoCP = document.getElementById("validationServer05Feedback");
+
+let cp = campoCP.value;
+console.log(campoCP.value.length);
+console.log(isNaN(cp));
+//
+if (
+    (campoCP.value.length ==5)
+    && 
+    (! isNaN(cp))
+    ){
+    campoCP.classList.remove("is-invalid");
+    campoCP.classList.add("is-valid");
+}else{
+    campoCP.classList.remove("is-valid");
+    campoCP.classList.add("is-invalid");
+}
+});
 
