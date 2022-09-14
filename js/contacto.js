@@ -173,3 +173,26 @@ if (ValidateEmail(inputdireccion.value)) {
   }); */
 =======
 >>>>>>> e08b85e3b8a8db393e36ba669a89746d258b2aaa
+let btnSubmit = document.getElementById("btnSubmit");
+
+btnSubmit.addEventListener("click", function(e){
+    e.preventDefault();
+    
+    let campoCP = document.getElementById("validationServer05Feedback");
+
+let cp = campoCP.value;
+console.log(campoCP.value.length);
+console.log(isNaN(cp));
+//
+if (
+    (campoCP.value.length ==5)
+    && 
+    (! isNaN(cp))
+    ){
+    campoCP.classList.remove("is-invalid");
+    campoCP.classList.add("is-valid");
+}else{
+    campoCP.classList.remove("is-valid");
+    campoCP.classList.add("is-invalid");
+}
+});
