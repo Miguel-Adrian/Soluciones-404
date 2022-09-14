@@ -1,4 +1,26 @@
-<<<<<<< HEAD
+
+//Area de validacion de numero telefonico
+//Campos        validationServer03
+let btnValidacion = document.getElementById("validacion03");
+let campoData = document.getElementById("validationServer03")
+
+//Validacion campo numero telefonico solo 10 digitos.
+btnValidacion.addEventListener("click", function(event){
+       event.preventDefault();
+
+    if ((campoData.value.length ==10) && (!isNaN(campoData.value)) ) {
+        campoData.classList.remove("is-invalid");
+        campoData.classList.add("is-valid");
+    } else {
+        campoData.classList.remove("is-valid");
+        campoData.classList.add("is-invalid");        
+    }
+
+});
+//Validacion campo numero telefonico solo 10 digitos.
+
+
+
 let inputdireccion = document.getElementById("validationServer03.1");
 let check = true;
 let btn = document.getElementById("btncheck");
@@ -23,7 +45,7 @@ let btn = document.getElementById("btncheck");
     } else {
       inputdireccion.classList.remove("is-valid");
       inputdireccion.classList.add("is-invalid");
-=======
+
 
 let camposNombre = (campoName.campoApe);
 camposNombre.addEventListener("blur", function (e){
@@ -132,12 +154,12 @@ btnEnviar.addEventListener("click", function (e){
     }else{
         TyC.classList.remove("is-valid");
         TyC.classList.add("is-invalid");
->>>>>>> e08b85e3b8a8db393e36ba669a89746d258b2aaa
+
     }
 });
 
 
-<<<<<<< HEAD
+
 
 
 
@@ -171,5 +193,4 @@ if (ValidateEmail(inputdireccion.value)) {
  
  
   }); */
-=======
->>>>>>> e08b85e3b8a8db393e36ba669a89746d258b2aaa
+
