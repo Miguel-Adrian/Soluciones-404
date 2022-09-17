@@ -24,11 +24,16 @@
          url('../src/fonts/lato/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
-}  
+}
+
 nav {
     background-color: #6F1D1B;
 }
-
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
 
 .navInf a {
     color: white
@@ -82,7 +87,6 @@ section p {
 
 
 .p-2 bd-highlight {
-
     background-color: antiquewhite;
 }
 
@@ -142,4 +146,21 @@ section p {
 #aboutparrafo{
     border-radius: 20px;
     margin: 15px;
+}
+
+footer{
+    color: #FFe6A7;
+    background: #432818;
+}
+footer a:hover{
+    color: #FFe6A7;
+}
+a{
+    text-decoration: none;
+    color: #FFe6A7;
+}
+.imgRedes:hover{
+    transform: scale(.85);
+}.logoHeader{
+    border-radius: 15px;
 }

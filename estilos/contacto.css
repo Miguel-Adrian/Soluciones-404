@@ -27,34 +27,65 @@
 }
 
 main {
+    font-family: "Lato";
     background-color:#FFe6A7;
     border: thin solid black;
-   height: auto;
-   width: auto;
-
-
-
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
 }
 body{
-    background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: auto;
-width: auto;
+    font-family: "Lato";
+/*     background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 .pez{
     image-orientation:unset;
 }
-/*background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg);
-background-repeat: no-repeat;
-background-size: cover;*/
-
 h1{
     text-align: center;
     font-family: "Baloo 2";
     color: #7F3122;
+    margin: 20px;
 }
-
+label{
+    font-family: "Baloo 2";
+    color: #432818;
+    font-size: large;
+}
 section{
     font-family: "Lato";
+}
+
+label{
+    font-family: "Baloo 2";
+}
+
+.imgIcon{
+    padding: 4px;
+}
+footer{
+    color: #FFe6A7;
+    background: #432818;
+}
+footer a:hover{
+    color: #FFe6A7;
+}
+a{
+    text-decoration: none;
+    color: #FFe6A7;
+}
+.imgRedes:hover{
+    transform: scale(.85);
+}
+.logoFooter{
+    border-radius: 15px;
 }

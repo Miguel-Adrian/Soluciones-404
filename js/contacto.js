@@ -11,17 +11,22 @@ let cp = campoCP.value;
 let TyC = document.getElementById("tycCheck");
 let mensaje = document.getElementById("textArea");
 
+
+
 btnEnviar.addEventListener("click", function (e) {
     e.preventDefault();
+
+let cont = 0;
+
 
     // Validación campo Nombre
     campoName.classList.remove("is-invalid");
     campoName.classList.add("is-valid");
 
     if ((campoName.value.length >= 3) && (campoName.value.length <= 20)) {
+        cont++;
 
         for (let i = 0; i < campoName.value.length; i++) {
-            console.log(campoName.value.charAt(i));
             if (
                 ((campoName.value.toUpperCase().charCodeAt(i) < 65)
                     || (campoName.value.toUpperCase().charCodeAt(i) > 90))
@@ -55,12 +60,12 @@ btnEnviar.addEventListener("click", function (e) {
     campoApe.classList.add("is-valid");
 
     if ((campoApe.value.length >= 3) && (campoApe.value.length <= 30)) {
+        cont++;
 
         for (let i = 0; i < campoApe.value.length; i++) {
-            console.log(campoApe.value.charAt(i));
             if (
                 ((campoApe.value.toUpperCase().charCodeAt(i) < 65)
-                    || (campoApe.value.toUpperCase().charCodeAt(i) > 90))
+                || (campoApe.value.toUpperCase().charCodeAt(i) > 90))
 
                 && (campoApe.value.toUpperCase().charCodeAt(i) != 32)
                 && (campoApe.value.toUpperCase().charCodeAt(i) != 193)
@@ -83,6 +88,8 @@ btnEnviar.addEventListener("click", function (e) {
 
     //Validación Número de teléfono
     if ((campoData.value.length == 10) && (!isNaN(campoData.value))) {
+        cont++;
+
         campoData.classList.remove("is-invalid");
         campoData.classList.add("is-valid");
     } else {
@@ -99,6 +106,8 @@ btnEnviar.addEventListener("click", function (e) {
     }
     
     if (isEmailValid(inputdireccion.value)) {
+        cont++;
+
         inputdireccion.classList.remove("is-invalid");
         inputdireccion.classList.add("is-valid");
     } else {
@@ -109,6 +118,8 @@ btnEnviar.addEventListener("click", function (e) {
     // Validación Estado
 
     if (campoEstados.selectedIndex == 0) {
+        cont++;
+
         campoEstados.classList.remove("is-valid");
         campoEstados.classList.add("is-invalid");
         flagEstados = false;
@@ -120,11 +131,9 @@ btnEnviar.addEventListener("click", function (e) {
     }
 
     // Validación Código Potal
-    if (
-        (campoCP.value.length == 5)
-        &&
-        (!isNaN(cp))
-    ) {
+    if ((campoCP.value.length == 5) && (!isNaN(cp))) {
+        cont++;
+
         campoCP.classList.remove("is-invalid");
         campoCP.classList.add("is-valid");
     } else {
@@ -135,6 +144,8 @@ btnEnviar.addEventListener("click", function (e) {
     //Validación Terminos y condiciones
 
     if (TyC.checked) {
+        cont++;
+
         TyC.classList.remove("is-invalid");
         TyC.classList.add("is-valid");
     } else {
@@ -145,8 +156,9 @@ btnEnviar.addEventListener("click", function (e) {
 
     //Validación Mensaje
 
-    if ((mensaje.value.length > 0) && (mensaje.value.length < 300)) {
-        //prompt("¿Ingres un mensaje para enviar!");
+    if ((mensaje.value.length > 0) && (mensaje.value.length < 300) && (mensaje.value.charCodeAt() != 32)) {
+        cont++;
+
         mensaje.classList.remove("is-invalid");
         mensaje.classList.add("is-valid");
 
@@ -155,15 +167,28 @@ btnEnviar.addEventListener("click", function (e) {
         mensaje.classList.add("is-invalid");
     }
 
-    Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "elpapudelospapus115@gmail.com",
-        Password: "B83C021D99E349309B9EE85D73F001C7A7EE",
-        To: "cristopher.serna17@gmail.com",
-        From: "elpapudelospapus115@gmail.com",
-        Subject: "This is a subject",
-        Body: "And this is the body testing123"
-      }).then(
-        message => alert(message)
-      );    
+    if (cont==7){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: '¡Mensaje enviado!',
+            text: `${campoName.value}, agradecemos tus comentarios, pronto nos pondremos en contacto contigo.`,
+            showConfirmButton: true,
+        });
+/*         Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "elpapudelospapus115@gmail.com",
+            Password: "B83C021D99E349309B9EE85D73F001C7A7EE",
+            To: "cristopher.serna17@gmail.com",
+            From: "elpapudelospapus115@gmail.com",
+            Subject: "Mesaje para Q-pets",
+            Body: mensaje.value,
+            }); */
+    } else {
+        Swal.fire({
+            title: 'Algo salio mal',
+            text: "Por favor, verifica que los campos estén correctos.",
+            icon: 'error',
+        });
+    }   
 });
