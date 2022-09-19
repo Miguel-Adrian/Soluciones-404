@@ -29,11 +29,6 @@
 nav {
     background-color: #6F1D1B;
 }
-body{
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
-}
 
 .navInf a {
     color: white
@@ -42,6 +37,11 @@ body{
 .navInf img {
     height: 50px;
     background-color: white;
+}
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
 }
 
 .container {
@@ -138,7 +138,6 @@ section p {
     padding: 10px;
     margin: 20px;
 }
-
 .p-2{
     border-radius: 20px;
     margin: 15px;
@@ -160,7 +159,12 @@ a{
     color: #FFe6A7;
 }
 .imgRedes:hover{
-    transform: scale(.85);
-}.logoHeader{
+    transform: scale(1.25);
+    transition: all 400ms;
+}
+.logoFooter{
+    border-radius: 15px;
+}
+.logoHeader{
     border-radius: 15px;
 }

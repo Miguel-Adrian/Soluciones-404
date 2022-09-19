@@ -172,7 +172,7 @@ let cont = 0;
             position: 'center',
             icon: 'success',
             title: '¡Mensaje enviado!',
-            text: `${campoName.value}, agradecemos tus comentarios, pronto nos pondremos en contacto contigo.`,
+            text: `${campoName.value}, agradecemos tus comentarios. Pronto nos pondremos en contacto contigo.`,
             showConfirmButton: true,
         });
 /*         Email.send({
@@ -186,8 +186,8 @@ let cont = 0;
             }); */
     } else {
         Swal.fire({
-            title: 'Algo salio mal',
-            text: "Por favor, verifica que los campos estén correctos.",
+            title: 'Error al enviar mensaje',
+            text: "Por favor, verifica que todos los campos sean válidos.",
             icon: 'error',
         });
     }   

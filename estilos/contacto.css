@@ -25,7 +25,15 @@
          url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
+/* Estilos para la barra de título */
+.contactoTitle{
+    background: #FFe6A7;
+    font-family: "Lato";
+    padding: 35px;
+    margin-top: 35px;
+}
 
+/* Estilos para el main del contacto.html*/
 main {
     font-family: "Lato";
     background-color:#FFe6A7;
@@ -36,6 +44,7 @@ main {
     padding: 20px;
     margin: 50px;
 }
+/* Estilos para el body del contacto.html*/
 body{
     font-family: "Lato";
 /*     background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg); */
@@ -47,31 +56,17 @@ body{
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-.pez{
-    image-orientation:unset;
-}
-h1{
-    text-align: center;
-    font-family: "Baloo 2";
-    color: #7F3122;
-    margin: 20px;
-}
+/* Estilos para las etiquetas <label> del contacto.html*/
 label{
     font-family: "Baloo 2";
     color: #432818;
     font-size: large;
 }
-section{
-    font-family: "Lato";
-}
-
-label{
-    font-family: "Baloo 2";
-}
-
+/* Estilos para los iconos que están por encima de los campos en el archivo contacto.html*/
 .imgIcon{
     padding: 4px;
 }
+/* Estilos para la sección <footer> del archivo contacto.html*/
 footer{
     color: #FFe6A7;
     background: #432818;
@@ -79,12 +74,19 @@ footer{
 footer a:hover{
     color: #FFe6A7;
 }
+/* Estilos para las etiquetas <a> dentro del archivo contacto.html*/
 a{
     text-decoration: none;
     color: #FFe6A7;
 }
+/* Estilos para los iconos de la sección <footer> dentro de contacto.html*/
 .imgRedes:hover{
-    transform: scale(.85);
+    transform: scale(1.25); /* Al pasar el cursor hace una transformación a una escala de 1.25 */
+    transition: all 400ms; /* La transformación toma un tiempo de 400ms (hace más suave la animación) */
+}
+#btnEnviar:hover{
+    transform: scale(1.1); 
+    transition: all 250ms; 
 }
 .logoFooter{
     border-radius: 15px;
