@@ -25,135 +25,48 @@
          url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
-
-nav {
-    background-color: #6F1D1B;
+/* Estilos para la barra de título */
+.contactoTitle{
+    background: #FFe6A7;
+    font-family: "Lato";
+    padding: 35px;
+    margin-top: 35px;
 }
 
-.navInf a {
-    color: white
+/* Estilos para el main del contacto.html*/
+main {
+    font-family: "Lato";
+    background-color:#FFe6A7;
+    border: thin solid black;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px;
 }
-
-.navInf img {
-    height: 50px;
-    background-color: white;
-}
+/* Estilos para el body del contacto.html*/
 body{
+    font-family: "Lato";
+/*     background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
     display: grid;
     min-height: 100vh;
     grid-template-rows: auto 1fr auto;
 }
-
-.container{
-    width: 55%;
-    background-color: antiquewhite;
-
-    margin-left: 20%;
-}
-
-.articulosCarrito{
-    background-color:#FFE6A7;
-}
-
-.resumenCompra{
-    background-color: #FFe6A7;
-}
-h1 {
-    text-align: center;
-    padding: 0.5em;
-    color: #7F3122;
-    font-size: 45px;
+/* Estilos para las etiquetas <label> del contacto.html*/
+label{
     font-family: "Baloo 2";
+    color: #432818;
+    font-size: large;
 }
-
-h2 {
-    margin-left: 100px;
-    color: #7F3122;
-    margin-top: 55px;
-    font-family: "Baloo 2";
+/* Estilos para los iconos que están por encima de los campos en el archivo contacto.html*/
+.imgIcon{
+    padding: 4px;
 }
-
-article h3 {
-    margin-left: 40px;
-    color: #7F3122;
-    font-family: "Baloo 2";
-}
-
-article p {
-    margin-left: 40px;
-    color: black;
-    font-family: "Baloo 2";
-    font-weight: 400;
-}
-
-section p {
-    text-align: justify;
-    font-family: serif;
-    font-family: "Lato";
-}
-
-
-.p-2 bd-highlight {
-    background-color: antiquewhite;
-}
-
-
-.cont2 {
-    margin-top: 20px;
-}
-
-.cont3 {
-    margin-top: 20px;
-}
-
-.cont4 {
-    margin-top: 20px;
-}
-
-/* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
-
-.bd-highlight {
-    background-color: #F0BC56;
-
-}
-
-.somosq h1 {
-    color: #7F3122;
-    font-size: 35px;
-    font-family: "Baloo 2";
-    text-align: center;
-
-}
-
-.gatito {
-
-    width: 280px;
-    height: 280px;
-    margin-top: -150px;
-    margin-left: 20%;
-
-}
-
-.gatito img {
-    width: 280px;
-    height: 280px;
-}
-
-.parrafoabout {
-    background: #ffe7b7;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 20px;
-}
-.p-2{
-    border-radius: 20px;
-    margin: 15px;
-}
-#aboutparrafo{
-    border-radius: 20px;
-    margin: 15px;
-}
-
+/* Estilos para la sección <footer> del archivo contacto.html*/
 footer{
     color: #FFe6A7;
     background: #432818;
@@ -161,17 +74,20 @@ footer{
 footer a:hover{
     color: #FFe6A7;
 }
+/* Estilos para las etiquetas <a> dentro del archivo contacto.html*/
 a{
     text-decoration: none;
     color: #FFe6A7;
 }
+/* Estilos para los iconos de la sección <footer> dentro de contacto.html*/
 .imgRedes:hover{
-    transform: scale(1.25);
-    transition: all 400ms;
+    transform: scale(1.25); /* Al pasar el cursor hace una transformación a una escala de 1.25 */
+    transition: all 400ms; /* La transformación toma un tiempo de 400ms (hace más suave la animación) */
+}
+#btnEnviar:hover{
+    transform: scale(1.1); 
+    transition: all 200ms; 
 }
 .logoFooter{
-    border-radius: 15px;
-}
-.logoHeader{
     border-radius: 15px;
 }

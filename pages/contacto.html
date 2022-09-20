@@ -1,192 +1,295 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-<link rel="stylesheet" href="../estilos/css/contacto.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/contacto.css">
+    <link rel="stylesheet" href="../estilos/estilos.css">
     <title>Contacto</title>
-  </head>
-  <body>
-    <h1>Contacto</h1>
-    <section>
-    <main class="container">
-      <form onsubmit="sendEmail(); reset(); return false;">
-        <div class="form-row">
-          <div class="col-md-8 mb-3">
-            <img src="../src/images/contactoimg/dog_animal_pet_bulldog_icon_124662.svg" alt="" width="40cm" height="40cm"  >
-            <label for="validationServer01">Nombre</label>
-            <input type="text" class="form-control is-invalid" id="validationServer01" value="" required>
-            <div class="invalidvalid-feedback">
-              Ingresa tu(s) nombre(s).
-            </div>
-          </div>
-          <div class="col-md-8 mb-3">
-            <img src="../src/images/contactoimg/22221cat_98748.svg" alt="" width="40cm" height="40cm"  >
-            <label for="validationServer02">Apellidos</label>
-            <input type="text" class="form-control is-invalid" id="validationServer02" value="" required>
-            <div class="invalid-feedback">
-              Ingresa tu(s) apellido(s).
-            </div>
-          </div>
-          <div class="col-md-8 mb-3">
-            <img src="../src/images/contactoimg/chihuahua_bone_dog_animal_15961.png" alt="" width="40cm" height="40cm"  >
-          
-            <label for="validationServer03">Numero de telefono</label>
-            <input type="text" class="form-control is-invalid" id="validationServer03" value="" required>
-            <div class="invalid-feedback">
-              Ingresa tu número de teléfono.
-            </div>
-          </div>
-        </div>
-        <div class="form-row"> <!--email-->
-          <div class="col-md-8 mb-3">
-            
-            <img src="../src/images/contactoimg/16-client-cat_icon-icons.com_76692.png" alt="" width="40cm" height="40cm"  >
-            <label for="validationServer03.1">Dirección</label>
-            <input  type="text" class="form-control is-invalid" id="validationServer031" aria-describedby="validationServer03.1Feedback" required>
-            <div id="validationServer03Feedback" class="invalid-feedback">
-              Ingresa tu dirección.
-            
-            </div>
-          </div><!--email-->
-          <div class="col-md-8 mb-3">
-            <img src="../src/images/contactoimg/dog_pet_animal_japanese_shiba_inu_japan_icon_127300.svg" width="40cm" height="40cm"  >
-            <label for="validationServer04">Estado</label>
-            <select class="custom-select is-invalid" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-              <option selected disabled value="">Choose...</option>
-              <option>Aguascalientes-AGS</option>
-              <option >Baja California BCN</option>
-              <option >Baja California Sur-BCS</option>
-              <option >Campeche-CAM</option>
-              <option >Chiapas-CHP</option>
-              <option >Chihuahua-CHI</option>
-              <option >Ciudad de México-CDMX</option>
-              <option >Coahuila-COA</option>
-              <option >Colima-COL</option>
-              <option >Durango-DUR</option>
-              <option >Guanajuato-GTO</option>
-              <option >Guerrero-GRO</option>
-              <option >Hidalgo-HGO</option>
-              <option >Jalisco-JAL</option>
-              <option >México-EDOMEX</option>
-              <option >Michoacán-MIC</option>
-              <option >Morelos-MOR</option>
-              <option >Nayarit-NAY</option>
-              <option >Nuevo León-NLE</option>
-              <option >Oaxaca-OAX</option>
-              <option >Puebla-PUE</option>
-              <option >Querétaro-QRO</option>
-              <option >Quintana Roo-ROO</option>
-              <option >San Luis Potosí-SLP</option>
-              <option >Sinaloa-SIN</option>
-              <option >Sonora-SON</option>
-              <option >Tabasco-TAB</option>
-              <option >Tamaulipas-TAM</option>
-              <option >Tlaxcala-TLX</option>
-              <option >Veracruz-VER</option>
-              <option >Yucatán-YUC</option>
-              <option >Zacatecas-ZAC</option>
-             
-            </select>
-            <div id="validationServer04Feedback" class="invalid-feedback">
-              Selecciona tu estado.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <img src="../src/images/contactoimg/ecoicon13_122082 (1).png" height="" width="40cm" height="40cm"  >
-            <label for="validationServer05">Código postal</label>
-            <input type="text" class="form-control is-invalid" id="validationServer05" aria-describedby="validationServer05Feedback" required>
-            <div id="validationServer05Feedback" class="invalid-feedback">
-            Ingresa tu código postal.
-            </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input is-invalid" type="checkbox" value="" id="tycCheck" aria-describedby="invalidCheck3Feedback" required>
-            <label class="form-check-label" for="tycCheck">
-              Aceptar términos y condiciones
-            </label>
-
-            <div  id="invalidCheck3Feedback" class="invalid-feedback">
-              Términos y condiciones.
-            
-            </div>
-
-          </div>
-        </div>
-        <div class="form-group">
-          <img src="../src/images/contactoimg/dogbone_perr_13465.png" height="" width="25cm" height="25cm" >
-          <label for="exampleFormControlTextarea1">Mensaje</label>
-          <textarea class="form-control" id="textArea" rows="3" placeholder="Escribe tu mensaje aquí... (máx 300 caracteres)"></textarea>
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-          <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm" height="30cm"  >
-
-        
-     
-        
-        </div>
 
        
-
-        <button class="btn btn-primary" type="submit" id="btnEnviar">Enviar</button>
-
-
-       
-
-
-
-      </form>
-  
-    </main>
-</section>
-
-
- 
-    
-
    
+        <div class="navInf">
+            <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#6F1D1B">
+                <a class="navbar-brand" href="#"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets"
+                        class="logoHeader"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto navInfLink">
+                        <a class="nav-item nav-link mx-auto" href="#" style="color:white">Promociones</a>
+                        <a class="nav-item nav-link mx-auto" href="../pages/about.html" style="color:white">Acerca de nosotros</a>
+                        <a class="nav-item nav-link mx-auto" href="../pages/contacto.html" style="color:white">Contacto</a>
+                        <a class="nav-item nav-link mx-auto" href="./login.html" tabindex="-1" aria-disabled="true"
+                            style="color:white">Iniciar sesión</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header> <!-- Cierra navbar -->
 
+    <h1 class="contactoTitle container-fluid">Contacto</h1>
+    <section>
+        <main class="container mx-auto">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <div class="form-row">
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo nombre -->
+                        <img class="imgIcon" src="../src/images/contactoimg/dog_animal_pet_bulldog_icon_124662.svg" alt="" width="40cm"
+                            height="40cm">
+                        <label for="validationServer01">Nombre</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer01" value="" required>
+                        <div class="invalidvalid-feedback">
+                            Ingresa tu(s) nombre(s).
+                        </div>                  
+                    </div>  <!-- Cierra campo nombre -->
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo apellido -->
+                        <img class="imgIcon" src="../src/images/contactoimg/22221cat_98748.svg" alt="" width="40cm" height="40cm">
+                        <label for="validationServer02">Apellidos</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer02" value="" required>
+                        <div class="invalid-feedback">
+                            Ingresa tu(s) apellido(s).
+                        </div>                 
+                    </div>  <!-- Cierra campo apellido -->
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo número de telefono -->
+                        <img class="imgIcon" src="../src/images/contactoimg/chihuahua_bone_dog_animal_15961.png" alt="" width="40cm"
+                            height="40cm">
+                        <label for="validationServer03">Número de telefono</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer03" value="" required
+                            maxlength="10" minlength="10">
+                        <div class="invalid-feedback">
+                            Ingresa tu número de teléfono.
+                        </div>
+                    </div>  <!-- Cierra campo número de telefono -->
+                </div>
+                <div class="form-row">
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo email -->
+                        <img class="imgIcon" src="../src/images/contactoimg/16-client-cat_icon-icons.com_76692.png" alt="" width="40cm"
+                            height="40cm">
+                        <label for="validationServer03.1">Dirección de correo electrónico</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer031"
+                            aria-describedby="validationServer03.1Feedback" required>
+                        <div id="validationServer03Feedback" class="invalid-feedback">
+                            Ingresa tu dirección de correo electrónico.
+                        </div>
+                    </div><!-- Cierra campo email -->
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo estados -->
+                        <img class="imgIcon" src="../src/images/contactoimg/dog_pet_animal_japanese_shiba_inu_japan_icon_127300.svg"
+                            width="40cm" height="40cm">
+                        <label for="validationServer04">Estado</label>
+                        <select class="custom-select" id="validationServer04">
+                            <option selected disabled value="">Elige tu estado de procedencia</option>
+                            <option>Aguascalientes-AGS</option>
+                            <option>Baja California-BCN</option>
+                            <option>Baja California Sur-BCS</option>
+                            <option>Campeche-CAM</option>
+                            <option>Chiapas-CHP</option>
+                            <option>Chihuahua-CHI</option>
+                            <option>Ciudad de México-CDMX</option>
+                            <option>Coahuila-COA</option>
+                            <option>Colima-COL</option>
+                            <option>Durango-DUR</option>
+                            <option>Guanajuato-GTO</option>
+                            <option>Guerrero-GRO</option>
+                            <option>Hidalgo HGO</option>
+                            <option>Jalisco JAL</option>
+                            <option>México-EDMEX</option>
+                            <option>Michoacán MIC</option>
+                            <option>Morelos MOR</option>
+                            <option>Nayarit NAY</option>
+                            <option>Nuevo León NLE</option>
+                            <option>Oaxaca OAX</option>
+                            <option>Puebla PUE</option>
+                            <option>Querétaro QRO</option>
+                            <option>Quintana Roo ROO</option>
+                            <option>San Luis Potosí SLP</option>
+                            <option>Sinaloa SIN</option>
+                            <option>Sonora SON</option>
+                            <option>Tabasco TAB</option>
+                            <option>Tamaulipas TAM</option>
+                            <option>Tlaxcala TLX</option>
+                            <option>Veracruz VER</option>
+                            <option>Yucatán YUC</option>
+                            <option>Zacatecas ZAC</option>
+                        </select>
+                        <div id="validationServer04Feedback" class="invalid-feedback">
+                            Selecciona tu estado.
+                        </div>
+                    </div> <!-- Cierra campo estados -->
+                    <div class="col-md-8 mb-3 divCampo"> <!-- Abre campo código postal -->
+                        <img class="imgIcon" src="../src/images/contactoimg/ecoicon13_122082 (1).png" height="" width="40cm"
+                            height="40cm">
+                        <label for="validationServer05">Código postal</label>
+                        <input type="text" class="form-control is-invalid" id="validationServer05"
+                            aria-describedby="validationServer05Feedback" minlength="5" maxlength="5" required>
+                        <div id="validationServer05Feedback" class="invalid-feedback">
+                            Ingresa tu código postal.
+                        </div> 
+                    </div>  <!-- Cierra campo código postal -->
+                </div>
+                <div class="form-group">
+                    <div class="divCampo"> <!-- Abre campo mensaje -->
+                    <img class="imgIcon" src="../src/images/contactoimg/dogbone_perr_13465.png" height="" width="25cm" height="25cm">
+                    <label for="exampleFormControlTextarea1">¡Queremos saber más! escríbenos aquí tu mensaje</label>
+                    <textarea class="form-control" id="textArea" rows="5" placeholder="Máx 300 caracteres">
+                    </textarea>
+                    </div>
+                    <div class="form-group"> <!-- Abre campo términos y condiciones -->
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="tycCheck"
+                                aria-describedby="invalidCheck3Feedback" required>
+                            <label class="form-check-label" for="tycCheck">
+                                Aceptar términos y condiciones
+                            </label>
+                        </div>
+                    </div> <!-- Cierra campo términos y condiciones -->
+                </div>
+                <button class="btn btn-warning" type="submit" id="btnEnviar">Enviar</button>
+                <div><br> <!-- Línea de imagen -->
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    <img src="../src/images/contactoimg/Fish-bone_icon-icons.com_52093.png" height="" width="30cm"
+                        height="30cm">
+                    </div>
+            </form>
+        </main>
+    </section>
+    <footer>
+        <div class="container-fluid" style="padding-top: 20px;">
+            <div class="row no-gutters" style="padding: 0px;">
+                <div style="padding: 20px;" class="col-md-4 text-md-left text-center">
+                    <a href="../index.html"><img class="float-center img-fluid logoFooter" src="../src/images/footer/logoQPets.jpg" alt="" width="220px"></a>
+                    <br><br><br>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoFacebook.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoInstagram.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoTwitter.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoWhatsapp.png" height="48px" alt=""></a> 
+                </div>
+                <div class="col-md-3 text-md-left text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Atención al cliente</strong>
+                        </li>
+                        <br/>
+                        <li><a href="#">Forma de pago</a></li>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Preguntas frecuentes</a></li>
+                        <li><a href="#">Políticas de devolución y envío</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-md-left text-center">
+                    <ul class="list-unstyled">
+                        <li><strong>Compra</strong></li><br />
+                        <li><strong>Perro</strong></li>
+                        <li><a href="#">Alimento</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <br />
+                        <li><strong>Gato</strong></li>
+                        <li><a href="#">Alimento</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 text-md-left text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><strong>Contacto</strong></a>
+                        </li>
+                        <br />
+                        <li>Correo electrónico:</li>
+                        <li>email@qpets.com.mx</li>
+                        <br>
+                        <li>Teléfono</li>
+                        <li>+52 XX XXX XXX</li>
+                        <img style="padding: 4px; padding-bottom: 6px;" class="mt-1" src="../src/images/footer/iconoMC.png" alt="" height="48px">
+                        <img style="padding: 5px;" src="../src/images/footer/iconoAmEx.png" alt="" height="48px">
+                        <img style="padding: 5px;" src="../src/images/footer/iconoTarjeta.png" height="48px" alt="">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-2"><img class="float-left" src="../src/images/footer/roedor.png" alt="" width="48px"></div>
+                <div class="col-8 text-center">Copyright © 2022. Q-Pets. Todos los derechos reservados.</div>
+                <div class="col-2 "><img class="float-right" src="../src/images/footer/huellita.png" alt="" height="36px"></div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/contacto.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 
-
-
-   <script src="../js/contacto.js"></script>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-
-    
-  </body>
+</body>
 </html>
