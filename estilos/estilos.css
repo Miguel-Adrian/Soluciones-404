@@ -44,13 +44,20 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
-.container {
+.container{
     width: 55%;
     background-color: antiquewhite;
 
     margin-left: 20%;
 }
 
+.articulosCarrito{
+    background-color:#FFE6A7;
+}
+
+.resumenCompra{
+    background-color: #FFe6A7;
+}
 h1 {
     text-align: center;
     padding: 0.5em;
