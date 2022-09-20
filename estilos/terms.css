@@ -1,0 +1,99 @@
+/* baloo-2-regular - latin */
+@font-face {
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/fonts/balo/baloo-2-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../src/fonts/balo/baloo-2-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../src/fonts/balo/baloo-2-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../src/fonts/balo/baloo-2-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../src/fonts/balo/baloo-2-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../src/fonts/balo/baloo-2-v14-latin-regular.svg#Baloo2') format('svg'); /* Legacy iOS */
+}
+
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/fonts/lato/lato-v23-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../src/fonts/lato/lato-v23-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../src/fonts/lato/lato-v23-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../src/fonts/lato/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+}
+
+footer {
+    background-color: #432818;
+    color: #FFE6A7;
+    font-family: 'Lato';
+}
+
+footer a,
+footer a:focus,
+footer a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav {
+    background-color: #6F1D1B;
+}
+
+
+.navInf a {
+    color: white;
+    font-family: 'Lato';
+}
+
+.navInf img {
+    height: 50px;
+    background-color: white;
+}
+
+h2 {
+    color: #7F3122;
+    font-size: 40px;
+    font-family: "Baloo 2";
+    text-align: center;
+    padding: 0.5em;
+    padding-top: 1em;
+}
+
+section{
+    background-color: #FFE6A7;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+section p{
+    font-family: "Lato";
+    color: #6E3E22;
+    font-size: 18px;
+    text-align: justify;
+}
+
+section h3{
+    font-family: "Baloo 2";
+    color: #6E3E22;
+    font-size: 20px;
+}
+
+section h4{
+    font-family: "Baloo 2";
+    color: #6E3E22;
+}
+
+@media (max-width: 576px) {
+    main{
+        background-color: #FFE6A7;
+    }
+}
