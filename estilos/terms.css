@@ -97,3 +97,15 @@ section h4{
         background-color: #FFE6A7;
     }
 }
+
+.imgRedes:hover{
+    transform: scale(1.25); /* Al pasar el cursor hace una transformación a una escala de 1.25 */
+    transition: all 400ms; /* La transformación toma un tiempo de 400ms (hace más suave la animación) */
+}
+#btnEnviar:hover{
+    transform: scale(1.1); 
+    transition: all 200ms; 
+}
+.logoFooter{
+    border-radius: 15px;
+}
