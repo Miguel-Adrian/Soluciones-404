@@ -1,4 +1,3 @@
-
 function addItem(item){
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
@@ -92,6 +91,42 @@ addItem({
     'pet':'dog',
     'category':'accesory'
 });
+// 16. Shampoo líquido
+addItem({'id' :16, 'name':'Shampo para perro liquido',
+    'img':'../src/images/catalogo/Shampoo perro.png',
+    'description':'Shampo líquido para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso', 
+    'price': 50.00, 
+    'pet':'dog',
+    'category':'cleaning'
+    });
+//17. Shampoo en barra
+addItem({'id' :17, 'name':'Shampo para perro en barra',
+    'img':'../src/images/catalogo/Shampoo-perro-barra.png',
+    'description':'Shampo en barra para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso previene de pulgas y garrapatas',
+     'price': 30.00,
+      'pet':'dog',
+    'category':'cleaning'});
+//18. Quitamanchas
+addItem({'id' :18, 'name':'Quitamanchas de mascotas',
+    'img':'../src/images/catalogo/Quita-manchas.png',
+    'description':'Elimina esas manchas y malos olores causadas por tu mascota en superficies',
+     'price': 150.00,
+      'pet':'dog',
+    'category':'cleaning'});
+//19. Limpieza dental
+addItem({'id' :19, 'name':'Limpieza dental para perro',
+    'img':'../src/images/catalogo/limpieza-dental.png',
+    'description':'Dale un buen cuidado bucal a tu perro previniendo así enfermedades/bacterias y malos olores',
+     'price': 120.00, 
+     'pet':'dog',
+    'category':'cleaning'});
+//20. Quita olores
+addItem({'id': 20, 'name':'Quita olores de mascota',
+    'img':'../src/images/catalogo/Limpiador-para-perro.png',
+    'description':'Elimina olor dejado por tu mascota despues de hacer sus necesidades y previene que no vuelva hacerlo en el mismo lugar',
+     'price': 170.00,
+      'pet':'dog',
+    'category':'cleaning'});
 
 //21. Camita para perro
 addItem({'id':21,'name':'Camita P-rruna',
@@ -205,5 +240,4 @@ addItem({
     'price': 350,
     'pet':'cat',
     'category':'accesory'
-
 });
