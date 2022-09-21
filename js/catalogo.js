@@ -186,6 +186,31 @@ addItem({
     'description':'¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas','price': 200,
     'pet':'cat','category':'toys'
 });
+//34 comida premium
+addItem({'id': 34, 'name':'Gato especial',
+    'img':'https://www.perfectsense.mx/wp-content/uploads/Gato.jpg',
+    'description':'Deliciosa comida preparada por los mejores chefs del mundo para ,para ese gato quisquilloso en la comida,contiene proteína para esos reyes de la casa. ', 'price':1600
+    ,'pet':'cat','category':'food'});
+//35 comida loco
+    addItem({'id': 35, 'name':'loco pro la comida',
+    'img':'https://http2.mlstatic.com/D_NQ_NP_884668-MLM50166068178_062022-O.jpg',
+    'description':'Deliciosa comida para compartir para todos los gatos, contiene pescado producto importado.', 'price':150
+    ,'pet':'cat','category':'food'});
+//36 comida delicias
+    addItem({'id': 36, 'name':'Delicia',
+    'img':'https://www.heb.com.mx/media/catalog/product/cache/9f5ec31302878493d9ed0ac40a398e12/6/6/666193_1240134170.jpg',
+    'description':'Delicia, mejor alimento para tu gato, contiene pescado, camarón y otras cosas más para esos gatos que les gusta comer de más.', 'price': 325
+    ,'pet':'cat','category':'food' });
+// 37 sobre
+    addItem({'id': 37, 'name':'Me gusta sobre',
+    'img':'https://www.costco.com.mx/medias/sys_master/products/hc7/hce/62467576070174.jpg',
+    'description':'Deliciosos sobres de Whiskas, caja con 24 piezas para tener en todo el mes y poder darle ese regalo a tu gato glotón.', 'price': 436
+    ,'pet':'cat','category':'food'});
+     //38 paquete
+    addItem({'id': 38, 'name':'El Paquete',
+    'img':'https://res.cloudinary.com/walmart-labs/image/upload/w_225,dpr_auto,f_auto,q_auto:eco/mg/gm/1p/images/product-images/img_large/00750107221577l.jpg',
+    'description':'un increible paquete para tu gato gloton una bolsa de comida de gato y sobres para ese gato que tanto quieres', 'price': 750
+    ,'pet':'cat','category':'food'});
 
 // 44. Cama gato mimbre
 addItem({
