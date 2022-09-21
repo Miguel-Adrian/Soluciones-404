@@ -9,3 +9,8 @@
 .card-header{
     color:white;
 }
+.slide{
+    max-height: 700px;
+}
+#categoriasText{
+    color: beige;
