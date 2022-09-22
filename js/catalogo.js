@@ -1,20 +1,20 @@
 function addItem(item){
-    const itemHTML = '<div class="card" style="width: 18rem;">\n' +
+    const itemHTML = '<div class="card col-3 p-1 mx-3 my-2" style="width: 18rem;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
+        '        <p class="card-text text-justify">'+item.description.slice(0,70)+'...</p><p class="text-right h5 text-success font-weight-bold">$'+item.price+'</p>\n' +
+        '        <a href="#" class="btn btn-warning">Ver mas...</a> \n' +
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
-    const itemsContainer = document.getElementById("list-items");
+    const itemsContainer = document.getElementById("listaDeProductos");
     itemsContainer.innerHTML += itemHTML;
 }
 
 //1. Pelota de caucho
 addItem({'id':1,'name':'Pelota K-Nina',
-    'img':'.//src/images/catalogo/DogTretBallPink.png',
+    'img':'../src/images/catalogo/DogTreatBallPink.png',
     'description':'Pelota de caucho rosa, ¡puede almacenar premios de comida en su interior, ya que cuenta con un compartimento! Útil para ejercitar a tu mascota y enseñarle uno que otro truco de una sola vez.',
     'price': 123.50,'pet':'dog','category':'toys'});
 
@@ -182,7 +182,7 @@ addItem({'id':22,'name':'K-sita K9',
 
 //23. Casita para perro 2 plantas
 addItem({'id':23,'name':'K-sita K9 Suite de 2 plantas',
-'img':'../src/images/catalogo/DogBed2.png',
+'img':'../src/images/catalogo/DogHouse2.png',
 'description':'¿Acaso hay más un un miembro peludo en la familia? ¡No hay problema! Esta hermosa suite para dos amiguit@s está pensada exclusivamente para ahorrar espacio.',
 'price':10011.00,'pet':'dog','category':'accesory'})
 
