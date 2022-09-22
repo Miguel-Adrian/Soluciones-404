@@ -1,12 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../estilos/contacto.css"> -->
+    <link rel="stylesheet" href="../estilos/login.css">
     <title>Login</title>
+     <!-- CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <!-- ===== CSS  header y footer===== -->
+     <link rel="stylesheet" href="../estilos/terms.css">
+        <!-- ===== Iconscout CSS ===== -->
+     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- ===== CSS ===== -->
+     <link rel="stylesheet" href="../estilos/login.css">
 </head>
+
 <body>
+    <header class="header">
+        <nav class="navbar d-flex justify-content-end">
+            <div class="navSup">
+                <form class="form-inline">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:white"><img
+                            src="../src/images/Search.png " style="height:20px;" alt="Buscar"></button>
+                    <input class="form-control mr-sm-0" type="search" placeholder="Buscar producto..." aria-label="Search"
+                        style="height: 38px; width:min-content">
+                    <nav class="navbar">
+                        <a class="navbar" href="./cart.html">
+                            <img src="../src/images/Cart.png" width="shrink-to-fit" height="30" alt="Ir al carrito">
+                        </a>
+                        <nav class="navbar ">
+                            <a class="navbar" href="./catalogo.html">
+                                <img src="../src/images/Like.png" width="shrink-to-fit" height="30" alt="Mis 'Me gusta'">
+                            </a>
+                        </nav>
+                    </nav>
+                </form>
+            </div>
+        </nav>
     
+
+        <div class="navInf">
+            <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#6F1D1B">
+                <a class="navbar-brand" href="#"><img class="rounded-pill" src="../src/images/Logo.jpeg" alt="Logo Q-Pets"
+
+                        class="logoHeader"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mx-auto navInfLink">
+                        <a class="nav-item nav-link mx-auto" href="#" style="color:white">Promociones</a>
+        <a class="nav-item nav-link mx-auto" href="../pages/about.html" style="color:white">Acerca de nosotros</a>
+        <a class="nav-item nav-link mx-auto" href="../pages/contacto.html" style="color:white">Contacto</a>
+        <a class="nav-item nav-link mx-auto" href="../pages/login.html" tabindex="-1" aria-disabled="true" style="color:white">Iniciar sesión</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header> <!-- Cierra navbar -->
+
+    <!--<title>Login & Registration Form</title>-->
+    </head>
+        <main>
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title" >Acceso</span>
+
+                    <form action="#">
+                        <div class="input-field">
+                            <input type="text" placeholder="Ingrese su correo electrónico" required>
+                            <i class="uil uil-envelope icon"></i>
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" placeholder="Ingrese su contraseña" required>
+                            <i class="uil uil-lock icon"></i>
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Recordarme</label>
+                            </div>
+                        
+                        <a href="#" class="text">¿Se te olvidó tu contraseña?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Acceso">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">¿No es un miembro?
+                        <a href="#" class="text signup-link">Regístrate ahora</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registro Form -->
+            <div class="form signup">
+                <span class="title">Registro</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Introduzca su nombre" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Introduce tu correo electrónico" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Crear contraseña" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="confirmar contraseña" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Acepto todos los términos y condiciones</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Inscribirse">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">¿Ya eres usuario?
+                        <a href="#" class="text login-link">Inicia sesión ahora
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js/login.js"></script>
+       
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="container-fluid" style="padding-top: 20px;">
+            <div class="row no-gutters" style="padding: 0px;">
+                <div style="padding: 20px;" class="col-md-4 text-md-left text-center">
+                    <img class="rounded float-center" src="../src/images/footer/logoQPets.jpg" alt="" width="220px">
+                    <br/>
+                    <br/>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoFacebook.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoInstagram.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoTwitter.png" height="48px" alt=""></a>
+                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoWhatsapp.png" height="48px" alt=""></a> 
+                </div>
+                <div class="col-md-3 text-md-left text-center">
+                    <ul class="list-unstyled">
+                    <li>
+                        <strong>Atención al cliente</strong>
+                    </li>
+                    <br/>
+                    <li><a href="../pages/terms.html">Forma de pago</a></li>
+                    <li><a href="../pages/terms.html">Términos y condiciones</a></li>
+                    <li><a href="../pages/terms.html">Preguntas frecuentes</a></li>
+                    <li><a href="../pages/terms.html">Políticas de devolución y envío</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 text-md-left text-center">
+                    <ul class="list-unstyled">
+                    <li><strong>Compra</strong></li><br />
+                    <li><strong>Perro</strong></li>
+                    <li><a href="../pages/catalogo.html">Alimento</a></li>
+                    <li><a href="../pages/catalogo.html">Accesorios</a></li>
+                    <br />
+                    <li><strong>Gato</strong></li>
+                    <li><a href="../pages/catalogo.html">Alimento</a></li>
+                    <li><a href="../pages/catalogo.html">Accesorios</a></li>
+                </ul>
+                </div>
+                <div class="col-md-3 text-md-left text-center">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="../pages/contacto.html"><strong>Contacto</strong></a>
+                        </li>
+                        <br />
+                        <li>Correo electrónico:</li>
+                        <li>email@qpets.com.mx</li>
+                        <br>
+                        <li>Teléfono</li>
+                        <li>+52 XX XXX XXX</li>
+                        <img style="padding: 4px; padding-bottom: 6px;" class="mt-1" src="../src/images/footer/iconoMC.png" alt="" height="48px">
+                        <img style="padding: 5px;" src="../src/images/footer/iconoAmEx.png" alt="" height="48px">
+                        <img style="padding: 5px;" src="../src/images/footer/iconoTarjeta.png" height="48px" alt="">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col-2"><img class="float-left" src="../src/images/footer/roedor.png" alt="" width="48px"></div>
+                <div class="col-8 text-center">Copyright © 2022. Q-Pets. Todos los derechos reservados.</div>
+                <div class="col-2 "><img class="float-right" src="../src/images/footer/huellita.png" alt="" height="36px"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -24,11 +24,11 @@
          url('../src/fonts/lato/lato-v23-latin-regular.woff') format('woff'), /* Modern Browsers */
          url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
-}  
+}
+
 nav {
     background-color: #6F1D1B;
 }
-
 
 .navInf a {
     color: white
@@ -38,14 +38,26 @@ nav {
     height: 50px;
     background-color: white;
 }
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
 
-.container {
+.container{
     width: 55%;
     background-color: antiquewhite;
 
     margin-left: 20%;
 }
 
+.articulosCarrito{
+    background-color:#FFE6A7;
+}
+
+.resumenCompra{
+    background-color: #FFe6A7;
+}
 h1 {
     text-align: center;
     padding: 0.5em;
@@ -82,7 +94,6 @@ section p {
 
 
 .p-2 bd-highlight {
-
     background-color: antiquewhite;
 }
 
@@ -134,7 +145,6 @@ section p {
     padding: 10px;
     margin: 20px;
 }
-
 .p-2{
     border-radius: 20px;
     margin: 15px;
@@ -142,4 +152,26 @@ section p {
 #aboutparrafo{
     border-radius: 20px;
     margin: 15px;
+}
+
+footer{
+    color: #FFe6A7;
+    background: #432818;
+}
+footer a:hover{
+    color: #FFe6A7;
+}
+a{
+    text-decoration: none;
+    color: #FFe6A7;
+}
+.imgRedes:hover{
+    transform: scale(1.25);
+    transition: all 400ms;
+}
+.logoFooter{
+    border-radius: 15px;
+}
+.logoHeader{
+    border-radius: 15px;
 }
