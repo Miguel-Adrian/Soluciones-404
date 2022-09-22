@@ -282,6 +282,55 @@ addItem({
     'description':'¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas','price': 200,
     'pet':'cat','category':'toys'
 });
+
+// 29. Ropa para gato ejecutivo corbata azul lisa
+addItem({
+    'id': 29, 'name': 'Ropa para gato ejecutivo corbata azul lisa',
+    'img': '../src/images/catalogo/ropa gato ejecutiva azul lisa.jpg',
+    'description': 'Elegante y casual, corbata azul marino lisa',
+    'price': 250,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 30. Ropa para gato ejecutivo corbata salmon con franjas
+addItem({
+    'id': 30, 'name': 'Ropa para gato ejecutivo corbata salmon con franjas',
+    'img': '../src/images/catalogo/ropa gato ejecutiva franjas.jpg',
+    'description': 'Elegante y casual, corbata salmon con franjas negras',
+    'price': 250,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 31. Ropa para gato hawaii
+addItem({
+    'id': 31, 'name': 'Ropa para gato hawaiana',
+    'img': '../src/images/catalogo/ropa gato hawaianai.jpg.jpg',
+    'description': 'Fresca y comoda camisa  hawaiana ',
+    'price': 350,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 32. Ropa para gato kimono
+addItem({
+    'id': 32, 'name': 'Ropa para gato kimono',
+    'img': '../src/images/catalogo/ropa gato kimono.jpg',
+    'description': 'Tradicional kimono japones neko',
+    'price': 400,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 33. Ropa para gato casino mixologo
+addItem({
+    'id': 33, 'name': 'Ropa para gato casino mixologo',
+    'img': '../src/images/catalogo/ropa gato mixologo.jpg',
+    'description': 'Casino mixologo, porte profesional gatuno',
+    'price': 400,
+    'pet':'cat',
+    'category':'accesory'
+});
+
+
+
 //34 comida premium
 addItem({'id': 34, 'name':'Gato especial',
     'img':'https://www.perfectsense.mx/wp-content/uploads/Gato.jpg',
