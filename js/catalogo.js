@@ -1,21 +1,23 @@
 function addItem(item){
-    const itemHTML = '<div class="card" style="width: 18rem;">\n' +
+    const itemHTML = '<div class="card col-3 p-1 mx-3 my-2" style="width: 18rem;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
+        '        <p class="card-text text-justify">'+item.description.slice(0,70)+'...</p><p class="text-right h5 text-success font-weight-bold">$'+item.price+'</p>\n' +
+        '        <a href="#" class="btn btn-warning">Ver mas...</a> \n' +
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
-    const itemsContainer = document.getElementById("list-items");
+    const itemsContainer = document.getElementById("listaDeProductos");
     itemsContainer.innerHTML += itemHTML;
 }
 
 
+
+
 //1. Pelota de caucho
 addItem({'id':1,'name':'Pelota K-Nina',
-    'img':'.//src/images/catalogo/DogTretBallPink.png',
+    'img':'../src/images/catalogo/DogTreatBallPink.png',
     'description':'Pelota de caucho rosa, ¡puede almacenar premios de comida en su interior, ya que cuenta con un compartimento! Útil para ejercitar a tu mascota y enseñarle uno que otro truco de una sola vez.',
     'price': 123.50,'pet':'dog','category':'toys'});
 
@@ -144,29 +146,29 @@ addItem({'id' :16, 'name':'Shampo para perro liquido',
 addItem({'id' :17, 'name':'Shampo para perro en barra',
     'img':'../src/images/catalogo/Shampoo-perro-barra.png',
     'description':'Shampo en barra para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso previene de pulgas y garrapatas',
-     'price': 30.00,
-      'pet':'dog',
+    'price': 30.00,
+    'pet':'dog',
     'category':'cleaning'});
 //18. Quitamanchas
 addItem({'id' :18, 'name':'Quitamanchas de mascotas',
     'img':'../src/images/catalogo/Quita-manchas.png',
     'description':'Elimina esas manchas y malos olores causadas por tu mascota en superficies',
-     'price': 150.00,
-      'pet':'dog',
+    'price': 150.00,
+    'pet':'dog',
     'category':'cleaning'});
 //19. Limpieza dental
 addItem({'id' :19, 'name':'Limpieza dental para perro',
     'img':'../src/images/catalogo/limpieza-dental.png',
     'description':'Dale un buen cuidado bucal a tu perro previniendo así enfermedades/bacterias y malos olores',
-     'price': 120.00, 
-     'pet':'dog',
+    'price': 120.00, 
+    'pet':'dog',
     'category':'cleaning'});
 //20. Quita olores
 addItem({'id': 20, 'name':'Quita olores de mascota',
     'img':'../src/images/catalogo/Limpiador-para-perro.png',
     'description':'Elimina olor dejado por tu mascota despues de hacer sus necesidades y previene que no vuelva hacerlo en el mismo lugar',
-     'price': 170.00,
-      'pet':'dog',
+    'price': 170.00,
+    'pet':'dog',
     'category':'cleaning'});
 
 //21. Camita para perro
@@ -183,7 +185,7 @@ addItem({'id':22,'name':'K-sita K9',
 
 //23. Casita para perro 2 plantas
 addItem({'id':23,'name':'K-sita K9 Suite de 2 plantas',
-'img':'../src/images/catalogo/DogBed2.png',
+'img':'../src/images/catalogo/DogHouse2.png',
 'description':'¿Acaso hay más un un miembro peludo en la familia? ¡No hay problema! Esta hermosa suite para dos amiguit@s está pensada exclusivamente para ahorrar espacio.',
 'price':10011.00,'pet':'dog','category':'accesory'})
 
@@ -227,6 +229,55 @@ addItem({
     'description':'¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas','price': 200,
     'pet':'cat','category':'toys'
 });
+
+// 29. Ropa para gato ejecutivo corbata azul lisa
+addItem({
+    'id': 29, 'name': 'Ropa para gato ejecutivo corbata azul lisa',
+    'img': '../src/images/catalogo/ropa gato ejecutiva azul lisa.jpg',
+    'description': 'Elegante y casual, corbata azul marino lisa',
+    'price': 250,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 30. Ropa para gato ejecutivo corbata salmon con franjas
+addItem({
+    'id': 30, 'name': 'Ropa para gato ejecutivo corbata salmon con franjas',
+    'img': '../src/images/catalogo/ropa gato ejecutiva franjas.jpg',
+    'description': 'Elegante y casual, corbata salmon con franjas negras',
+    'price': 250,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 31. Ropa para gato hawaii
+addItem({
+    'id': 31, 'name': 'Ropa para gato hawaiana',
+    'img': '../src/images/catalogo/ropa gato hawaianai.jpg.jpg',
+    'description': 'Fresca y comoda camisa  hawaiana ',
+    'price': 350,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 32. Ropa para gato kimono
+addItem({
+    'id': 32, 'name': 'Ropa para gato kimono',
+    'img': '../src/images/catalogo/ropa gato kimono.jpg',
+    'description': 'Tradicional kimono japones neko',
+    'price': 400,
+    'pet':'cat',
+    'category':'accesory'
+});
+// 33. Ropa para gato casino mixologo
+addItem({
+    'id': 33, 'name': 'Ropa para gato casino mixologo',
+    'img': '../src/images/catalogo/ropa gato mixologo.jpg',
+    'description': 'Casino mixologo, porte profesional gatuno',
+    'price': 400,
+    'pet':'cat',
+    'category':'accesory'
+});
+
+
+
 //34 comida premium
 addItem({'id': 34, 'name':'Gato especial',
     'img':'https://www.perfectsense.mx/wp-content/uploads/Gato.jpg',
@@ -252,6 +303,54 @@ addItem({'id': 34, 'name':'Gato especial',
     'img':'https://res.cloudinary.com/walmart-labs/image/upload/w_225,dpr_auto,f_auto,q_auto:eco/mg/gm/1p/images/product-images/img_large/00750107221577l.jpg',
     'description':'un increible paquete para tu gato gloton una bolsa de comida de gato y sobres para ese gato que tanto quieres', 'price': 750
     ,'pet':'cat','category':'food'});
+
+    
+// 39. Shampoo para gato
+addItem({'id':39,
+'name':'Shampoo para gato',
+'img':'../src/images/catalogo/ShampooGato.png',
+'description':'Shampoo para gato, elimina malos olores de tu felino dejando su pelo suave y con un agradable aroma.',
+'price':145.00,
+'pet':'cat',
+'category':'cleaning'
+});
+
+// 40. Cepillo para gato
+addItem({'id':40,
+'name':'Cepillo para gato',
+'img':'../src/images/catalogo/CepilloParaGato.png',
+'description':'Cepillo de cerda fina para remover el pelo muesrto de tu gato.',
+'price':120.00,
+'pet':'cat',
+'category':'cleaning'
+});
+
+// 41. Cepillo dental para gato
+addItem({'id':41,
+'name':'Cepillo dental para gato',
+'img':'../src/images/catalogo/CepilloDientesGato.png',
+'description':'Este kit de cuidado dental cuenta con un cepillo de dientes y una pasta de dientes para gatos con sabor a pollo para que no tengas líos con la aceptación de tu felino hacia la pasta. ',
+'price':140.00,'pet':'cat',
+'category':'cleaning'
+});
+
+// 42. Talco antipulgas
+addItem({'id':42,
+'name':'Talco antipulgas para perro y gato',
+'img':'../src/images/catalogo/TalcoGato.png',
+'description':'Talco Bolfo ayuda a eliminar los problemas de pulgas y garrapatas de tu mascota',
+'price':150.00,'pet':'cat',
+'category':'cleaning'
+});
+
+// 43. Jabón para gato
+addItem({'id':43,
+'name':'Jabón limpieza profunda gato',
+'img':'../src/images/catalogo/JabonGato.png',
+'description':'Limpia y desinfecta profundamente, da brillo, desodoriza y restaura la condición del pelo y la piel de tu felinos.',
+'price':80.00,'pet':'cat',
+'category':'cleaning'
+});
 
 // 44. Cama gato mimbre
 addItem({
@@ -282,4 +381,3 @@ addItem({
     'pet':'cat',
     'category':'accesory'
 });
-

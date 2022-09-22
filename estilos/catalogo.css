@@ -2,10 +2,20 @@
     height: 500px;
     margin-top: 20px;
 }
-
 .d-block{
     height: 500px;
 }
 .card-header{
     color:white;
+}
+.slide{
+    max-height: 700px;
+}
+#categoriasText{
+    color: beige;
+}
+.card-img-top {
+    width:100%;
+    height: 25vw;
+    object-fit:contain;
 }
