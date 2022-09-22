@@ -58,9 +58,7 @@
         </div>
     </header> <!-- Cierra navbar -->
 
-<main class="container-fluid">
-    <!-- contenedor principal -->
-
+<section>
     <div id="carouselExampleCaptions" class="carousel slide p-5 mx-auto mb-5" data-ride="carousel"> 
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -102,109 +100,87 @@
             <span class="sr-only">Next</span>
         </button>
     </div> <!-- Aqui cierra carrusel -->
+</section>
 
+<section class="container-fluid">
+    <div class="row ml-2">
+        <div class="col-3 ml-4 p-3 d-none d-md-block"> <!-- Lado izquierda - Categorias -->
+                <div class="container-fluid categorias">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-header" style="background-color:#6F1D1B ;">
+                                <h4 id="categoriasText" class="mx-auto">Categorias</h4>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <br>
+                                    <div id="divData"></div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
+                                        <label class="custom-control-label" for="customCheck1">Categoria para Perros</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
+                                        <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Juguetes</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Alimento</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Accesorios</label>
+                                    </div><!-- div checkbox -->
+                                </li>
+                                <li class="list-group-item">
+                                    <br>
+                                    <div id="divData"></div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
+                                        <label class="custom-control-label" for="customCheck1">Categoria para Gatos</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
+                                        <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Juguetes</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Alimento</label>
+                                    </div><!-- div checkbox -->
+                                    <br>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="women">
+                                        <label class="custom-control-label" for="customCheck1">Accesorios</label>
+                                    </div><!-- div checkbox -->
+                                </li><!-- div checkbox -->
+                            </ul><!-- cierra lista -->
+                        </div> <!-- cierra card -->
+                    </div> <!-- cierra columna 1 -->
+                </div><!-- cierra container -->
+        </div>
 
-    <div class="container-fluid p-5 row">
-        <div class="">
-            <div class="col">
-                <div class="card-col-9" style="width: 18rem;">
-                    <div class="card-header" style="background-color:#6F1D1B ;">
-                        <h4 id="categoriasText" class="mx-auto">Categorias</h4>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <br>
-                            <div id="divData"></div>
+    <div class="col-8 container-fluid row productos mx-auto" id="listaDeProductos"> <!-- Lado derecha - Productos --> 
 
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="dog">
-                                <label class="custom-control-label" for="customCheck1">Categoria para Perros</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="dog">
-                                <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
-                            </div><!-- div checkbox -->
+    </div>
+    </div>
 
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Juguetes</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Alimento</label>
-                            </div><!-- div checkbox -->
+</section>
 
-
-                            <br>
-
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Accesorios</label>
-                            </div><!-- div checkbox -->
-
-
-
-
-                        </li>
-                        <li class="list-group-item">
-
-                            <br>
-
-                            <div id="divData"></div>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="dog">
-                                <label class="custom-control-label" for="customCheck1">Categoria para Gatos</label>
-                            </div><!-- div checkbox -->
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="dog">
-                                <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Juguetes</label>
-                            </div><!-- div checkbox -->
-
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Alimento</label>
-                            </div><!-- div checkbox -->
-
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked
-                                    value="women">
-                                <label class="custom-control-label" for="customCheck1">Accesorios</label>
-                            </div><!-- div checkbox -->
-                        </li><!-- div checkbox -->
-
-                    </ul><!-- cierra lista -->
-
-                </div> <!-- cierra card -->
-            </div> <!-- cierra columna 1 -->
-        </div><!-- cierra row -->
-    </div><!-- cierra container -->
-
-</main><!-- aqui cierra main -->
 
 <!-- footer -->
 
