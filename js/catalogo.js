@@ -1,4 +1,3 @@
-
 function addItem(item){
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
@@ -93,6 +92,82 @@ addItem({
     'category':'accesory'
 });
 
+//11. alimento para perro
+addItem({ 'id':11, 'name': 'Alimento Purina Dow Chow de 15 Kg',
+    'img':'../src/images/catalogo/alimentoparaperro1.jpg',
+    'description':'Alimento PURINA DOG CHOW para adulto. Tamaño de raza: medianos y grandes.', 
+    'price':749, 
+    'pet':'dog',
+    'category':'food' });
+//12. alimento para perro
+addItem({'id':12, 'name': 'Alimento para perro Ganador 20 Kg', 
+    'img':'../src/images/catalogo/alimentoparaperro2.jpg',
+    'description':'Alimento para perro de la marca Ganador para adulto de razas medianas y grandes.' , 
+    'price':899, 
+    'pet':'dog',
+    'category':'food'});
+
+//13. alimento para perro
+addItem({'id':13, 'name': 'Alimento para perro de la marca Perron 25Kg',
+    'img':'../src/images/catalogo/alimentoparaperro3.jpg',
+    'description':'Alimento de mayor nutrición a menor precio, para perros adultos de todas las razas y tamaños', 
+    'price':899, 
+    'pet':'dog',
+    'category':'food'});
+
+//14. alimento para perro
+addItem({'id':14, 'name': 'Alimento para perro de la marca Purina ONE 3,5 Kg',
+    'img':'../src/images/catalogo/alimentoparaperro4.jpg',
+    'description':'Alimento super premium de la marca Purina ONE con pollo y cordero de verdad contribuye a un corazón sano y musculos fuertes',
+    'price':459, 
+    'pet':'dog',
+    'category':'food'});
+
+//15. alimento para perro
+addItem({'id':15, 'name': 'Alimento para perro de la marca NUPEC 2 Kg',
+    'img':'../src/images/catalogo/alimentoparaperro5.jpg',
+    'description':'alimento con el balance de vitaminas, minerales, grasas, proteínas y energía adecuados para esta etapa de vida que definirá su calidad de vida adulta.',
+    'price':265, 
+    'pet':'dog',
+    'category':'food'});
+
+// 16. Shampoo líquido
+addItem({'id' :16, 'name':'Shampo para perro liquido',
+    'img':'../src/images/catalogo/Shampoo perro.png',
+    'description':'Shampo líquido para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso', 
+    'price': 50.00, 
+    'pet':'dog',
+    'category':'cleaning'
+    });
+//17. Shampoo en barra
+addItem({'id' :17, 'name':'Shampo para perro en barra',
+    'img':'../src/images/catalogo/Shampoo-perro-barra.png',
+    'description':'Shampo en barra para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso previene de pulgas y garrapatas',
+    'price': 30.00,
+    'pet':'dog',
+    'category':'cleaning'});
+//18. Quitamanchas
+addItem({'id' :18, 'name':'Quitamanchas de mascotas',
+    'img':'../src/images/catalogo/Quita-manchas.png',
+    'description':'Elimina esas manchas y malos olores causadas por tu mascota en superficies',
+    'price': 150.00,
+    'pet':'dog',
+    'category':'cleaning'});
+//19. Limpieza dental
+addItem({'id' :19, 'name':'Limpieza dental para perro',
+    'img':'../src/images/catalogo/limpieza-dental.png',
+    'description':'Dale un buen cuidado bucal a tu perro previniendo así enfermedades/bacterias y malos olores',
+    'price': 120.00, 
+    'pet':'dog',
+    'category':'cleaning'});
+//20. Quita olores
+addItem({'id': 20, 'name':'Quita olores de mascota',
+    'img':'../src/images/catalogo/Limpiador-para-perro.png',
+    'description':'Elimina olor dejado por tu mascota despues de hacer sus necesidades y previene que no vuelva hacerlo en el mismo lugar',
+    'price': 170.00,
+    'pet':'dog',
+    'category':'cleaning'});
+
 //21. Camita para perro
 addItem({'id':21,'name':'Camita P-rruna',
 'img':'../src/images/catalogo/DogBed1.png',
@@ -177,6 +252,54 @@ addItem({'id': 34, 'name':'Gato especial',
     'description':'un increible paquete para tu gato gloton una bolsa de comida de gato y sobres para ese gato que tanto quieres', 'price': 750
     ,'pet':'cat','category':'food'});
 
+    
+// 39. Shampoo para gato
+addItem({'id':39,
+'name':'Shampoo para gato',
+'img':'../src/images/catalogo/ShampooGato.png',
+'description':'Shampoo para gato, elimina malos olores de tu felino dejando su pelo suave y con un agradable aroma.',
+'price':145.00,
+'pet':'cat',
+'category':'cleaning'
+});
+
+// 40. Cepillo para gato
+addItem({'id':40,
+'name':'Cepillo para gato',
+'img':'../src/images/catalogo/CepilloParaGato.png',
+'description':'Cepillo de cerda fina para remover el pelo muesrto de tu gato.',
+'price':120.00,
+'pet':'cat',
+'category':'cleaning'
+});
+
+// 41. Cepillo dental para gato
+addItem({'id':41,
+'name':'Cepillo dental para gato',
+'img':'../src/images/catalogo/CepilloDientesGato.png',
+'description':'Este kit de cuidado dental cuenta con un cepillo de dientes y una pasta de dientes para gatos con sabor a pollo para que no tengas líos con la aceptación de tu felino hacia la pasta. ',
+'price':140.00,'pet':'cat',
+'category':'cleaning'
+});
+
+// 42. Talco antipulgas
+addItem({'id':42,
+'name':'Talco antipulgas para perro y gato',
+'img':'../src/images/catalogo/TalcoGato.png',
+'description':'Talco Bolfo ayuda a eliminar los problemas de pulgas y garrapatas de tu mascota',
+'price':150.00,'pet':'cat',
+'category':'cleaning'
+});
+
+// 43. Jabón para gato
+addItem({'id':43,
+'name':'Jabón limpieza profunda gato',
+'img':'../src/images/catalogo/JabonGato.png',
+'description':'Limpia y desinfecta profundamente, da brillo, desodoriza y restaura la condición del pelo y la piel de tu felinos.',
+'price':80.00,'pet':'cat',
+'category':'cleaning'
+});
+
 // 44. Cama gato mimbre
 addItem({
     'id': 44, 'name': 'Cama para gato de mimbre',
@@ -205,5 +328,4 @@ addItem({
     'price': 350,
     'pet':'cat',
     'category':'accesory'
-
 });
