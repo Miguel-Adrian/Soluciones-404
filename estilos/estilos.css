@@ -44,13 +44,6 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
-.container{
-    width: 55%;
-    background-color: antiquewhite;
-
-    margin-left: 20%;
-}
-
 .articulosCarrito{
     background-color:#FFE6A7;
 }
@@ -145,10 +138,7 @@ section p {
     padding: 10px;
     margin: 20px;
 }
-.p-2{
-    border-radius: 20px;
-    margin: 15px;
-}
+
 #aboutparrafo{
     border-radius: 20px;
     margin: 15px;
