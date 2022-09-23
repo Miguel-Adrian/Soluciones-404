@@ -12,6 +12,9 @@ function addItem(item){
     itemsContainer.innerHTML += itemHTML;
 }
 
+
+
+
 //1. Pelota de caucho
 addItem({
     'id': 1, 'name': 'Pelota K-Nina',
