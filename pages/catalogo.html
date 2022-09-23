@@ -8,7 +8,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/catalogo.css">
     <link rel="stylesheet" href="../estilos/estilos.css">
-    <title>Catálogo</title>
+    <title>Catálogo - Q-Pets</title>
 </head>
 <body>
     <header class="header">
@@ -59,7 +59,8 @@
     </header> <!-- Cierra navbar -->
 
 <section>
-    <div id="carouselExampleCaptions" class="carousel slide p-5 mx-auto mb-5" data-ride="carousel"> 
+    <h1 class="pt-5">Catálogo</h1>
+    <div id="carouselExampleCaptions" class="carousel slide p-4 mx-auto mb-4" data-ride="carousel"> 
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -71,14 +72,14 @@
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Visita nuestras promociones</h5>
-                    <p>15% de descuento en todos nuestros alimentos para perrros de la marca Nupec</p>
+                    <p>15% de descuento en todos nuestros alimentos para perros de la marca Nupec</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="../src/images/catalogo/karsten-winegeart-tIWBJN8t7zE-unsplash.jpg" class="d-block w-100 slide"
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Nuevos productos de aceo personal para gato</h5>
+                    <h5>Nuevos productos de aseo personal para gato</h5>
                     <p>Aprovecha nuestros nuevos productos para tu gato</p>
                 </div>
             </div>
@@ -86,8 +87,8 @@
                 <img src="../src/images/catalogo/karsten-winegeart-tIWBJN8t7zE-unsplash.jpg" class="d-block w-100 slide"
                     alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Conoce nuestra ropa y accesorios para tu mascotas</h5>
+                    <p>Da click para ver el catálogo</p>
                 </div>
             </div>
         </div>
@@ -103,26 +104,24 @@
 </section>
 
 <section class="container-fluid">
-    <div class="row ml-2">
-        <div class="col-3 ml-4 p-3 d-none d-md-block"> <!-- Lado izquierda - Categorias -->
+    <div class="row mx-2">
+        <div class="col-3 p-1 d-none d-md-block"> <!-- Lado izquierda - Categorias -->
                 <div class="container-fluid categorias">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="max-width: 18rem; min-width: 180px">
                             <div class="card-header" style="background-color:#6F1D1B ;">
-                                <h4 id="categoriasText" class="mx-auto">Categorias</h4>
+                                <h4 id="categoriasText" class="mx-auto">Categorías</h4>
                             </div>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
                                     <br>
-                                    <div id="divData"></div>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
-                                        <label class="custom-control-label" for="customCheck1">Categoria para Perros</label>
+                                        <label class="custom-control-label" for="customCheck1">Categoría para Perros</label>
                                     </div><!-- div checkbox -->
                                     <br>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
-                                        <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
+                                        <label class="custom-control-label" for="customCheck1">Artículos de limpieza</label>
                                     </div><!-- div checkbox -->
                                     <br>
                                     <div class="custom-control custom-checkbox">
@@ -142,15 +141,14 @@
                                 </li>
                                 <li class="list-group-item">
                                     <br>
-                                    <div id="divData"></div>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
-                                        <label class="custom-control-label" for="customCheck1">Categoria para Gatos</label>
+                                        <label class="custom-control-label" for="customCheck1">Categoría para Gatos</label>
                                     </div><!-- div checkbox -->
                                     <br>
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="customCheck1" checked value="dog">
-                                        <label class="custom-control-label" for="customCheck1">Articulos de limpieza</label>
+                                        <label class="custom-control-label" for="customCheck1">Artículos de limpieza</label>
                                     </div><!-- div checkbox -->
                                     <br>
                                     <div class="custom-control custom-checkbox">
@@ -170,12 +168,13 @@
                                 </li><!-- div checkbox -->
                             </ul><!-- cierra lista -->
                         </div> <!-- cierra card -->
-                    </div> <!-- cierra columna 1 -->
                 </div><!-- cierra container -->
         </div>
 
-    <div class="col-8 container-fluid row productos mx-auto" id="listaDeProductos"> <!-- Lado derecha - Productos --> 
+    <div class="col-9"> <!-- Lado derecha - Productos --> 
+        <div class="row" id="listaDeProductos">
 
+        </div>
     </div>
     </div>
 
