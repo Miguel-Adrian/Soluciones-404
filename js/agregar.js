@@ -27,32 +27,18 @@ class UI{
         //voy a crear un elemento dentro de mi html 
         const element = document.createElement ("div");
 //vamos a llenar el div, vamosa insertarle un elemento html
-        element.innerHTML = `
-        <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
- 
-  <div class="card-body">
-  
-  <h5 class="card-title"></h5> ${articulo.nombreproduct}
 
-  <strong>Descripcion:</strong>${articulo.descripcion}
-  <br>
-  <strong>Precio del producto $</strong> ${articulo.costo}
-  <br>
-  <strong>Opcion:</strong> ${articulo.opcion}
-  <br>
-  <strong>Categoria:</strong> ${articulo.categoria}
-
- 
-  <br>
-  <a href="#" class="btn btn-primary">Guardar</a>
-  <a href="#" class="btn btn-danger" name="delete">Eliminar</a>
-  
-  </div>
-</div>
-        
-     `;
-
+     element.innerHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mb-4" style="max-width: 300px;">\n' +
+     '    <img src="'+ '...' +'" class="card-img-top" alt="image">\n' +
+     '    <div class="card-body">\n' +
+     '        <h5 class="card-title">'+articulo.nombreproduct+'</h5>\n' +
+     '        <p class="card-text text-justify">'+articulo.descripcion.slice(0,70)+'...</p>\n'+
+     '        <p class="card-text text-justify"><small class="text-muted">'+ articulo.categoria +' para '+ articulo.opcion.toLowerCase() +'</small></p>\n'+
+     '        <p class="text-right h5 text-success font-weight-bold">$'+ articulo.costo +'</p>\n' +
+     '        <a href="#" class="btn btn-primary btnCard">Guardar</a><a href="#" class="btn btn-danger ml-2" style="border: none;" name="delete">Eliminar</a>\n' +
+     '    </div>\n' +
+     '</div>\n' +
+     '<br/>';
      //vamos a insertar la informacion 
         productlist.appendChild(element);
         this.resetForm();
