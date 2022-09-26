@@ -1,3 +1,4 @@
+
 //este arreglo lo que va a tener dentro son todas las listas de aticulos 
 const articulos =[]
 
@@ -69,6 +70,11 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     const opcion= document.getElementById("validationDefault04").value;
     const categoria= document.getElementById("validationDefault05").value; 
 
+    
+    const key = "info";
+    let container = [];
+    let cont = 0;
+    
     //Este new product lo que hace es crear un objeto con una estreuctura de nuestra clase producto
     
     //console.log(new Product(nombreproduct, descripcion,costo, opcion, categoria))
@@ -209,7 +215,14 @@ else {
 //         icon: 'error',
 //     });
 // }
+let producto = {"id":cont,"nombre":nombreproduct.value,"descripcion":descripcion.value,"costo":costo.value,"opcion":opcion.value,"categoria":categoria.value};
+    cont ++;
+    container.push(producto);
 
+    let containerJSON = JSON.stringify(container);
+
+    localStorage.setItem(key, JSON.stringify(container));
 });
 
 //para resetear los eventos del formulario 
+
