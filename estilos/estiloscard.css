@@ -13,6 +13,9 @@
 }
 .container{
     padding: 20px;
+    width: 55%;
+    background-color: antiquewhite;
+    margin-left: 20%;
 }
 .containerCard{
     max-width: 1200px;
@@ -112,4 +115,9 @@ a:hover{
 }
 .foto{
     padding: 100px;
+}
+
+.p-2{
+    border-radius: 20px;
+    margin: 15px;
 }
