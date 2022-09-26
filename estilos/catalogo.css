@@ -1,6 +1,13 @@
+.btnCard{
+    background-color: #6E3E22;
+    color: #FFE6A7;
+    border: none;
+}
+
 .carousel-inner{
     height: 500px;
     margin-top: 20px;
+    font-family: 'Baloo 2';
 }
 .d-block{
     height: 500px;
@@ -14,8 +21,23 @@
 #categoriasText{
     color: beige;
 }
+
 .card-img-top {
-    width:100%;
-    height: 25vw;
-    object-fit:contain;
+    width: 100%;
+    height: 20vw;
+    object-fit: contain;
+}
+
+.row{
+    justify-content: center;
+}
+
+body{
+    background-color: #FFE6A7;
+}
+  
+@media (max-width: 768px) {
+    .card-img-top{
+        height: auto;
+    }
 }
