@@ -1,7 +1,11 @@
 //Validacion de los campos de selección y checkbox de TyC
 let campoBoth = document.getElementById("validationDefault04");
 let flagBoth = false;
+<<<<<<< HEAD
 let campoCatego = document.getElementById("validationDefault05");
+=======
+let campoCatego = document.getElementById("validationDefault4");
+>>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4
 let flagCatego = false;
 let check = true;
 let TyC = document.getElementById("invalidCheck2");
