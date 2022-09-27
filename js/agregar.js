@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 let btnSubmit = document.getElementById("btnSubmit");
 let nombre = document.getElementById("validationDefault01");
@@ -24,7 +23,6 @@ btnSubmit.addEventListener("click", function(e){
     localStorage.setItem(key, JSON.stringify(container));
 
 })
-=======
 //Validacion de los campos de selección y checkbox de TyC
 let campoBoth = document.getElementById("validationDefault04");
 let flagBoth = false;
@@ -180,4 +178,3 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
 
 //para resetear los eventos del formulario 
 
->>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4

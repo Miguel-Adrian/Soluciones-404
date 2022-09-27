@@ -27,21 +27,6 @@ function filtrar (event){
 
 
 function addItem(item){
-<<<<<<< HEAD
-    console.log(item.pet)
-    const itemHTML = `<div class="card ${getClassPet(item.pet)}" style="width: 18rem;">
-            <img src=${item.img} class="card-img-top" alt="image">
-            <div class="card-body">
-                <h5 class="card-title">${item.name}+</h5>
-                <p class="card-text">${item.description}</p>
-                <p class="card-text">${item.category}</p>
-                <p class="card-text"><strong>$ ${item.price.toFixed(2)}</strong></p>
-                <a href="#" class="btn btn-primary">Add</a>
-            </div>
-        </div>
-        <br/>`;
-    const itemsContainer = document.getElementById("listProducts");
-=======
     const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 300px;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
@@ -54,56 +39,10 @@ function addItem(item){
         '</div>\n' +
         '<br/>';
     const itemsContainer = document.getElementById("listaDeProductos");
->>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4
     itemsContainer.innerHTML += itemHTML;
 }
 
 //1. Pelota de caucho
-<<<<<<< HEAD
-addItem({'id':1,'name':'Pelota K-Nina',
-    'img':'../src/images/catalogo/DogTreatBallPink.png',
-    'description':'Pelota de caucho rosa, ¡puede almacenar premios de comida en su interior, ya que cuenta con un compartimento! Útil para ejercitar a tu mascota y enseñarle uno que otro truco de una sola vez.',
-    'price': 123.50,
-    'pet':'dog',
-    'category':'toys'
-});
-
-//2. Dona de tela con silbato
-addItem({'id':2,'name':'Dona chillona',
-    'img':'../src/images/catalogo/DogSqueakyDonut.png',
-    'description':'El juguete emite un chillido cuando es presionada, algo que le encantará a tu perro, sea cachorro o adulto.',
-    'price':199.00,
-    'pet':'dog',
-    'category':'toys'
-});
-
-//3. Hueso de caucho
-addItem({'id':3,'name':'Huesito Fiu-Fiu',
-    'img':'../src/images/catalogo/DogRubberBone.png',
-    'description':'Hueso de caucho de uso rudo. Ideal para canes adultos. Este juguete puede ser útil para evitar que tu perro muerda objetos que no debería morder. Antiestrés.',
-    'price':120.00,
-    'pet':'dog',
-    'category':'toys'
-});
-
-//4. Juguete de fibra
-addItem({'id':4,'name':'Juguete de fibra',
-    'img':'../src/images/catalogo/DogRopeToy.png',
-    'description':'Juguete de fibra 100% natural. Ideal para canes adultos. Dale a tu amigo horas de diversión y relajamiento con este juguete.',
-    'price':99.00,
-    'pet':'dog',
-    'category':'toys'
-});
-
-//5. Kit para masticar
-addItem({'id':5,'name':'Kit de sandalias y zapatos',
-    'img':'../src/images/catalogo/DogKitSandalsSneakersChewies.png',
-    'description':'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
-    'price':216.00,
-    'pet':'dog',
-    'category':'toys'
-});
-=======
 addItem({
     'id': 1, 'name': 'Pelota K-Nina',
     'img': '../src/images/catalogo/DogTreatBallPink.png',
@@ -141,7 +80,6 @@ addItem({
     'description': 'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
     'price': 216.00, 'pet': 'Perro', 'category': 'Juguetes'
 })
->>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4
 
 
 // 6. Blazer de perro
@@ -290,33 +228,6 @@ addItem({
 });
 
 //21. Camita para perro
-<<<<<<< HEAD
-addItem({'id':21,'name':'Camita P-rruna',
-    'img':'../src/images/catalogo/DogBed1.png',
-    'description':'¿Un día agotador? Dale el descanso que se merece a tu peludo con esta preciosa cama en forma de sandalia. Hecha con materiales 100% naturales, le dará a tu amig@ un descanso reparador.',
-    'price':1314.00,
-    'pet':'dog',
-    'category':'toys'
-});
-
-//22. Casita para perro una planta
-addItem({'id':22,'name':'K-sita K9',
-    'img':'../src/images/catalogo/DogHouse1.png',
-    'description':'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
-    'price':5163,
-    'pet':'dog',
-    'category':'accesory'
-});
-
-//23. Casita para perro 2 plantas
-addItem({'id':23,'name':'K-sita K9 Suite de 2 plantas',
-    'img':'../src/images/catalogo/DogHouse2.png',
-    'description':'¿Acaso hay más un un miembro peludo en la familia? ¡No hay problema! Esta hermosa suite para dos amiguit@s está pensada exclusivamente para ahorrar espacio.',
-    'price':10011.00,
-    'pet':'dog',
-    'category':'accesory'
-});
-=======
 addItem({
     'id': 21, 'name': 'Camita P-rruna',
     'img': '../src/images/catalogo/DogBed1.png',
@@ -339,7 +250,6 @@ addItem({
     'description': '¿Acaso hay más un un miembro peludo en la familia? ¡No hay problema! Esta hermosa suite para dos amiguit@s está pensada exclusivamente para ahorrar espacio.',
     'price': 10011.00, 'pet': 'Perro', 'category': 'Accesorios'
 })
->>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4
 
 
 // 24. Dispensador de snack para gato 
