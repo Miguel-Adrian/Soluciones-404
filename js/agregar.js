@@ -1,11 +1,8 @@
+
 //Validacion de los campos de selección y checkbox de TyC
 let campoBoth = document.getElementById("validationDefault04");
 let flagBoth = false;
-<<<<<<< HEAD
 let campoCatego = document.getElementById("validationDefault05");
-=======
-let campoCatego = document.getElementById("validationDefault4");
->>>>>>> 47a68e00a37dbdddc5782477e9ce99c7bef552b4
 let flagCatego = false;
 let check = true;
 let TyC = document.getElementById("invalidCheck2");
@@ -65,9 +62,9 @@ if (cont==7){
     });
 }
 
+
 //este arreglo lo que va a tener dentro son todas las listas de aticulos 
 const articulos =[]
-
 
 class Product{
    /*  producto = "";
@@ -137,6 +134,11 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
     const opcion= document.getElementById("validationDefault04").value;
     const categoria= document.getElementById("validationDefault05").value; 
 
+    
+    const key = "info";
+    let container = [];
+    let cont = 0;
+    
     //Este new product lo que hace es crear un objeto con una estreuctura de nuestra clase producto
     
     //console.log(new Product(nombreproduct, descripcion,costo, opcion, categoria))
@@ -153,6 +155,137 @@ document.getElementById("formulario").addEventListener("submit", function(e) {
    
     // console.log(nombreproduct,descripcion, costo,opcion,categoria);
 
+    //Validacion de los campos de selección y checkbox de TyC
+let campo1 = document.getElementById("validationDefault01");
+let campo2 = document.getElementById("validationDefault02");
+let campo3 = document.getElementById("validationDefault03");
+let campoBoth = document.getElementById("validationDefault04");
+let flagBoth = false;
+let campoCatego = document.getElementById("validationDefault05");
+let flagCatego = false;
+let check = true;
+// let TyC = document.getElementById("invalidCheck2");
+
+// if (campo1.value, campo2.value, campo3.value === ""){
+//     alert ("Por favor ingresa la información faltante")
+// }else{
+//     alert (`Muchas Gracias todos los campos estan llenos`)
+// }
+
+if (campo1.value.length >= 3) {   //validación producto
+campo1.classList.remove("is-invalid");
+campo1.classList.add("is-valid");
+}else {
+campo1.classList.remove("is-valid");
+campo1.classList.add("is-invalid");
+}//campo 1
+for (let i = 0; i < campo1.value.length; i++) {
+console.log((!isNaN(campo1.value.charAt(i))) );
+console.log(campo1.value.charAt(i));
+console.log(campo1.value.toUpperCase().charCodeAt(i));
+if (  (
+         (campo1.value.toUpperCase().charCodeAt(i)<65)
+         ||
+         (campo1.value.toUpperCase().charCodeAt(i)>90)
+      )
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=32) )  //espacio
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=193) ) //Á
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=201) ) //É
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=205) ) //Í
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=211) ) //Ó
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=218) ) //Ú
+      && ((campo1.value.toUpperCase().charCodeAt(i)!=209) ) //Ñ
+) {         
+    campo1.classList.remove("is-valid");
+    campo1.classList.add("is-invalid");
+    break;
+}//if
+}//for i
+
+if (campo2.value.length >= 3) {   //validación descripción
+campo2.classList.remove("is-invalid");
+campo2.classList.add("is-valid");
+}else {
+campo2.classList.remove("is-valid");
+campo2.classList.add("is-invalid");
+}//campo2
+
+let precio = campo3.value;
+console.log(campo3.value.length);
+console.log(isNaN(precio));
+if( 
+(campo3.value.length<=10)
+ &&
+(! isNaN(precio)) 
+  ) {                           //validación precio
+campo3.classList.remove("is-invalid");
+campo3.classList.add("is-valid");
+}else{
+campo3.classList.remove("is-valid");
+campo3.classList.add("is-invalid");
+}// ==5
+
+if (campoBoth.selectedIndex == 0) {
+    cont++;
+
+    campoBoth.classList.remove("is-valid");
+    campoBoth.classList.add("is-invalid");
+    flagBoth = false;
+}
+else {
+    campoBoth.classList.remove("is-invalid");
+    campoBoth.classList.add("is-valid");
+    flagBoth = true;
+}
+
+if (campoCatego.selectedIndex == 0) {
+    cont++;
+
+    campoCatego.classList.remove("is-valid");
+    campoCatego.classList.add("is-invalid");
+    flagCatego = false;
+}
+else {
+    campoCatego.classList.remove("is-invalid");
+    campoCatego.classList.add("is-valid");
+    flagCatego = true;
+}
+
+// if (TyC.checked) {
+//     cont++;
+
+//     TyC.classList.remove("is-invalid");
+//     TyC.classList.add("is-valid");
+// } else {
+//     TyC.classList.remove("is-valid");
+//     TyC.classList.add("is-invalid");
+
+// }
+
+//alerts del formulario 
+// if (cont==7){
+//     Swal.fire({
+//         position: 'center',
+//         icon: 'success',
+//         title: '¡Bien hecho!',
+//         text: `${campoName.value}, Avancemos a la vista preliminar`,
+//         showConfirmButton: true,
+//     });
+
+// } else {
+//     Swal.fire({
+//         title: 'Error al enviar mensaje',
+//         text: "Por favor, verifica que todos los campos sean válidos.",
+//         icon: 'error',
+//     });
+// }
+let producto = {"id":cont,"nombre":nombreproduct.value,"descripcion":descripcion.value,"costo":costo.value,"opcion":opcion.value,"categoria":categoria.value};
+    cont ++;
+    container.push(producto);
+
+    let containerJSON = JSON.stringify(container);
+
+    localStorage.setItem(key, JSON.stringify(container));
 });
 
 //para resetear los eventos del formulario 
