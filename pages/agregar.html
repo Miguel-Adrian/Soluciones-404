@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/navbarFooter.css">
     <link rel="stylesheet" href="../estilos/agregar.css">
     <title>Agregar productos</title>
   </head>
@@ -49,12 +49,22 @@
               <option>Limpieza / Aseo</option>
               <option>Ropa / Accesorios</option>
             </select>
+
+          </div>
+          </div>          
+          <div class="form-group col-md-6 mb-3">
+          <div class="custom-file">
+            <input class="custom-file-input" type="file" id="imgProducto" accept="image/x-png,image/jpeg" required/>
+            <label class="custom-file-label" for="customFileLangHTML" data-browse="Elegir archivo">* Selecciona una imagen '.png' o '.jpeg'</label>
+          </div>
+
           </div>         
           <div class="form-group col-md mb-3">
               <div class="form-group">
                 <label for="campoImagen">Imagen (PNG o JPG)</label>
                 <input type="file" accept="image/png, image/jpg" class="form-control-file" id="campoImagen" required>
               </div>
+
         </div>
           <div class="col-md mb-3">
             <button class="btn btn-primary" type="submit" id="enviar">Crear producto</button>
