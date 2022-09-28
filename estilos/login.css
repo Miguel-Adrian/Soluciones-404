@@ -178,6 +178,7 @@ main{
 .form .login-signup{
     margin-top: 30px;
     text-align: center;
+
 }
 /* baloo-2-regular - latin */
 @font-face {
@@ -217,6 +218,7 @@ nav {
 .navInf img {
     height: 50px;
     background-color: white;
+
 }
 
 /* Estilos para la barra de título */
@@ -260,27 +262,7 @@ label{
 .imgIcon{
     padding: 4px;
 }
-/* Estilos para la sección <footer> del archivo contacto.html*/
-footer{
-    color: #FFe6A7;
-    background: #432818;
-}
-footer a:hover{
-    color: #FFe6A7;
-}
-/* Estilos para las etiquetas <a> dentro del archivo contacto.html*/
-a{
-    text-decoration: none;
-    color: #FFe6A7;
-}
-/* Estilos para los iconos de la sección <footer> dentro de contacto.html*/
-.imgRedes:hover{
-    transform: scale(1.25); /* Al pasar el cursor hace una transformación a una escala de 1.25 */
-    transition: all 400ms; /* La transformación toma un tiempo de 400ms (hace más suave la animación) */
-}
 
-.logoFooter{
-    border-radius: 15px;
 
 }
 .centrar{
@@ -291,3 +273,4 @@ a{
 .input-field button{
  background-image: url(../src/images/login/huellita.png);
 }
+
