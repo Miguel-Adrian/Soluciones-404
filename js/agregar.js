@@ -50,7 +50,7 @@ class UI{
      '        <p class="card-text text-justify">'+articulo.description.slice(0,70)+'...</p>\n'+
      '        <p class="card-text text-justify"><small class="text-muted">'+ articulo.category +' para '+ articulo.pet.toLowerCase() +'</small></p>\n'+
      '        <p class="text-right h5 text-success font-weight-bold">$'+ articulo.price +'</p>\n' +
-     '        <a href="#" class="btn btn-primary btnCard">Guardar</a><button id="btnEliminar" class="btn btn-danger ml-2" style="border: none;" name="delete">Eliminar</button>\n' +
+     //'        <a href="#" class="btn btn-primary btnCard">Guardar</a><button id="btnEliminar" class="btn btn-danger ml-2" style="border: none;" name="delete">Eliminar</button>\n' +
      '    </div>\n' +
      '</div>\n' +
      '<br/>';
@@ -62,7 +62,8 @@ class UI{
     
     resetForm(){
         document.getElementById("formulario").reset();
-        
+        document.getElementsByClassName("is-valid").classList.remove("is-valid");
+        document.getElementsByClassName("is-invalid").classList.remove("is-invalid");
     }
     deleteProduct(){
 
