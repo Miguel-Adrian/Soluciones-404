@@ -21,7 +21,7 @@ h1 {
     object-fit: contain;
 }
 
-.btnCard{
+.btnCard, #file-upload-button{
     background-color: #6E3E22;
     color: #FFE6A7;
     border: none;
@@ -48,6 +48,46 @@ h1 {
 }
 
 label{
-
+    font-size: large;
     color: #6E3E22;
+}
+
+main form .form-control, .custom-select, .is-invalid, .is-valid, .custom-select:valid,
+main form .form-control:valid, .custom-select:invalid, main form .form-control:invalid,
+main form .form-control:focus{
+    background-color: #BB9457;
+    border: none;
+    color: white;
+}
+
+.form-control::placeholder, .custom-select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder, .custom-select:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
+
+h3{
+    font-family: "Baloo 2";
+    color: #6E3E22;
+    font-size: 32px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .card-img-top{
+        height: auto;
+    }
 }
