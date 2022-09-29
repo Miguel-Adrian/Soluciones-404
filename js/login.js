@@ -16,7 +16,6 @@ class User {
     }
 }
 
-
     
     //Evento submit para el boton 
     document.getElementById("btnRegistrar").addEventListener("click", function(e) {
