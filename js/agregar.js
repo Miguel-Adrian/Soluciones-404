@@ -50,23 +50,12 @@ class UI{
     deleteProduct(element){
         if(element.name === "delete"){
           element.parentElement.parentElement.parentElement.remove();
-          Swal.fire({
-            title: 'Estas seguro que deseas eliminar el producto?',
-            text: "",
-            icon: 'warning',
-            showCancelButton: true,
-            confirmButtonColor: '#3085d6',
-            cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-          }).then((result) => {
-            if (result.isConfirmed) {
-              Swal.fire(
-                'Deleted!',
-                'Your file has been deleted.',
-                'success'
-              )
-            }
-          })
+
+          Swal.fire(
+            'Estas seguro que quieres eliminar el producto?',
+            'You clicked the button!',
+            'success'
+          )
            
         }
        

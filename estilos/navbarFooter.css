@@ -1,7 +1,7 @@
 /* Fuentes */
 
 /* baloo-2-regular - latin */
-@font-face {
+  @font-face {
     font-family: 'Baloo 2';
     font-style: normal;
     font-weight: 400;
@@ -38,7 +38,7 @@
         /* Safari, Android, iOS */
         url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg');
     /* Legacy iOS */
-}
+}  
 
 /* Header */
 
@@ -54,9 +54,14 @@ nav {
 
 .navInf img {
     height: 50px;
-    background-color: white;
 }
 
+.iconoBuscar{
+    position: absolute;
+    margin: 10px;
+    top: 15px;
+    margin-left: 198px;
+}
 /* Footer */
 
 footer {
@@ -88,6 +93,12 @@ footer a:hover {
     transform: scale(1.1);
     transition: all 200ms;
 }
+
+.logoHeader{
+    border-radius: 15px;
+    justify-content: center;
+}
+
 
 .logoFooter {
     border-radius: 15px;
