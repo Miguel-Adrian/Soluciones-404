@@ -3,45 +3,35 @@ setFooter = document.getElementsByTagName("footer");
 
 window.addEventListener("load", function (e) {
     setHeader[0].innerHTML += `
-    <nav class="navbar d-flex justify-content-end">
-        <div class="navSup">
-            <form class="form-inline">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="background-color:white"><img
-                        src="../src/images/Search.png " style="height:20px;" alt="Buscar"></button>
-                <input class="form-control mr-sm-0" type="search" placeholder="Buscar producto..." aria-label="Search"
-                    style="height: 38px; width:min-content">
-                <nav class="navbar">
-                    <a class="navbar" href="../pages/cart.html">
-                        <img src="../src/images/Cart.png" width="shrink-to-fit" height="30" alt="Ir al carrito">
-                    </a>
-                    <nav class="navbar ">
-                        <a class="navbar" href="./catalogo.html">
-                            <img src="../src/images/Like.png" width="shrink-to-fit" height="30" alt="Mis 'Me gusta'">
-                        </a>
-                    </nav>
-                </nav>
-            </form>
-        </div>
-    </nav>
-
+    <header class="header">
     <div class="navInf">
-        <nav class="navbar navbar-expand-sm navbar-light" style="background-color:#6F1D1B">
-            <a class="navbar-brand" href="../index.html"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets"
-                    class="logoHeader"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav mx-auto navInfLink">
-                    <a class="nav-item nav-link mx-auto" href="#" style="color:white">Promociones</a>
-    <a class="nav-item nav-link mx-auto" href="../pages/about.html" style="color:white">Acerca de nosotros</a>
-    <a class="nav-item nav-link mx-auto" href="../pages/contacto.html" style="color:white">Contacto</a>
-    <a class="nav-item nav-link mx-auto" href="../pages/login.html" tabindex="-1" aria-disabled="true" style="color:white">Iniciar sesión</a>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#6F1D1B">
+        <a class="navbar-brand mr-5" href="#"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav mx-auto navInfLink">
+            <a class="nav-item nav-link mx-auto" href="./pages/catalogo.html" style="color:white">Promociones</a>
+            <a class="nav-item nav-link mx-auto" href="./pages/about.html" style="color:white">Acerca de nosotros</a>
+            <a class="nav-item nav-link mx-auto" href="./pages/contacto.html" style="color:white">Contacto</a>
+            <a class="nav-item nav-link mx-auto" href="./pages/login.html" tabindex="-1" aria-disabled="true"
+              style="color:white">Iniciar sesión</a>
+          </div>
+          <div class="form-inline justify-content-center">
+          <div>
+            <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
+          </div>
+          <div>
+            <a class="button" href="../pages/cart.html"><img src="../src/images/Cart.png" alt="Carrito" style="height:30px;margin-left:10px"></a>
+            <a class="button" href="../pages/login.html"><img src="../src/images/User.png" alt="Iniciar sesión" style="height:30px;margin-left:10px;"></a>
+          </div>
+        </div>
+        </div>
+      </nav>
     </div>
+  </header>
 `;
     setFooter[0].innerHTML += `
     <div class="container-fluid" style="padding-top: 20px;">
