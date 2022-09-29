@@ -7,11 +7,9 @@
 }
 h1 {
     text-align: center;
-<<<<<<< HEAD
     padding: 0.5em;
     color: #7F3122;
     font-size: 45px;
-=======
 
 }
 /* baloo-2-regular - latin */
@@ -75,7 +73,6 @@ body{
 }
 /* Estilos para las etiquetas <label> del contacto.html*/
 label{
->>>>>>> 8e3b304648809255ac3f88ffc63e6f0bee3b7130
     font-family: "Baloo 2";
     margin-top: 0.5em;
 }
@@ -98,13 +95,10 @@ main form .form-control:focus{
     color: white;
 }
 
-<<<<<<< HEAD
 
 
 h1 {
-=======
 .centrar{
->>>>>>> 8e3b304648809255ac3f88ffc63e6f0bee3b7130
     text-align: center;
     padding: 0.5em;
     color: #7F3122;
