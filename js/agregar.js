@@ -90,7 +90,7 @@
             }
         }
     }
-
+    
     // Eventos del DOM (Documento Object Model) un evento del html, cuando un usuario da click en un botón, cuando escribe, etc.
     // Aquí vamos a capturar su evento de submit, es decir que cuando presione el botón enviar ocurra algo
     document.getElementById("formulario").addEventListener("submit", function(e) {
