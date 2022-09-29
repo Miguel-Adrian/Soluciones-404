@@ -84,7 +84,7 @@ class UI{
 
 // Eventos del DOM (Documento Object Model) un evento del html, cuando un usuario da click en un botÓn, cuando escribe, etc 
 // Aquí vamos a capturar su evento de submit, es decir que cuando presione el boton enviar ocurra algo
-document.getElementById("formulario").addEventListener("submit", function(e) {
+document.getElementById("formulario").addEventListener("click", function(e) {
     e.preventDefault();
    //quiero camputar lo que hay dentro de nombre del producto y por eso pongo el .value tambien
     let nombreproduct = document.getElementById("validationDefault01").value;
