@@ -1,3 +1,31 @@
+let dog = document.getElementById("customCheck1");
+let dogCleaning = document.getElementById("customCheck2");
+let dogToys = document.getElementById("customCheck3");
+let dogFood = document.getElementById("customCheck4");
+let dogAccesories = document.getElementById("customCheck5");
+let cat = document.getElementById("customCheck6");
+let catCleaning = document.getElementById("customCheck6");
+let catToys = document.getElementById("customCheck6");
+let catFood = document.getElementById("customCheck6");
+let catAccesories = document.getElementById("customCheck6");
+
+
+
+function filtrar (event){
+    console.log(event.target.value);
+    let elementos = Array.from(document.getElementsByClassName(event.target.value));
+
+    elementos.forEach((e) =>{
+        if (event.target.checked){
+            e.style.display = "block";
+        } else{
+            e.style.display = "none";
+        }
+    });
+};
+
+
+
 function addItem(item){
     const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 300px;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
@@ -436,3 +464,26 @@ addItem({
     'pet': 'Gato',
     'category': 'Accesorios'
 });
+
+dog.addEventListener("click", filtrar);
+dogCleaning.addEventListener("click", filtrar);
+dogToys.addEventListener("click", filtrar);
+dogFood.addEventListener("click", filtrar);
+dogAccesories.addEventListener("click", filtrar);
+cat.addEventListener("click", filtrar);
+catCleaning.addEventListener("click", filtrar);
+catToys.addEventListener("click", filtrar);
+catFood.addEventListener("click", filtrar);
+catAccesories.addEventListener("click", filtrar);
+
+
+function getClassPet(pet){
+    switch(pet){
+        case "dog":
+        c="dog";
+        break;
+        case "cat":
+        c="cat";
+        break;
+    } return c;
+}

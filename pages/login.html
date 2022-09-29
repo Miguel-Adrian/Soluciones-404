@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="../estilos/contacto.css"> -->
-    <link rel="stylesheet" href="../estilos/login.css">
+    
     <title>Login</title>
      <!-- CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-     <!-- ===== CSS  header y footer===== -->
-     <link rel="stylesheet" href="../estilos/terms.css">
         <!-- ===== Iconscout CSS ===== -->
      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+     <!-- Estilos NavBar y Footer> -->
+    <link rel="stylesheet" href="../estilos/navbarFooter.css">
         <!-- ===== CSS ===== -->
      <link rel="stylesheet" href="../estilos/login.css">
 </head>
@@ -63,23 +62,27 @@
             </nav>
         </div>
     </header> <!-- Cierra navbar -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--<title>Login & Registration Form</title>-->
     </head>
+    <div class="centrar">
+        <img src="../src/images/login/cute-gray-cat-waving-paw-cartoon-illustration-vector (1).png" alt="" width="400px" height="350" id="nm">
+    </div>
         <main>
+            
         <div class="container">
             <div class="forms">
                 <div class="form login">
-                    <span class="title">Acceso</span>
+                    <span class="title">Bienvenido</span>
 
                     <form action="#">
                         <div class="input-field">
                             <input type="text" placeholder="Ingrese su correo electrónico" required>
-                            <i class="uil uil-envelope icon"></i>
+                            <i class="fa-solid fa-dog"></i>
                         </div>
                         <div class="input-field">
                             <input type="password" class="password" placeholder="Ingrese su contraseña" required>
-                            <i class="uil uil-lock icon"></i>
+                            <i class="fa-solid fa-cat"></i>
                             <i class="uil uil-eye-slash showHidePw"></i>
                         </div>
 
@@ -93,7 +96,8 @@
                     </div>
 
                     <div class="input-field button">
-                        <input type="button" value="Acceso">
+                        <input type="button" value="Ingresar"  >
+                        <i class="fa-sharp fa-solid fa-paw-simple"></i>
                     </div>
                 </form>
 
@@ -106,27 +110,34 @@
 
             <!-- Registro Form -->
             <div class="form signup">
+                <br>
+                <br>
                 <span class="title">Registro</span>
 
                 <form action="#">
                     <div class="input-field">
                         <input type="text" placeholder="Introduzca su nombre" required>
-                        <i class="uil uil-user"></i>
+                        <i class="fa-solid fa-address-book"></i>
                     </div>
                     <div class="input-field">
                         <input type="text" placeholder="Introduce tu correo electrónico" required>
-                        <i class="uil uil-envelope icon"></i>
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="input-field">
                         <input type="password" class="password" placeholder="Crear contraseña" required>
-                        <i class="uil uil-lock icon"></i>
+                        <i class="fa-sharp fa-solid fa-lock"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
                     <div class="input-field">
                         <input type="password" class="password" placeholder="confirmar contraseña" required>
-                        <i class="uil uil-lock icon"></i>
+                        <i class="fa-sharp fa-solid fa-lock"></i>
                         <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
-
+                    <div class="input-field">
+                        <input type="text" class="text" placeholder="Numero de telefono" required>
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                       
+                    </div>
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="termCon">
