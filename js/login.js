@@ -32,3 +32,19 @@ const container = document.querySelector(".container"),
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
+//validacion del campo email
+function isEmailValid(email) {
+    let regex =
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    return !!regex.exec(email);
+}
+
+if (isEmailValid(inputdireccion.value)) {
+    cont++;
+
+    inputdireccion.classList.remove("is-invalid");
+    inputdireccion.classList.add("is-valid");
+} else {
+    inputdireccion.classList.remove("is-valid");
+    inputdireccion.classList.add("is-invalid");
+}
