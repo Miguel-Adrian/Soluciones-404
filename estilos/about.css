@@ -46,7 +46,7 @@ section p {
 }
 
 
-.p-2 bd-highlight {
+.p-2 .bd-highlight {
     background-color: antiquewhite;
 }
 
@@ -65,9 +65,9 @@ section p {
 
 /* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
 
-.bd-highlight {
-    background-color: #F0BC56;
-
+#containerAbout{
+    background-color: #ffe7b7;
+    border-radius: 15px;
 }
 
 .somosq h1 {
@@ -83,17 +83,18 @@ section p {
     width: 280px;
     height: 280px;
     margin-top: -150px;
-    margin-left: 20%;
+    margin-left: 10%;
+    flex-wrap: wrap;
 
 }
 
 .gatito img {
     width: 280px;
     height: 280px;
+    flex-wrap: wrap;
 }
 
 .parrafoabout {
-    background: #ffe7b7;
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
@@ -111,14 +112,8 @@ section p {
     font-weight: 400;
 }
 
-.container{
-    padding: 20px;
-    width: 55%;
-    background-color: antiquewhite;
-    margin-left: 20%;
-}
 .containerCard{
-    max-width: 1200px;
+    max-width: auto;
     padding: 20px;
     padding-bottom: 40px;
     margin: auto;
@@ -130,11 +125,10 @@ section p {
 .card{
     width: 300px;
     position: relative;
-    margin: 20px;
     font-family: 'Lato';
     transition: all 300ms;
-    border-radius: 20px;
     padding: 20px;
+    border: none;
 }
 .card:hover{
     box-shadow: 1px 1px 20px -15px #20202049;
@@ -150,7 +144,7 @@ section p {
 
 .foto{
     width: 100%;
-    height: 220px;
+    height: 270px;
     background:rgb(240, 197, 89);
     padding: 20px;
     display: flex;
@@ -164,7 +158,7 @@ section p {
 }
 .bio{
     width: 100%;
-    height: 180px;
+    height: 220px;
     color: #474747;
     background:rgb(255, 235, 171);
     padding: 15px;
@@ -174,7 +168,7 @@ section p {
     border-radius: 15px;
 }
 .bio p{
-    font-size: 200px;
+    font-size: 15px;
     margin-top: 5px;
     display: -webkit-box;
     display: -moz-box;
@@ -182,8 +176,8 @@ section p {
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     box-orient: vertical;
-    -webkit-line-clamp: 7;
-    line-clamp: 7;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
     overflow: hidden;
     color: #6E3E22;
     font-family: 'Baloo 2';
@@ -196,13 +190,15 @@ section p {
 
 .tituloQpets{
     font-weight: 1000;
-    font-size: xx-large;
+    font-size: 48px;
     background: #FFE6A7;
     color: #6E3E22;
     text-align: center;
-    padding: 60px;
+    padding: 20px;
     margin-top: 60px;
+    font-family: 'Baloo 2';
 }
+
 .foto{
     padding: 100px;
 }
@@ -210,4 +206,5 @@ section p {
 .p-2{
     border-radius: 20px;
     margin: 15px;
+    background-color: #F0BC56;
 }
