@@ -6,7 +6,7 @@ window.addEventListener("load", function (e) {
     <header class="header">
     <div class="navInf">
       <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#6F1D1B">
-        <a class="navbar-brand mr-5" href="#"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
+        <a class="navbar-brand mr-5" href="../index.html"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -24,8 +24,8 @@ window.addEventListener("load", function (e) {
             <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
           </div>
           <div>
-            <a class="button" href="../pages/cart.html"><img src="../src/images/Cart.png" alt="Carrito" style="height:30px;margin-left:10px"></a>
-            <a class="button" href="../pages/login.html"><img src="../src/images/User.png" alt="Iniciar sesión" style="height:30px;margin-left:10px;"></a>
+            <a class="button" href="./cart.html"><img src="../src/images/Cart.png" alt="Carrito" style="height:30px;margin-left:10px"></a>
+            <a class="button" href="./login.html"><img src="../src/images/User.png" alt="Iniciar sesión" style="height:30px;margin-left:10px;"></a>
           </div>
         </div>
         </div>

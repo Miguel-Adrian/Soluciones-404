@@ -90,9 +90,9 @@
             }
         }
     }
-
-    // Eventos del DOM (Documento Object Model) un evento del html, cuando un usuario da click en un botÓn, cuando escribe, etc 
-    // Aquí vamos a capturar su evento de submit, es decir que cuando presione el boton enviar ocurra algo
+    
+    // Eventos del DOM (Documento Object Model) un evento del html, cuando un usuario da click en un botón, cuando escribe, etc.
+    // Aquí vamos a capturar su evento de submit, es decir que cuando presione el botón enviar ocurra algo
     document.getElementById("formulario").addEventListener("submit", function(e) {
         e.preventDefault();
     //quiero camputar lo que hay dentro de nombre del producto y por eso pongo el .value tambien
@@ -103,23 +103,21 @@
         let categoria= document.getElementById("validationDefault05").value;
         let cont = 0;
         
-        //Este new product lo que hace es crear un objeto con una estreuctura de nuestra clase producto
-        
-        //console.log(new Product(nombreproduct, descripcion,costo, opcion, categoria))
+        //Este new product lo que hace es crear un objeto con una estructura de nuestra clase producto
 
-        //vamos a gusrdar esto en una constante 
+        //vamos a guardar esto en una constante 
 
         const articulo =new Product(id, nombreproduct, imgURL, descripcion, costo, opcion, categoria);
-        //tengo que almacenar este objeto también dentreo de ua constante. estoy creando una nueva instancia de la clase UI
-        //una vez se crea me da un objeto con los metodos que estan dentro de la clase 
+        //tengo que almacenar este objeto también dentro de una constante. estoy creando una nueva instancia de la clase UI
+        //una vez se crea me da un objeto con los métodos que estan dentro de la clase 
         const ui = new UI();
-        //voy a acceder al metodo agregar producto y le voy a dar el articulo  que he creado para que lo muestre en pantalla
+        // Voy a acceder al método agregar producto y le voy a dar el artículo  que he creado para que lo muestre en pantalla
         ui.addProduct(articulo);
     
     
         // console.log(nombreproduct,descripcion, costo,opcion,categoria);
 
-        //Validacion de los campos de selección y checkbox de TyC
+        //Validación de los campos de selección y checkbox de TyC
     let campo1 = document.getElementById("validationDefault01");
     let campo2 = document.getElementById("validationDefault02");
     let campo3 = document.getElementById("validationDefault03");
