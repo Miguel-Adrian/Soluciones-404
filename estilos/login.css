@@ -207,19 +207,6 @@ main{
          url('../src/fonts/lato/lato-v23-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
-nav {
-    background-color: #6F1D1B;
-}
-
-.navInf a {
-    color: white
-}
-
-.navInf img {
-    height: 50px;
-    background-color: white;
-
-}
 
 /* Estilos para la barra de título */
 .contactoTitle{
@@ -263,8 +250,6 @@ label{
     padding: 4px;
 }
 
-
-}
 .centrar{
     text-align: center;
     margin: 0cm;
