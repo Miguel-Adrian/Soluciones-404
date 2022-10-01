@@ -20,9 +20,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 100px;
     color: #7F3122;
-    margin-top: 55px;
     font-family: "Baloo 2";
 }
 
@@ -67,7 +65,7 @@ section p {
 
 #containerAbout{
     background-color: #ffe7b7;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .somosq h1 {
@@ -91,7 +89,7 @@ section p {
 .gatito img {
     width: 280px;
     height: 280px;
-    flex-wrap: wrap;
+
 }
 
 .parrafoabout {
@@ -101,8 +99,8 @@ section p {
 }
 
 #aboutparrafo{
-    border-radius: 20px;
-    margin: 15px;
+    margin: auto;
+    padding-top: 10px;
 }
 
 /* Estilos para las cards */
@@ -207,4 +205,9 @@ section p {
     border-radius: 20px;
     margin: 15px;
     background-color: #F0BC56;
+}
+
+.p-2 p{
+    font-weight: bold;
+    font-style: italic;
 }

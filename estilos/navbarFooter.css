@@ -62,10 +62,10 @@ nav {
     top: 15px;
     margin-left: 198px;
 }
+
 /* Footer */
 
 footer {
-    background-color: #432818;
     color: #FFE6A7;
     font-family: 'Lato';
 }
@@ -78,7 +78,7 @@ footer a:active {
 }
 
 footer a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 
@@ -102,4 +102,13 @@ footer a:hover {
 
 .logoFooter {
     border-radius: 15px;
+}
+
+#topFooter{
+    background-color: #6E3E22;
+}
+
+#bottomFooter{
+    padding-top: 10px;
+    background-color: #432818;
 }

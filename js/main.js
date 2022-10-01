@@ -34,7 +34,7 @@ window.addEventListener("load", function (e) {
   </header>
 `;
     setFooter[0].innerHTML += `
-    <div class="container-fluid" style="padding-top: 20px;">
+    <div class="container-fluid" id="topFooter" style="padding-top: 20px;">
         <div class="row no-gutters" style="padding: 0px;">
             <div style="padding: 20px;" class="col-md-4 text-md-left text-center">
                 <a href="../index.html"><img class="rounded float-center" src="../src/images/footer/logoQPets.jpg" alt="Logo de Q-Pets" width="220px"></a>
@@ -87,8 +87,7 @@ window.addEventListener("load", function (e) {
             </div>
         </div>
     </div>
-    <hr>
-    <div class="container-fluid">
+    <div class="container-fluid" id="bottomFooter">
         <div class="row" style="padding-bottom: 10px;">
             <div class="col-2"><img class="float-left" src="../src/images/footer/roedor.png" alt="Imagen de ratón" width="48px"></div>
             <div class="col-8 text-center">Copyright © 2022. Q-Pets. Todos los derechos reservados.</div>
