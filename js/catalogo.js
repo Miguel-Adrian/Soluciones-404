@@ -1,28 +1,18 @@
+
 let dog = document.getElementById("customCheck1");
 let dogCleaning = document.getElementById("customCheck2");
 let dogToys = document.getElementById("customCheck3");
 let dogFood = document.getElementById("customCheck4");
 let dogAccesories = document.getElementById("customCheck5");
 let cat = document.getElementById("customCheck6");
-let catCleaning = document.getElementById("customCheck6");
-let catToys = document.getElementById("customCheck6");
-let catFood = document.getElementById("customCheck6");
-let catAccesories = document.getElementById("customCheck6");
+let catCleaning = document.getElementById("customCheck7");
+let catToys = document.getElementById("customCheck8");
+let catFood = document.getElementById("customCheck9");
+let catAccesories = document.getElementById("customCheck10");
 
 
 
-function filtrar (event){
-    console.log(event.target.value);
-    let elementos = Array.from(document.getElementsByClassName(event.target.value));
 
-    elementos.forEach((e) =>{
-        if (event.target.checked){
-            e.style.display = "block";
-        } else{
-            e.style.display = "none";
-        }
-    });
-};
 
 
 
@@ -465,6 +455,8 @@ addItem({
     'category': 'Accesorios'
 });
 
+
+
 dog.addEventListener("click", filtrar);
 dogCleaning.addEventListener("click", filtrar);
 dogToys.addEventListener("click", filtrar);
@@ -476,14 +468,118 @@ catToys.addEventListener("click", filtrar);
 catFood.addEventListener("click", filtrar);
 catAccesories.addEventListener("click", filtrar);
 
+dogCleaning.addEventListener("click", function(event){//con forEach le digo que los recorra todos 
+    console.log(event.target.value);
+        let elementos = Array.from(document.getElementsByClassName(event.target.value));
+        elementos.forEach((e)=>{
+            if (event.target.checked){
+                e.style.display="block";
+    
+            }else{
+                e.style.display="none";
+            }
+        });
+    
+    });
 
-function getClassPet(pet){
-    switch(pet){
-        case "dog":
+
+
+function getClassPet(dog){
+    let c= "";
+    switch(dog){
+        case "Categoría para Perros":
         c="dog";
         break;
-        case "cat":
+
+
+        case "Artículos de limpieza":
+            c="dogCleaning";
+            break;
+    
+        
+        case "Juguetes":
+            c="dogToys";
+           break;
+
+         case "Alimento":
+             c="dogFood";
+             break;
+
+             case "Accesorios":
+             c="dogAccesories";
+             break;
+
+            } 
+            return c;
+        }
+
+             function getClassPet(cat){
+                let d= "";
+                switch(cat){
+
+             case "Categoría para Gatos":
         c="cat";
         break;
-    } return c;
+
+
+        case "Artículos de limpieza":
+            c="catCleaning";
+            break;
+    
+        
+        case "Juguetes":
+            c="catToys";
+           break;
+
+         case "Alimento":
+             c="catFood";
+             break;
+
+             case "Accesorios":
+             c="catAccesories";
+             break;
+
+        default:
+            c = "all";
+             break;
+    } 
+    return c;
 }
+
+
+/* 
+
+let dog = document.getElementById("customCheck1");
+let dogCleaning = document.getElementById("customCheck2");
+let dogToys = document.getElementById("customCheck3");
+let dogFood = document.getElementById("customCheck4");
+let dogAccesories = document.getElementById("customCheck5");
+let cat = document.getElementById("customCheck6");
+let catCleaning = document.getElementById("customCheck7");
+let catToys = document.getElementById("customCheck8");
+let catFood = document.getElementById("customCheck9");
+let catAccesories = document.getElementById("customCheck10"); */
+/* function getClassCategory(cat) {
+    let c = "";
+    switch (cat) {
+        case "men's clothing":
+            c = "mens";
+            break;
+    
+        case "Limpieza":
+            c = "women";
+            break;
+        case "jewelery":
+            c = "jew";
+            break;
+        case "electronics":
+            c = "elec";
+             break;
+
+        default:
+            c = "all";
+             break;
+    }//switch
+
+    return c;
+}//getClassCatergory */
