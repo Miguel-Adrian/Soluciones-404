@@ -1,3 +1,15 @@
+
+h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: #7F3122;
+    font-size: 45px;
+    font-family: "Baloo 2";
+    margin-top: -0.8em;
+}
+
+
+
 .btnCard{
     background-color: #6E3E22;
     color: #FFE6A7;
@@ -6,6 +18,7 @@
 
 .carousel-inner{
     height: 500px;
+    width: 100%;
     margin-top: 20px;
     font-family: 'Baloo 2';
 }
@@ -15,9 +28,9 @@
 .card-header{
     color:white;
 }
-.slide{
+/* .slide{
     max-height: 700px;
-}
+} */
 #categoriasText{
     color: beige;
 }
@@ -41,3 +54,13 @@ body{
         height: auto;
     }
 }
+
+.d-block w-100 slide{
+    width: 100%;
+    
+}
+
+.img-fluid{
+    max-width: 100%;  
+} 
+

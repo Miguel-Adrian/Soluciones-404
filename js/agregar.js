@@ -72,6 +72,12 @@ class UI{
             Swal.fire({
                 icon: 'error',
                 title: 'Artículo eliminado',
+                icon: 'success',
+                color: "#6E3E22",
+                confirmButtonText:"OK",
+                confirmButtonColor:"#6F1D1B",
+                iconColor:"#6F1D1B",
+                
               })    
         }
     }
@@ -82,11 +88,18 @@ class UI{
             element.parentElement.parentElement.parentElement.innerHTML = "";
             localStorage.setItem("products", JSON.stringify(articulos));
 
-            Swal.fire(
-                'Producto agregado con éxito',
-                '¡Gracias, equipo Q-Pets!',
-                'success'
-              ) 
+            Swal.fire({
+
+
+                title: "Producto agregado con éxito",
+                text: '¡Gracias, equipo Q-Pets!',
+                icon: 'success',
+                color: "#6E3E22",
+                confirmButtonText:"OK",
+                confirmButtonColor:"#6F1D1B",
+                iconColor:"#6F1D1B",
+  
+            } ) ;
         }
     }
 }
@@ -190,6 +203,8 @@ else {
 articulos.push(new Product (id, nombreproduct, imgURL, descripcion, costo, opcion, categoria));
 id++;
 });
+
+
 
 document.getElementById("product-list").addEventListener("click", function(e){
     let ui = new UI;
