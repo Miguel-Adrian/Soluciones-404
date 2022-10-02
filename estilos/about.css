@@ -4,13 +4,6 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
-.articulosCarrito{
-    background-color:#FFE6A7;
-}
-
-.resumenCompra{
-    background-color: #FFe6A7;
-}
 h1 {
     text-align: center;
     padding: 0.5em;
@@ -43,29 +36,16 @@ section p {
     font-family: "Lato";
 }
 
-
-.p-2 .bd-highlight {
-    background-color: antiquewhite;
-}
-
-
-.cont2 {
-    margin-top: 20px;
-}
-
-.cont3 {
-    margin-top: 20px;
-}
-
-.cont4 {
-    margin-top: 20px;
+.cuerpoAbout{
+    margin-top: 10px;
 }
 
 /* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
 
 #containerAbout{
-    background-color: #ffe7b7;
+    background-color: #FFE6A7;
     border-radius: 10px;
+    padding-bottom: 20px;
 }
 
 .somosq h1 {
@@ -83,13 +63,13 @@ section p {
     margin-top: -150px;
     margin-left: 10%;
     flex-wrap: wrap;
-
 }
 
 .gatito img {
     width: 280px;
     height: 280px;
-
+    z-index: 1;
+    position: relative;
 }
 
 .parrafoabout {
@@ -205,9 +185,60 @@ section p {
     border-radius: 20px;
     margin: 15px;
     background-color: #F0BC56;
+    margin-bottom: 5%;
 }
 
-.p-2 p{
-    font-weight: bold;
-    font-style: italic;
+#tituloPrincipal{
+    font-weight: 1000;
+    font-size: 64px;
+    background-color: #F0BC56;
+    color: #6E3E22;
+    text-align: center;
+    font-family: 'Baloo 2';
+    margin-top: 60px;
+}
+
+.huellita{
+    margin-top: -75px;
+    margin-left: -25px;
+}
+
+.bi{
+    font-size: 32px;
+    color:#6E3E22;
+    justify-content: space-around;
+}
+
+@media (min-width: 993px) {
+    #tituloPrincipal{
+        padding-top: 100px;
+        text-align: right;
+        padding-right: 200px;
+    }
+
+    .p-2{
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
+    }
+
+    #aboutparrafo{
+        font-size: 24px;
+    }
+
+    .huellita{
+        width: 60px;
+    }
+}
+
+@media (max-width: 576px) {
+    #containerAbout{
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #FFFFFF;
+    }
+
+    .p-2, .parrafoabout{
+        margin-bottom: 10%;
+    }
 }
