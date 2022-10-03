@@ -1,3 +1,21 @@
+
+let dog = document.getElementById("customCheck1");
+let dogCleaning = document.getElementById("customCheck2");
+let dogToys = document.getElementById("customCheck3");
+let dogFood = document.getElementById("customCheck4");
+let dogAccesories = document.getElementById("customCheck5");
+let cat = document.getElementById("customCheck6");
+let catCleaning = document.getElementById("customCheck7");
+let catToys = document.getElementById("customCheck8");
+let catFood = document.getElementById("customCheck9");
+let catAccesories = document.getElementById("customCheck10");
+
+
+
+
+
+
+
 function addItem(item){
     const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 300px;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
@@ -267,7 +285,7 @@ addItem({
 // 29. Ropa para gato ejecutivo corbata azul lisa
 addItem({
     'id': 29, 'name': 'Ropa para gato ejecutivo corbata azul lisa',
-    'img': '../src/images/catalogo/ropa gato ejecutiva azul lisa.jpg',
+    'img': '../src/images/catalogo/ropaGatoEjecutivaAzulLisa.jpg',
     'description': 'Elegante y casual, corbata azul marino lisa',
     'price': 250,
     'pet': 'Gato',
@@ -276,7 +294,7 @@ addItem({
 // 30. Ropa para gato ejecutivo corbata salmon con franjas
 addItem({
     'id': 30, 'name': 'Ropa para gato ejecutivo corbata salmon con franjas',
-    'img': '../src/images/catalogo/ropa gato ejecutiva franjas.jpg',
+    'img': '../src/images/catalogo/RopaGatoEjecutivaFranjas.jpg',
     'description': 'Elegante y casual, corbata salmon con franjas negras',
     'price': 250,
     'pet': 'Gato',
@@ -285,7 +303,7 @@ addItem({
 // 31. Ropa para gato hawaii
 addItem({
     'id': 31, 'name': 'Ropa para gato hawaiana',
-    'img': '../src/images/catalogo/ropa gato hawaianai.jpg.jpg',
+    'img': '../src/images/catalogo/RopaGatoHawaianai.jpg',
     'description': 'Fresca y comoda camisa  hawaiana ',
     'price': 350,
     'pet': 'Gato',
@@ -294,7 +312,7 @@ addItem({
 // 32. Ropa para gato kimono
 addItem({
     'id': 32, 'name': 'Ropa para gato kimono',
-    'img': '../src/images/catalogo/ropa gato kimono.jpg',
+    'img': '../src/images/catalogo/RopaGatoKimono.jpg',
     'description': 'Tradicional kimono japones neko',
     'price': 400,
     'pet': 'Gato',
@@ -303,7 +321,7 @@ addItem({
 // 33. Ropa para gato casino mixologo
 addItem({
     'id': 33, 'name': 'Ropa para gato casino mixologo',
-    'img': '../src/images/catalogo/ropa gato mixologo.jpg',
+    'img': '../src/images/catalogo/RopaGatoMixologo.jpg',
     'description': 'Casino mixologo, porte profesional gatuno',
     'price': 400,
     'pet': 'Gato',
@@ -436,3 +454,132 @@ addItem({
     'pet': 'Gato',
     'category': 'Accesorios'
 });
+
+
+
+dog.addEventListener("click", filtrar);
+dogCleaning.addEventListener("click", filtrar);
+dogToys.addEventListener("click", filtrar);
+dogFood.addEventListener("click", filtrar);
+dogAccesories.addEventListener("click", filtrar);
+cat.addEventListener("click", filtrar);
+catCleaning.addEventListener("click", filtrar);
+catToys.addEventListener("click", filtrar);
+catFood.addEventListener("click", filtrar);
+catAccesories.addEventListener("click", filtrar);
+
+dogCleaning.addEventListener("click", function(event){//con forEach le digo que los recorra todos 
+    console.log(event.target.value);
+        let elementos = Array.from(document.getElementsByClassName(event.target.value));
+        elementos.forEach((e)=>{
+            if (event.target.checked){
+                e.style.display="block";
+    
+            }else{
+                e.style.display="none";
+            }
+        });
+    
+    });
+
+
+
+function getClassPet(dog){
+    let c= "";
+    switch(dog){
+        case "Categoría para Perros":
+        c="dog";
+        break;
+
+
+        case "Artículos de limpieza":
+            c="dogCleaning";
+            break;
+    
+        
+        case "Juguetes":
+            c="dogToys";
+           break;
+
+         case "Alimento":
+             c="dogFood";
+             break;
+
+             case "Accesorios":
+             c="dogAccesories";
+             break;
+
+            } 
+            return c;
+        }
+
+             function getClassPet(cat){
+                let d= "";
+                switch(cat){
+
+             case "Categoría para Gatos":
+        c="cat";
+        break;
+
+
+        case "Artículos de limpieza":
+            c="catCleaning";
+            break;
+    
+        
+        case "Juguetes":
+            c="catToys";
+           break;
+
+         case "Alimento":
+             c="catFood";
+             break;
+
+             case "Accesorios":
+             c="catAccesories";
+             break;
+
+        default:
+            c = "all";
+             break;
+    } 
+    return c;
+}
+
+
+/* 
+
+let dog = document.getElementById("customCheck1");
+let dogCleaning = document.getElementById("customCheck2");
+let dogToys = document.getElementById("customCheck3");
+let dogFood = document.getElementById("customCheck4");
+let dogAccesories = document.getElementById("customCheck5");
+let cat = document.getElementById("customCheck6");
+let catCleaning = document.getElementById("customCheck7");
+let catToys = document.getElementById("customCheck8");
+let catFood = document.getElementById("customCheck9");
+let catAccesories = document.getElementById("customCheck10"); */
+/* function getClassCategory(cat) {
+    let c = "";
+    switch (cat) {
+        case "men's clothing":
+            c = "mens";
+            break;
+    
+        case "Limpieza":
+            c = "women";
+            break;
+        case "jewelery":
+            c = "jew";
+            break;
+        case "electronics":
+            c = "elec";
+             break;
+
+        default:
+            c = "all";
+             break;
+    }//switch
+
+    return c;
+}//getClassCatergory */
