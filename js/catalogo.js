@@ -285,7 +285,7 @@ addItem({
 // 29. Ropa para gato ejecutivo corbata azul lisa
 addItem({
     'id': 29, 'name': 'Ropa para gato ejecutivo corbata azul lisa',
-    'img': '../src/images/catalogo/ropa gato ejecutiva azul lisa.jpg',
+    'img': '../src/images/catalogo/ropaGatoEjecutivaAzulLisa.jpg',
     'description': 'Elegante y casual, corbata azul marino lisa',
     'price': 250,
     'pet': 'Gato',
@@ -294,7 +294,7 @@ addItem({
 // 30. Ropa para gato ejecutivo corbata salmon con franjas
 addItem({
     'id': 30, 'name': 'Ropa para gato ejecutivo corbata salmon con franjas',
-    'img': '../src/images/catalogo/ropa gato ejecutiva franjas.jpg',
+    'img': '../src/images/catalogo/RopaGatoEjecutivaFranjas.jpg',
     'description': 'Elegante y casual, corbata salmon con franjas negras',
     'price': 250,
     'pet': 'Gato',
@@ -303,7 +303,7 @@ addItem({
 // 31. Ropa para gato hawaii
 addItem({
     'id': 31, 'name': 'Ropa para gato hawaiana',
-    'img': '../src/images/catalogo/ropa gato hawaianai.jpg.jpg',
+    'img': '../src/images/catalogo/RopaGatoHawaianai.jpg',
     'description': 'Fresca y comoda camisa  hawaiana ',
     'price': 350,
     'pet': 'Gato',
@@ -312,7 +312,7 @@ addItem({
 // 32. Ropa para gato kimono
 addItem({
     'id': 32, 'name': 'Ropa para gato kimono',
-    'img': '../src/images/catalogo/ropa gato kimono.jpg',
+    'img': '../src/images/catalogo/RopaGatoKimono.jpg',
     'description': 'Tradicional kimono japones neko',
     'price': 400,
     'pet': 'Gato',
@@ -321,7 +321,7 @@ addItem({
 // 33. Ropa para gato casino mixologo
 addItem({
     'id': 33, 'name': 'Ropa para gato casino mixologo',
-    'img': '../src/images/catalogo/ropa gato mixologo.jpg',
+    'img': '../src/images/catalogo/RopaGatoMixologo.jpg',
     'description': 'Casino mixologo, porte profesional gatuno',
     'price': 400,
     'pet': 'Gato',

@@ -11,35 +11,7 @@
     <title>Catálogo - Q-Pets</title>
 </head>
 <body>
-    <header class="header">
-        <div class="navInf">
-          <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#6F1D1B">
-            <a class="navbar-brand mr-5" href="../index.html"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav mx-auto navInfLink">
-                <a class="nav-item nav-link mx-auto" href="./catalogo.html" style="color:white">Promociones</a>
-                <a class="nav-item nav-link mx-auto" href="./about.html" style="color:white">Acerca de nosotros</a>
-                <a class="nav-item nav-link mx-auto" href="./contacto.html" style="color:white">Contacto</a>
-                <a class="nav-item nav-link mx-auto" href="./login.html" tabindex="-1" aria-disabled="true"
-                  style="color:white">Iniciar sesión</a>
-              </div>
-              <div class="form-inline justify-content-center">
-              <div>
-                <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
-              </div>
-              <div>
-                <a class="button" href="./cart.html"><img src="../src/images/Cart.png" alt="Carrito" style="height:30px;margin-left:10px"></a>
-                <a class="button" href="./login.html"><img src="../src/images/User.png" alt="Iniciar sesión" style="height:30px;margin-left:10px;;"></a>
-              </div>
-            </div>
-            </div>
-          </nav>
-        </div>
-      </header> <!-- Cierra navbar -->
+    <header></header>
 
 
 <main class="container-fluid">
@@ -52,7 +24,6 @@
 
     <h1 class="pt-5">Catálogo</h1>
     <div id="carouselExampleCaptions" class="carousel slide p-4 mx-auto mb-4" data-ride="carousel"> 
-
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 
         <ol class="carousel-indicators">
@@ -64,20 +35,15 @@
             <div class="carousel-item active">
                 <img src="../src/images/catalogo/pocat1_Mesa de trabajo 1.png" class="d-block w-100 slide"
                     alt="..." height="auto">
-              
             </div>
             <div class="carousel-item">
                 <img src="../src/images/catalogo/pocat2_Mesa de trabajo 1.png" class="d-block w-100 slide"
-                    alt="...">
-                
+                    alt="...">  
             </div>
-
             <div class="carousel-item">
                 <img src="../src/images/catalogo/pocat3_Mesa de trabajo 1.png" class="d-block w-100 slide"
-                    alt="...">
-                
+                    alt="..."> 
             </div>
-           
         </div>
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -157,192 +123,19 @@
                         </div> <!-- cierra card -->
                 </div><!-- cierra container -->
         </div>
-
     <div class="col-9"> <!-- Lado derecha - Productos --> 
         <div class="row" id="listaDeProductos">
-
         </div>
     </div>
     </div>
 
 </section>
 
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="card col-md-3" style="width: 18rem;">
-                    <div class="card-header" style="background-color:#6F1D1B ;">
-                        <h4 id="categoriasText" class="mx-auto">Categorías</h4>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <br>
-                            <div id="divData"></div>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1" 
-                                    value="dog">
-                                <label class="custom-control-label" for="customCheck1">Categoría para Perros</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck2" 
-                                    value="dogCleaning">
-                                <label class="custom-control-label" for="customCheck2">Artículos de limpieza</label>
-                            </div><!-- div checkbox -->
-
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck3" 
-                                    value="dogToys">
-                                <label class="custom-control-label" for="customCheck3">Juguetes</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck4" 
-                                    value="dogFood">
-                                <label class="custom-control-label" for="customCheck4">Alimento</label>
-                            </div><!-- div checkbox -->
-
-
-                            <br>
-
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck5" 
-                                    value="dogAccesories">
-                                <label class="custom-control-label" for="customCheck5">Accesorios</label>
-                            </div><!-- div checkbox -->
-
-
-
-                        </li>
-                        <li class="list-group-item">
-
-                            <br>
-
-                            <div id="divData"></div>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck6" 
-                                    value="cat">
-                                <label class="custom-control-label" for="customCheck6">Categoría para Gatos</label>
-                            </div><!-- div checkbox -->
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck7" 
-                                    value="catCleaning">
-                                <label class="custom-control-label" for="customCheck7">Artículos de limpieza</label>
-                            </div><!-- div checkbox -->
-                            <br>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck8" 
-                                    value="catToys">
-                                <label class="custom-control-label" for="customCheck8">Juguetes</label>
-                            </div><!-- div checkbox -->
-
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck9" 
-                                    value="catFood">
-                                <label class="custom-control-label" for="customCheck9">Alimento</label>
-                            </div><!-- div checkbox -->
-
-                            <br>
-
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck10" 
-                                    value="catAccesories">
-                                <label class="custom-control-label" for="customCheck10">Accesorios</label>
-                            </div><!-- div checkbox -->
-                        </li><!-- div checkbox -->
-
-                    </ul><!-- cierra lista -->
-
-                </div> <!-- cierra card -->
-                <div class="card col-md-1" id="listProducts"></div> <!--Segunda columna: Catálogo-->
-            </div> <!-- cierra columna 1 -->
-        </div><!-- cierra row -->
-    </div><!-- cierra container -->
-
 </main><!-- aqui cierra main -->
 
-
 <!-- footer -->
-
-<footer>
-        <div class="container-fluid" style="padding-top: 20px;">
-            <div class="row no-gutters" style="padding: 0px;">
-                <div style="padding: 20px;" class="col-md-4 text-md-left text-center">
-                    <img class="rounded float-center" src="../src/images/footer/logoQPets.jpg" alt="" width="220px">
-                    <br />
-                    <br />
-                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;"
-                            src="../src/images/footer/iconoFacebook.png" height="48px" alt=""></a>
-                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;"
-                            src="../src/images/footer/iconoInstagram.png" height="48px" alt=""></a>
-                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;"
-                            src="../src/images/footer/iconoTwitter.png" height="48px" alt=""></a>
-                    <a href="#"><img class="float-center imgRedes" style="padding: 5px;"
-                            src="../src/images/footer/iconoWhatsapp.png" height="48px" alt=""></a>
-                </div>
-                <div class="col-md-3 text-md-left text-center">
-                    <ul class="list-unstyled">
-                        <li>
-                            <strong>Atención al cliente</strong>
-                        </li>
-                        <br />
-                        <li><a href="../pages/terms.html">Forma de pago</a></li>
-                        <li><a href="../pages/terms.html">Términos y condiciones</a></li>
-                        <li><a href="../pages/terms.html">Preguntas frecuentes</a></li>
-                        <li><a href="../pages/terms.html">Políticas de devolución y envío</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 text-md-left text-center">
-                    <ul class="list-unstyled">
-                        <li><strong>Compra</strong></li><br />
-                        <li><strong>Perro</strong></li>
-                        <li><a href="../pages/catalogo.html">Alimento</a></li>
-                        <li><a href="../pages/catalogo.html">Accesorios</a></li>
-                        <br />
-                        <li><strong>Gato</strong></li>
-                        <li><a href="../pages/catalogo.html">Alimento</a></li>
-                        <li><a href="../pages/catalogo.html">Accesorios</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 text-md-left text-center">
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="../pages/contacto.html"><strong>Contacto</strong></a>
-                        </li>
-                        <br />
-                        <li>Correo electrónico:</li>
-                        <li>email@qpets.com.mx</li>
-                        <br>
-                        <li>Teléfono</li>
-                        <li>+52 XX XXX XXX</li>
-                        <img style="padding: 4px; padding-bottom: 6px;" class="mt-1"
-                            src="../src/images/footer/iconoMC.png" alt="" height="48px">
-                        <img style="padding: 5px;" src="../src/images/footer/iconoAmEx.png" alt="" height="48px">
-                        <img style="padding: 5px;" src="../src/images/footer/iconoTarjeta.png" height="48px" alt="">
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container-fluid">
-            <div class="row" style="padding-bottom: 10px;">
-                <div class="col-2"><img class="float-left" src="../src/images/footer/roedor.png" alt="" width="48px">
-                </div>
-                <div class="col-8 text-center">Copyright © 2022. Q-Pets. Todos los derechos reservados.</div>
-                <div class="col-2 "><img class="float-right" src="../src/images/footer/huellita.png" alt=""
-                        height="36px"></div>
-            </div>
-        </div>
-</footer>
+<footer></footer>
+    <script src="../js/main.js"></script>
     <script src="../js/catalogo.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
