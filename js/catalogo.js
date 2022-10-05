@@ -1,10 +1,10 @@
-
-let dog = document.getElementById("customCheck1");
+let mainProductos = document.getElementById("mainproducts");
+//let dog = document.getElementById("customCheck1");
 let dogCleaning = document.getElementById("customCheck2");
 let dogToys = document.getElementById("customCheck3");
 let dogFood = document.getElementById("customCheck4");
 let dogAccesories = document.getElementById("customCheck5");
-let cat = document.getElementById("customCheck6");
+//let cat = document.getElementById("customCheck6");
 let catCleaning = document.getElementById("customCheck7");
 let catToys = document.getElementById("customCheck8");
 let catFood = document.getElementById("customCheck9");
@@ -14,12 +14,12 @@ let catAccesories = document.getElementById("customCheck10");
 
 
 function addItem(item){
-    const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 600px" id="card">\n' +
+    const itemHTML = '<div class="'+getClassCategory(item.category)+' card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4 " style="max-width: 600px;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body" >\n' +
         '        <h5 class="card-title"><strong>'+item.name+'</h5></strong>\n' +
         '        <p class="card-text text-justify">'+item.description.slice(0,70)+'...</p>\n'+
-        '        <p class="card-text text-justify"><small class="text-muted">'+ item.category +' para '+ item.pet.toLowerCase() +'<small></p>\n'+
+        '        <p class="card-text text-justify"><small class="text-muted">'+item.category+'<small></p>\n'+
         '        <p class="text-right h5 text-success font-weight-bold">$'+item.price.toFixed(2)+'</p>\n' +
         '         <button type="button" class="btn btnCard  btn-warning" data-toggle="modal" data-target="#Modal_'+ item.id +'">\n' +
         '         Ver más...<i class="bi bi-cart-plus"></i>\n' +
@@ -65,7 +65,7 @@ addItem({
     'id': 1, 'name': 'Pelota K-Nina',
     'img': '../src/images/catalogo/DogTreatBallPink.png',
     'description': 'Pelota de caucho rosa, ¡puede almacenar premios de comida en su interior, ya que cuenta con un compartimento! Útil para ejercitar a tu mascota y enseñarle uno que otro truco de una sola vez.',
-    'price': 123.50, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 123.50, 'pet': 'perro', 'category':'Juguetes para perro'
 });
 
 //2. Dona de tela con silbato
@@ -73,14 +73,14 @@ addItem({
     'id': 2, 'name': 'Dona chillona',
     'img': '../src/images/catalogo/DogSqueakyDonut.png',
     'description': 'El juguete emite un chillido cuando es presionada, algo que le encantará a tu perro, sea cachorro o adulto.',
-    'price': 199.00, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 199.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
 })
 //3. Hueso de caucho
 addItem({
     'id': 3, 'name': 'Huesito Fiu-Fiu',
     'img': '../src/images/catalogo/DogRubberBone.png',
     'description': 'Hueso de caucho de uso rudo. Ideal para canes adultos. Este juguete puede ser útil para evitar que tu perro muerda objetos que no debería morder. Antiestrés.',
-    'price': 120.00, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 120.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
 })
 
 //4. Juguete de fibra
@@ -88,7 +88,7 @@ addItem({
     'id': 4, 'name': 'Juguete de fibra',
     'img': '../src/images/catalogo/DogRopeToy.png',
     'description': 'Juguete de fibra 100% natural. Ideal para canes adultos. Dale a tu amigo horas de diversión y relajamiento con este juguete.',
-    'price': 99.00, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 99.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
 })
 
 //5. Kit para masticar
@@ -96,7 +96,7 @@ addItem({
     'id': 5, 'name': 'Kit de sandalias y zapatos',
     'img': '../src/images/catalogo/DogKitSandalsSneakersChewies.png',
     'description': 'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
-    'price': 216.00, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 216.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
 })
 
 
@@ -107,7 +107,7 @@ addItem({
     'description': 'Dale un look cool a tu perro en la temporada de invierno con este blazer',
     'price': 750,
     'pet': 'Perro',
-    'category': 'Accesorios'
+    'category': 'Accesorios para perro'
 });
 
 // 7. Hoodie de perro
@@ -117,7 +117,7 @@ addItem({
     'description': 'Protege a tu perrito del frío con este adorable hoodie',
     'price': 400,
     'pet': 'Perro',
-    'category': 'Accesorios'
+    'category': 'Accesorios para perro'
 });
 
 // 8. Filipina de perro
@@ -127,7 +127,7 @@ addItem({
     'description': '¿Quieres un ayudante de cocina? Con esta filipina podrás convertir a tu perro en un verdadero chef',
     'price': 600,
     'pet': 'Perro',
-    'category': 'Accesorios'
+    'category': 'Accesorios para perro'
 });
 
 // 9. Beanie de perro
@@ -137,7 +137,7 @@ addItem({
     'description': 'Perfecto para salir a la calle',
     'price': 100,
     'pet': 'Perro',
-    'category': 'Accesorios'
+    'category': 'Accesorios para perro'
 });
 
 // 10. Mameluco de perro
@@ -147,7 +147,7 @@ addItem({
     'description': '¡Hora de dormir!',
     'price': 300,
     'pet': 'Perro',
-    'category': 'Accesorios'
+    'category': 'Accesorios para perro'
 });
 
 //11. alimento para perro
@@ -157,7 +157,7 @@ addItem({
     'description': 'Alimento PURINA DOG CHOW para adulto. Tamaño de raza: medianos y grandes.',
     'price': 749,
     'pet': 'Perro',
-    'category': 'Alimento'
+    'category': 'Alimento para perro'
 });
 //12. alimento para perro
 addItem({
@@ -166,7 +166,7 @@ addItem({
     'description': 'Alimento para perro de la marca Ganador para adulto de razas medianas y grandes.',
     'price': 899,
     'pet': 'Perro',
-    'category': 'Alimento'
+    'category': 'Alimento para perro'
 });
 
 //13. alimento para perro
@@ -176,7 +176,7 @@ addItem({
     'description': 'Alimento de mayor nutrición a menor precio, para perros adultos de todas las razas y tamaños',
     'price': 899,
     'pet': 'Perro',
-    'category': 'Alimento'
+    'category': 'Alimento para perro'
 });
 
 //14. alimento para perro
@@ -186,7 +186,7 @@ addItem({
     'description': 'Alimento super premium de la marca Purina ONE con pollo y cordero de verdad contribuye a un corazón sano y musculos fuertes',
     'price': 459,
     'pet': 'Perro',
-    'category': 'Alimento'
+    'category': 'Alimento para perro'
 });
 
 //15. alimento para perro
@@ -196,7 +196,7 @@ addItem({
     'description': 'alimento con el balance de vitaminas, minerales, grasas, proteínas y energía adecuados para esta etapa de vida que definirá su calidad de vida adulta.',
     'price': 265,
     'pet': 'Perro',
-    'category': 'Alimento'
+    'category': 'Alimento para perro'
 });
 
 // 16. Shampoo líquido
@@ -206,7 +206,7 @@ addItem({
     'description': 'Shampo líquido para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso',
     'price': 50.00,
     'pet': 'Perro',
-    'category': 'Limpieza'
+    'category': 'Limpieza para perro'
 });
 //17. Shampoo en barra
 addItem({
@@ -215,7 +215,7 @@ addItem({
     'description': 'Shampo en barra para perros,elimina malos olores de tu perro y deja su pelo suave y brilloso previene de pulgas y garrapatas',
     'price': 30.00,
     'pet': 'Perro',
-    'category': 'Limpieza'
+    'category': 'Limpieza para perro'
 });
 //18. Quitamanchas
 addItem({
@@ -224,7 +224,7 @@ addItem({
     'description': 'Elimina esas manchas y malos olores causadas por tu mascota en superficies',
     'price': 150.00,
     'pet': 'Perro',
-    'category': 'Limpieza'
+    'category': 'Limpieza para perro'
 });
 //19. Limpieza dental
 addItem({
@@ -233,7 +233,7 @@ addItem({
     'description': 'Dale un buen cuidado bucal a tu perro previniendo así enfermedades/bacterias y malos olores',
     'price': 120.00,
     'pet': 'Perro',
-    'category': 'Limpieza'
+    'category': 'Limpieza para perro'
 });
 //20. Quita olores
 addItem({
@@ -242,7 +242,7 @@ addItem({
     'description': 'Elimina olor dejado por tu mascota despues de hacer sus necesidades y previene que no vuelva hacerlo en el mismo lugar',
     'price': 170.00,
     'pet': 'Perro',
-    'category': 'Limpieza'
+    'category': 'Limpieza para perro'
 });
 
 //21. Camita para perro
@@ -250,7 +250,7 @@ addItem({
     'id': 21, 'name': 'Camita P-rruna',
     'img': '../src/images/catalogo/DogBed1.png',
     'description': '¿Un día agotador? Dale el descanso que se merece a tu peludo con esta preciosa cama en forma de sandalia. Hecha con materiales 100% naturales, le dará a tu amig@ un descanso reparador.',
-    'price': 1314.00, 'pet': 'Perro', 'category': 'Juguetes'
+    'price': 1314.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
 })
 
 //22. Casita para perro una planta
@@ -258,7 +258,7 @@ addItem({
     'id': 22, 'name': 'K-sita K9',
     'img': '../src/images/catalogo/DogHouse1.png',
     'description': 'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
-    'price': 5163, 'pet': 'Perro', 'category': 'Accesorios'
+    'price': 5163, 'pet': 'Perro', 'category': 'Accesorios para perro'
 })
 
 //23. Casita para perro 2 plantas
@@ -266,7 +266,7 @@ addItem({
     'id': 23, 'name': 'K-sita K9 Suite de 2 plantas',
     'img': '../src/images/catalogo/DogHouse2.png',
     'description': '¿Acaso hay más un un miembro peludo en la familia? ¡No hay problema! Esta hermosa suite para dos amiguit@s está pensada exclusivamente para ahorrar espacio.',
-    'price': 10011.00, 'pet': 'Perro', 'category': 'Accesorios'
+    'price': 10011.00, 'pet': 'Perro', 'category': 'Accesorios para perro'
 })
 
 
@@ -275,7 +275,7 @@ addItem({
     'id': 24, 'name': 'Dispensador de snack para gato',
     'img': 'https://www.petsonic.com/blog/wp-content/uploads/2018/10/juguete-gato-1.png',
     'description': 'Logra que tu gatito se mantenga saludable y entretenido con este dispensador de bocadillos, que lo estimula física y mentalmente', 'price': 500,
-    'pet': 'Gato', 'category': 'Juguetes'
+    'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
 // 25. Tunel para gatos 
@@ -283,7 +283,7 @@ addItem({
     'id': 25, 'name': 'Tunel para gatos',
     'img': 'https://aristopet.com/wp-content/uploads/2020/11/tunel-1.png',
     'description': 'Dale un lugar seguro, obscuro y muy entretenido a tu gato, su instinto de cacería siempre estará en sus juegos con este tunel', 'price': 350,
-    'pet': 'Gato', 'category': 'Juguetes'
+    'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
 // 26. Vara juguete para gato
@@ -291,7 +291,7 @@ addItem({
     'id': 26, 'name': 'Vara juguete para gato',
     'img': 'https://nakanpets.com/wp-content/uploads/2022/06/2-12.png',
     'description': 'Ejercita la mente, reflejos y físico de tu gatito con esta varita, pasando grandes momentos de diversión', 'price': 100,
-    'pet': 'Gato', 'category': 'Juguetes'
+    'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
 // 27. Ratoncitos para gato 
@@ -299,16 +299,19 @@ addItem({
     'id': 27, 'name': 'Ratoncitos para gato "Kitten',
     'img': 'https://www.nutypet.com/wp-content/uploads/2021/08/juguete-de-raron-500x500.png',
     'description': 'Ratoncitos de peluche para gato, con materiales no tóxicos y ecológicos', 'price': 150,
-    'pet': 'Gato', 'category': 'Juguetes'
+    'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
 // 28. Pelotas para gato 
+
 /* addItem({
     'id': 28, 'name': 'Pelotas para gato',
     'img': 'https://w7.pngwing.com/pngs/538/164/png-transparent-cat-play-and-toys-cat-play-and-toys-fish-ball-cat-toy-pet-ball-cat-thumbnail.png',
     'description': '¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas', 'price': 200,
     'pet': 'Gato', 'category': 'Juguetes'
 }); */
+
+
 
 // 29. Ropa para gato ejecutivo corbata azul lisa
 addItem({
@@ -317,7 +320,7 @@ addItem({
     'description': 'Elegante y casual, corbata azul marino lisa',
     'price': 250,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 // 30. Ropa para gato ejecutivo corbata salmon con franjas
 addItem({
@@ -326,7 +329,7 @@ addItem({
     'description': 'Elegante y casual, corbata salmon con franjas negras',
     'price': 250,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 // 31. Ropa para gato hawaii
 addItem({
@@ -335,7 +338,7 @@ addItem({
     'description': 'Fresca y comoda camisa  hawaiana ',
     'price': 350,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 // 32. Ropa para gato kimono
 addItem({
@@ -344,7 +347,7 @@ addItem({
     'description': 'Tradicional kimono japones neko',
     'price': 400,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 // 33. Ropa para gato casino mixologo
 addItem({
@@ -353,7 +356,7 @@ addItem({
     'description': 'Casino mixologo, porte profesional gatuno',
     'price': 400,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 
 
@@ -363,14 +366,14 @@ addItem({
     'id': 34, 'name': 'Gato especial',
     'img': 'https://www.perfectsense.mx/wp-content/uploads/Gato.jpg',
     'description': 'Deliciosa comida preparada por los mejores chefs del mundo para ,para ese gato quisquilloso en la comida,contiene proteína para esos reyes de la casa. ', 'price': 1600
-    , 'pet': 'Gato', 'category': 'Alimento'
+    , 'pet': 'Gato', 'category': 'Alimento para gato'
 });
 //35 comida loco
 addItem({
     'id': 35, 'name': 'Loco por la comida',
     'img': 'https://http2.mlstatic.com/D_NQ_NP_884668-MLM50166068178_062022-O.jpg',
     'description': 'Deliciosa comida para compartir para todos los gatos, contiene pescado producto importado.', 'price': 150
-    , 'pet': 'Gato', 'category': 'Alimento'
+    , 'pet': 'Gato', 'category': 'Alimento para gato'
 });
 //36 comida delicias
 addItem({
@@ -380,14 +383,14 @@ addItem({
     'description': 'Delicia, mejor alimento para tu gato, contiene pescado, camarón y otras cosas más para esos gatos que les gusta comer de más.',
     'price': 325,
     'pet': 'Gato',
-    'category': 'Alimento'
+    'category': 'Alimento para gato'
 });
 // 37 sobre
 addItem({
     'id': 37, 'name': 'Me gusta sobre',
     'img': 'https://www.costco.com.mx/medias/sys_master/products/hc7/hce/62467576070174.jpg',
     'description': 'Deliciosos sobres de Whiskas, caja con 24 piezas para tener en todo el mes y poder darle ese regalo a tu gato glotón.', 'price': 436
-    , 'pet': 'Gato', 'category': 'Alimento'
+    , 'pet': 'Gato', 'category': 'Alimento para gato'
 });
 //38 paquete
 addItem({
@@ -397,7 +400,7 @@ addItem({
     'description': 'un increible paquete para tu gato gloton una bolsa de comida de gato y sobres para ese gato que tanto quieres',
     'price': 750,
     'pet': 'Gato',
-    'category': 'Alimento'
+    'category': 'Alimento para gato'
 });
 
 
@@ -409,7 +412,7 @@ addItem({
     'description': 'Shampoo para gato, elimina malos olores de tu felino dejando su pelo suave y con un agradable aroma.',
     'price': 145.00,
     'pet': 'Gato',
-    'category': 'Limpieza'
+    'category': 'Limpieza para gato'
 });
 
 // 40. Cepillo para gato
@@ -420,7 +423,7 @@ addItem({
     'description': 'Cepillo de cerda fina para remover el pelo muesrto de tu gato.',
     'price': 120.00,
     'pet': 'Gato',
-    'category': 'Limpieza'
+    'category': 'Limpieza para gato'
 });
 
 // 41. Cepillo dental para gato
@@ -430,7 +433,7 @@ addItem({
     'img': '../src/images/catalogo/CepilloDientesGato.png',
     'description': 'Este kit de cuidado dental cuenta con un cepillo de dientes y una pasta de dientes para gatos con sabor a pollo para que no tengas líos con la aceptación de tu felino hacia la pasta. ',
     'price': 140.00, 'pet': 'Gato',
-    'category': 'Limpieza'
+    'category': 'Limpieza para gato'
 });
 
 // 42. Talco antipulgas
@@ -440,7 +443,7 @@ addItem({
     'img': '../src/images/catalogo/TalcoGato.png',
     'description': 'Talco Bolfo ayuda a eliminar los problemas de pulgas y garrapatas de tu mascota',
     'price': 150.00, 'pet': 'Gato',
-    'category': 'Limpieza'
+    'category': 'Limpieza para gato'
 });
 
 // 43. Jabón para gato
@@ -450,7 +453,7 @@ addItem({
     'img': '../src/images/catalogo/JabonGato.png',
     'description': 'Limpia y desinfecta profundamente, da brillo, desodoriza y restaura la condición del pelo y la piel de tu felinos.',
     'price': 80.00, 'pet': 'Gato',
-    'category': 'Limpieza'
+    'category': 'Limpieza para gato'
 });
 
 // 44. Cama gato mimbre
@@ -460,7 +463,7 @@ addItem({
     'description': 'Dale comodidad y espacio a tu gatito con esta cama',
     'price': 400,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 
 // 45. Cama gato fibra
@@ -470,7 +473,7 @@ addItem({
     'description': 'Suavecita, con superficie de microfibra',
     'price': 350,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 
 // 46. Cama gato algodón
@@ -480,66 +483,95 @@ addItem({
     'description': 'Comodidad y frescura el minino',
     'price': 350,
     'pet': 'Gato',
-    'category': 'Accesorios'
+    'category': 'Accesorios para gato'
 });
 
 
 
-dog.addEventListener("click", filtrar);
+
+//dog.addEventListener("click", filtrar);
 dogCleaning.addEventListener("click", filtrar);
 dogToys.addEventListener("click", filtrar);
 dogFood.addEventListener("click", filtrar);
 dogAccesories.addEventListener("click", filtrar);
-cat.addEventListener("click", filtrar);
+//cat.addEventListener("click", filtrar);
 catCleaning.addEventListener("click", filtrar);
 catToys.addEventListener("click", filtrar);
 catFood.addEventListener("click", filtrar);
 catAccesories.addEventListener("click", filtrar);
 
-function filtrar (event) {
-    console.log (event.target.value);   //este .target nos ayuda a no tener que hacer una función para cada checked, en este caso, sino que hace la función 
-                                        //sino que hace la función para la opción que esté habilitada en ese momento
-    let elementos = Array.from(document.getElementsByClassName(event.target.value));  //este es para que se haga una copia del arreglo y se pueda realizar forEach en ese
-    elementos.forEach((e) => {
-        if (event.target.checked) {
-            e.style.display = "block";
-        } else {
-            e.style.display = "none";
-        } //if
-    });
-}
+
+function filtrar(event){//con forEach le digo que los recorra todos 
+    console.log(event.target.value);
+        let elementos = Array.from(document.getElementsByClassName (event.target.value));
+        elementos.forEach((e)=>{
+            if (event.target.checked){
+                e.style.display="block";
+    
+            }else{
+                e.style.display="none";
+            }
+        });
+    
+    };
 
 
-function getClassPet(dog){
+
+function getClassCategory(cat){
     let c= "";
-    switch(dog){
-        case "Categoría para Perros":
-        c="dog";
-        break;
+    switch(cat){
+       // case "Categoría para Perros":
+       // c="dog";
+       // break;
 
 
-        case "Artículos de limpieza":
+        case "Limpieza para perro":
             c="dogCleaning";
             break;
     
         
-        case "Juguetes":
+        case "Juguetes para perro":
             c="dogToys";
            break;
 
-         case "Alimento":
+         case "Alimento para perro":
              c="dogFood";
              break;
 
-             case "Accesorios":
+             case "Accesorios para perro":
              c="dogAccesories";
              break;
-
+            // case "Categoría para Gatos":
+              //  c="cat";
+               // break;
+        
+        
+                case "Limpieza para gato":
+                    c="catCleaning";
+                    break;
+            
+                
+                case "Juguetes para gato":
+                    c="catToys";
+                   break;
+        
+                 case "Alimento para gato":
+                     c="catFood";
+                     break;
+        
+                     case "Accesorios para gato":
+                     c="catAccesories";
+                     break;
+        
+                default:
+                    c = "return c";
+                     break;
             } 
             return c;
-        }
+            } 
+        
 
-             function getClassPet(cat){
+           /*  function getClassCategory(cat){
                 let d= "";
                 switch(cat){
 
@@ -553,25 +585,25 @@ function getClassPet(dog){
             break;
     
         
-        case "Juguetes":
+        case "Juguetes para gato":
             c="catToys";
            break;
 
-         case "Alimento":
+         case "Alimento para gato":
              c="catFood";
              break;
 
-             case "Accesorios":
+             case "Accesorios para gato":
              c="catAccesories";
              break;
 
         default:
-            c = "all";
+            c = "return c";
              break;
     } 
     return c;
 }
-
+*/
 
 /* 
 

@@ -3,9 +3,10 @@ h1 {
     text-align: center;
     padding: 0.5em;
     color: #7F3122;
-    font-size: 45px;
+    font-size: 60px;
     font-family: "Baloo 2";
-    margin-top: -0.8em;
+    margin-top: 0.2em;
+    
 }
 
 #titulo{
@@ -50,6 +51,9 @@ h1 {
 
 body{
     background-color: #FFE6A7;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
   
 @media (max-width: 768px) {
