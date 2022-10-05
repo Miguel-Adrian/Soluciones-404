@@ -13,23 +13,51 @@ let catAccesories = document.getElementById("customCheck10");
 
 
 
-
-
-
 function addItem(item){
-    const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 300px;">\n' +
+    const itemHTML = '<div class="card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4" style="max-width: 600px" id="card">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
+        '    <div class="card-body" >\n' +
+        '        <h5 class="card-title"><strong>'+item.name+'</h5></strong>\n' +
         '        <p class="card-text text-justify">'+item.description.slice(0,70)+'...</p>\n'+
         '        <p class="card-text text-justify"><small class="text-muted">'+ item.category +' para '+ item.pet.toLowerCase() +'<small></p>\n'+
         '        <p class="text-right h5 text-success font-weight-bold">$'+item.price.toFixed(2)+'</p>\n' +
-        '        <a href="#" class="btn btnCard btn-warning">Ver más...</a> \n' +
+        '         <button type="button" class="btn btnCard  btn-warning" data-toggle="modal" data-target="#Modal_'+ item.id +'">\n' +
+        '         Ver más...<i class="bi bi-cart-plus"></i>\n' +
+
+/* 
+        '        <a href="#" class="btn btnCard btn-warning"data-toggle="modal" data-target="#Modal_'+ item.id +' >Ver más...</a> \n' + */
         '    </div>\n' +
         '</div>\n' +
-        '<br/>';
-    const itemsContainer = document.getElementById("listaDeProductos");
-    itemsContainer.innerHTML += itemHTML;
+        '<br/>'+
+       '  <div class="modal fade" id="Modal_'+item.id+'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">\n' +
+        '  <div class="modal-dialog">\n' +
+        '  <div class="modal-content">\n' +
+        '  <div class="modal-header">\n' +
+        '  <h5 class="modal-title" id="exampleModalLabel" style="color:#6F1D1B">'+item.name+'</h5>\n' +
+        '  <button type="button" class="close" style="color:#6F1D1B" data-dismiss="modal" aria-label="Close">\n' +
+        '  <span aria-hidden="true">&times;</span>\n' +
+        '  </button>\n' +
+        '  </div>\n' +
+        '  <div class="modal-body" style="color:#6F1D1B">\n' +
+        '  '+item.description+'\n' +
+        '      <br><strong>Precio $'+item.price.toFixed(2)+'\n</strong> <br>  ' +
+
+        '   </div>\n' +
+        '   <div class="modal-footer">\n' +
+        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
+        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
+        '  <i class="bi bi-cart-plus"></i>  ' +
+        '  </button> ' +
+        '   </div>  \n' +
+        '   </div>  \n' +
+        '   </div>  \n' +
+        '   </div>  \n'; 
+      
+
+        const itemsContainer = document.getElementById("listaDeProductos");
+        itemsContainer.innerHTML += itemHTML;
+        
+    
 }
 
 //1. Pelota de caucho
@@ -275,12 +303,12 @@ addItem({
 });
 
 // 28. Pelotas para gato 
-addItem({
+/* addItem({
     'id': 28, 'name': 'Pelotas para gato',
     'img': 'https://w7.pngwing.com/pngs/538/164/png-transparent-cat-play-and-toys-cat-play-and-toys-fish-ball-cat-toy-pet-ball-cat-thumbnail.png',
     'description': '¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas', 'price': 200,
     'pet': 'Gato', 'category': 'Juguetes'
-});
+}); */
 
 // 29. Ropa para gato ejecutivo corbata azul lisa
 addItem({
@@ -339,7 +367,7 @@ addItem({
 });
 //35 comida loco
 addItem({
-    'id': 35, 'name': 'loco pro la comida',
+    'id': 35, 'name': 'Loco por la comida',
     'img': 'https://http2.mlstatic.com/D_NQ_NP_884668-MLM50166068178_062022-O.jpg',
     'description': 'Deliciosa comida para compartir para todos los gatos, contiene pescado producto importado.', 'price': 150
     , 'pet': 'Gato', 'category': 'Alimento'
@@ -468,20 +496,18 @@ catToys.addEventListener("click", filtrar);
 catFood.addEventListener("click", filtrar);
 catAccesories.addEventListener("click", filtrar);
 
-dogCleaning.addEventListener("click", function(event){//con forEach le digo que los recorra todos 
-    console.log(event.target.value);
-        let elementos = Array.from(document.getElementsByClassName(event.target.value));
-        elementos.forEach((e)=>{
-            if (event.target.checked){
-                e.style.display="block";
-    
-            }else{
-                e.style.display="none";
-            }
-        });
-    
+function filtrar (event) {
+    console.log (event.target.value);   //este .target nos ayuda a no tener que hacer una función para cada checked, en este caso, sino que hace la función 
+                                        //sino que hace la función para la opción que esté habilitada en ese momento
+    let elementos = Array.from(document.getElementsByClassName(event.target.value));  //este es para que se haga una copia del arreglo y se pueda realizar forEach en ese
+    elementos.forEach((e) => {
+        if (event.target.checked) {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        } //if
     });
-
+}
 
 
 function getClassPet(dog){
