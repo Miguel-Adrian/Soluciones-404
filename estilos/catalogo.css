@@ -3,12 +3,17 @@ h1 {
     text-align: center;
     padding: 0.5em;
     color: #7F3122;
-    font-size: 45px;
+    font-size: 60px;
     font-family: "Baloo 2";
-    margin-top: -0.8em;
+    margin-top: 0.2em;
+    
 }
 
-
+#titulo{
+    background-color:#ffedbe;
+    margin-top: 80px;
+   
+}
 
 .btnCard{
     background-color: #6E3E22;
@@ -16,11 +21,10 @@ h1 {
     border: none;
 }
 
-.carousel-inner{
-    height: 500px;
-    width: 100%;
-    margin-top: 20px;
-    font-family: 'Baloo 2';
+.carousel{
+    
+    margin-top: 50px;
+   
 }
 .d-block{
     height: 500px;
@@ -47,6 +51,9 @@ h1 {
 
 body{
     background-color: #FFE6A7;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
   
 @media (max-width: 768px) {
@@ -64,3 +71,31 @@ body{
     max-width: 100%;  
 } 
 
+.card-text{
+    font-family: "Baloo 2";
+}
+
+
+.card-title{
+    font-family: "Lato";
+}
+.custom-control-label{
+    font-family: "Lato";
+   
+ 
+}
+
+.modal-title{
+    font-family: "Lato";
+    font-weight: bold; 
+}
+
+
+.modal-body{
+    font-family: "Baloo 2";
+    font-size: 18px;
+}
+
+.btnCard{
+    font-family: "Lato";
+}
