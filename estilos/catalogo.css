@@ -3,9 +3,10 @@ h1 {
     text-align: center;
     padding: 0.5em;
     color: #7F3122;
-    font-size: 45px;
+    font-size: 60px;
     font-family: "Baloo 2";
-    margin-top: -0.8em;
+    margin-top: 0.2em;
+    
 }
 
 
@@ -63,4 +64,11 @@ body{
 .img-fluid{
     max-width: 100%;  
 } 
-
+h4 {
+    text-align: center;
+    padding: 0.5em;
+    color: #7F3122;
+    
+    font-family: "Baloo 2";
+    margin-top: -0.8em;
+}
