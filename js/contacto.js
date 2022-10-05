@@ -174,21 +174,29 @@ let cont = 0;
             title: '¡Mensaje enviado!',
             text: `${campoName.value}, agradecemos tus comentarios. Pronto nos pondremos en contacto contigo.`,
             showConfirmButton: true,
+            color: "#6E3E22",
+            confirmButtonText:"OK",
+            confirmButtonColor:"#6F1D1B",
+            iconColor:"#6F1D1B",
         });
-/*         Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "elpapudelospapus115@gmail.com",
-            Password: "B83C021D99E349309B9EE85D73F001C7A7EE",
-            To: "cristopher.serna17@gmail.com",
-            From: "elpapudelospapus115@gmail.com",
-            Subject: "Mesaje para Q-pets",
-            Body: mensaje.value,
-            }); */
+        // Email.send({
+        //     Host: "smtp.elasticemail.com",
+        //     Username: "elpapudelospapus115@gmail.com",
+        //     Password: "B83C021D99E349309B9EE85D73F001C7A7EE",
+        //     To: "cristopher.serna17@gmail.com",
+        //     From: "elpapudelospapus115@gmail.com",
+        //     Subject: "Mensaje para Q-pets",
+        //     Body: mensaje.value,
+        //     });
     } else {
         Swal.fire({
             title: 'Error al enviar mensaje',
             text: "Por favor, verifica que todos los campos sean válidos.",
             icon: 'error',
+            color: "#6E3E22",
+            confirmButtonText:"OK",
+            confirmButtonColor:"#6F1D1B",
+            iconColor:"#6F1D1B",
         });
     }   
 });
