@@ -91,4 +91,6 @@ h3{
         height: auto;
     }
 }
-
+.is-valid{
+    color:aqua
+}
