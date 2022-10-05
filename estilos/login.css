@@ -1,17 +1,4 @@
-#mainContainer{
-    background-color: #FFE6A7;
-    margin: auto;
-    padding: 2.5%;
-    margin-bottom: 2.5%;
-    border-radius: 10px;
-}
-h1 {
-    text-align: center;
-    padding: 0.5em;
-    color: #7F3122;
-    font-size: 45px;
 
-}
 /* baloo-2-regular - latin */
 @font-face {
     font-family: 'Baloo 2';
@@ -40,116 +27,28 @@ h1 {
          url('../src/fonts/lato/lato-v23-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
 }
 
-/* Estilos para la barra de título */
-.contactoTitle{
-    background: #BB9457;
-    font-family: "Lato";
-    padding: 35px;
-    margin-top: 35px;
-}
-
-/* Estilos para el main del contacto.html*/
-main {
-    font-family: "Lato";
-    background-color:#FFE6A7;
-    border: thin solid black;
-    height: auto;
-    width: auto;
+#mainContainer{
+    background-color: #FFE6A7;
     border-radius: 10px;
-    padding: 20px;
-    margin: 1px 50px 50px 50px;
+    max-width: 700px;
 }
-/* Estilos para el body del contacto.html*/
-body{
-    font-family: "Lato";
-/*     background-image: url(https://img.freepik.com/vector-premium/ilustracion-divertidos-dibujos-animados-perros-gatos-lindos-mejores-amigos_112554-246.jpg); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    width: auto;
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
+h1 {
+    text-align: center;
+    color: #7F3122;
 }
-/* Estilos para las etiquetas <label> del contacto.html*/
 label{
     font-family: "Baloo 2";
     margin-top: 0.5em;
-}
-#formulario{
-    font-family: 'Lato';
-}.btnCard, #file-upload-button{
-    background-color: #6E3E22;
-    color: #FFE6A7;
-    border: none;
-}
-label{
-    font-size: large;
+    font-size: 23px;
     color: #6E3E22;
 }
+
 main form .form-control, .custom-select, .is-invalid, .is-valid, .custom-select:valid,
 main form .form-control:valid, .custom-select:invalid, main form .form-control:invalid,
 main form .form-control:focus{
     background-color: #BB9457;
     border: none;
     color: white;
-}
-
-
-
-h1 {
-.centrar{
-    text-align: center;
-    padding: 0.5em;
-    color: #7F3122;
-    font-size: 45px;
-    font-family: "Baloo 2";
-    margin-top: 0.5em;
-}
-
-#mainContainer{
-    background-color: #FFE6A7;
-    margin: auto;
-    padding: 2.5%;
-    margin-bottom: 2.5%;
-    border-radius: 10px;
-}
-
-.card-img-top {
-    width: 100%;
-    height: 20vw;
-    object-fit: contain;
-}
-
-.btnCard, #file-upload-button{
-    background-color: #6E3E22;
-    color: #FFE6A7;
-    border: none;
-}
-
-.card{
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#formulario{
-    font-family: 'Lato';
-}
-
-#btnRegistrar{
-    background-color: #6E3E22;
-    color: #FFE6A7;
-    border: none;
-    margin-top: 2.5%;
-}
-
-.card-title{
-    color: #6E3E22;
-}
-
-label{
-    font-size: large;
-    color: #6E3E22;
 }
 
 main form .form-control, .custom-select, .is-invalid, .is-valid, .custom-select:valid,
@@ -171,23 +70,4 @@ main form .form-control:focus{
 
 .form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
-}
-
-textarea {
-    resize: none;
-}
-
-h3{
-    font-family: "Baloo 2";
-    color: #6E3E22;
-    font-size: 32px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-@media (max-width: 768px) {
-    .card-img-top{
-        height: auto;
-    }
 }
