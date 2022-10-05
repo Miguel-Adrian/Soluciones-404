@@ -1,16 +1,17 @@
 /* Estilos para la barra de título */
-.contactoTitle{
+h1{
     background: #FFe6A7;
-    font-family: "Lato";
+    font-family: "Baloo 2";
     padding: 35px;
     margin-top: 35px;
+    text-align: center;
+    color: #432818;
 }
 
 /* Estilos para el main del contacto.html*/
 main {
     font-family: "Lato";
     background-color:#FFe6A7;
-    border: thin solid black;
     height: auto;
     width: auto;
     border-radius: 10px;
@@ -31,11 +32,50 @@ body{
 }
 /* Estilos para las etiquetas <label> del contacto.html*/
 label{
-    font-family: "Baloo 2";
+    font-family: "Lato";
     color: #432818;
-    font-size: large;
+    font-size: 20px;
 }
 /* Estilos para los iconos que están por encima de los campos en el archivo contacto.html*/
 .imgIcon{
     padding: 4px;
+    width: 35px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.form-group{
+    align-items: center;
+}
+
+#gatoContacto{
+    width: 480px;
+    border-radius: 10px;
+}
+
+main form .form-control, .custom-select, .is-invalid, .is-valid, .custom-select:valid,
+main form .form-control:valid, .custom-select:invalid, main form .form-control:invalid,
+main form .form-control:focus{
+    background-color: #BB9457;
+    border: none;
+    color: white;
+}
+
+main .form-control::placeholder, .custom-select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+main .form-control:-ms-input-placeholder, .custom-select:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+    color: white;
+}
+
+main .form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+#btnEnviar{
+    background-color: #6E3E22;
+    color: #FFE6A7;
+    border: none;
 }
