@@ -6,14 +6,14 @@ window.addEventListener("load", function (e) {
     <header class="header">
     <div class="navInf">
       <nav class="navbar navbar-expand-xl navbar-light" style="background-color:#6F1D1B">
-        <a class="navbar-brand mr-5" href="../index.html"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
+        <a class="navbar-brand mr-5" href="./index.html"><img src="../src/images/Logo.jpeg" alt="Logo Q-Pets" class="logoHeader"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto navInfLink">
-            <a class="nav-item nav-link mx-auto" href="./catalogo.html" style="color:white">Promociones</a>
+            <a class="nav-item nav-link mx-auto" href="./catalogo.html" style="color:white">Catálogo</a>
             <a class="nav-item nav-link mx-auto" href="./about.html" style="color:white">Acerca de nosotros</a>
             <a class="nav-item nav-link mx-auto" href="./contacto.html" style="color:white">Contacto</a>
             <a class="nav-item nav-link mx-auto" href="./login.html" tabindex="-1" aria-disabled="true"
@@ -37,7 +37,7 @@ window.addEventListener("load", function (e) {
     <div class="container-fluid" id="topFooter" style="padding-top: 20px;">
         <div class="row no-gutters" style="padding: 0px;">
             <div style="padding: 20px;" class="col-md-4 text-md-left text-center">
-                <a href="../index.html"><img class="rounded float-center" src="../src/images/footer/logoQPets.jpg" alt="Logo de Q-Pets" width="220px"></a>
+                <a href="./index.html"><img class="rounded float-center" src="../src/images/footer/logoQPets.jpg" alt="Logo de Q-Pets" width="220px"></a>
                 <br/>
                 <br/>
                 <a href="#"><img class="float-center imgRedes" style="padding: 5px;" src="../src/images/footer/iconoFacebook.png" height="48px" alt="Logo de Facebook"></a>
