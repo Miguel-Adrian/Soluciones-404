@@ -53,7 +53,10 @@ class UI{
     '        <a href="#" class="btn btn-primary btnCard" name="guardar">Guardar</a><button id="btnEliminar" class="btn btn-danger ml-2" style="border: none;" name="delete">Eliminar</button>\n' +
     '    </div>\n' +
     '</div>\n' +
-    '<br/>';
+    '<br/>'
+    
+
+    
     //vamos a insertar la informacion
     this.resetForm();
     }
