@@ -4,6 +4,13 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
+.articulosCarrito{
+    background-color:#FFE6A7;
+}
+
+.resumenCompra{
+    background-color: #FFe6A7;
+}
 h1 {
     text-align: center;
     padding: 0.5em;
@@ -13,7 +20,9 @@ h1 {
 }
 
 h2 {
+    margin-left: 100px;
     color: #7F3122;
+    margin-top: 55px;
     font-family: "Baloo 2";
     font-size: 60px;
     padding: 50px;
@@ -39,8 +48,22 @@ section p {
     font-family: "Lato";
 }
 
-.cuerpoAbout{
-    margin-top: 10px;
+
+.p-2 bd-highlight {
+    background-color: antiquewhite;
+}
+
+
+.cont2 {
+    margin-top: 20px;
+}
+
+.cont3 {
+    margin-top: 20px;
+}
+
+.cont4 {
+    margin-top: 20px;
 }
 
 /* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
@@ -64,18 +87,17 @@ section p {
     width: 280px;
     height: 280px;
     margin-top: -150px;
-    margin-left: 10%;
-    flex-wrap: wrap;
+    margin-left: 20%;
+
 }
 
 .gatito img {
     width: 280px;
     height: 280px;
-    z-index: 1;
-    position: relative;
 }
 
 .parrafoabout {
+    background: #ffe7b7;
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
@@ -192,14 +214,9 @@ section p {
     margin-bottom: 10%;
 }
 
-#tituloPrincipal{
-    font-weight: 1000;
-    font-size: 64px;
-    background-color: #F0BC56;
-    color: #6E3E22;
-    text-align: center;
-    font-family: 'Baloo 2';
-    margin-top: 60px;
+a{
+    text-decoration: none;
+    color: #FFe6A7;
 }
 
 .huellita{
