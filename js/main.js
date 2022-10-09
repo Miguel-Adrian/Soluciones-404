@@ -21,7 +21,7 @@ window.addEventListener("load", function (e) {
           </div>
           <div class="form-inline justify-content-center">
           <div>
-            <input class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
+            <input id="theSearchBar" class="form-control" type="search" placeholder="Buscar producto..." aria-label="Search">
           </div>
           <div>
             <a class="button" href="./cart.html"><img src="../src/images/Cart.png" alt="Carrito" style="height:30px;margin-left:10px"></a>
@@ -95,4 +95,11 @@ window.addEventListener("load", function (e) {
         </div>
     </div>
     `;
+})
+
+window.addEventListener("keyup", event =>{
+  if(event.key === "Enter" && event.target.id === 'theSearchBar'){
+    localStorage.setItem('textoBuscar', event.target.value.toLowerCase());
+    window.location.assign("../pages/catalogo.html");
+  }
 })
