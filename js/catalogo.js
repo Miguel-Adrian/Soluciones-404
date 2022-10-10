@@ -304,12 +304,12 @@ addItem({
 
 // 28. Pelotas para gato 
 
-/* addItem({
+addItem({
     'id': 28, 'name': 'Pelotas para gato',
     'img': 'https://w7.pngwing.com/pngs/538/164/png-transparent-cat-play-and-toys-cat-play-and-toys-fish-ball-cat-toy-pet-ball-cat-thumbnail.png',
     'description': '¿Quién dijo que a los gatos no les gusta ir por la pelota?, crea un vínculo con tu mascota con este set de pelotas', 'price': 200,
     'pet': 'Gato', 'category': 'Juguetes'
-}); */
+}); 
 
 
 
