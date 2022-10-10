@@ -102,7 +102,7 @@ function addItem(item){
         '   </div>\n' +
         '   <div class="modal-footer">\n' +
         '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
-        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
+        '   <button value="'+ item.id +'" type="button" class="btn btnCard btnAddCart btn-secondary" data-dismiss="modal">Agregar\n ' +
         '  <i class="bi bi-cart-plus"></i>  ' +
         '  </button> ' +
         '   </div>  \n' +
@@ -117,11 +117,23 @@ function addItem(item){
     
 }
 
+let prodsCart = [];
+
 window.addEventListener("load", function (event) {
-    fetchAnswer();
+    fetchProductos();
+    if (localStorage.getItem('cartIds') != null) {
+        prodsCart = [localStorage.getItem('cartIds')];
+    }
 })
 
-const fetchAnswer = () => {
+window.addEventListener("click", function (event) {
+    if (event.target.classList.contains('btnAddCart')) {
+        prodsCart.push(event.target.value);
+        localStorage.setItem('cartIds', prodsCart);
+    }
+})
+
+const fetchProductos = () => {
     fetch("../src/json/productos.json")
         .then(data => data.json())
         .then(data => {
@@ -132,7 +144,7 @@ const fetchAnswer = () => {
                     addItem(element);
                 })
             } else {
-                if (filtroBusqueda === []) {
+                if (filtroBusqueda.length == 0) {
                     document.getElementById("listaDeProductos").innerHTML
                      = "No se encontraron coincidencias con tu búsqueda. :(";
                 } else {
@@ -143,6 +155,8 @@ const fetchAnswer = () => {
             }
         })
 }
+
+
 
 const filtrado = (productos = [], texto) => {
     return productos.filter(item => 
