@@ -240,7 +240,7 @@ addItem({
 addItem({
     'id': 14, 'name': 'Alimento para perro de la marca Purina ONE 3,5 Kg',
     'img': '../src/images/catalogo/alimentoparaperro4.jpg',
-    'description': 'Alimento super premium de la marca Purina ONE con pollo y cordero de verdad contribuye a un corazón sano y musculos fuertes',
+    'description': 'Alimento súper premium de la marca Purina ONE con pollo y cordero de verdad contribuye a un corazón sano y músculos fuertes',
     'price': 459,
     'pet': 'Perro',
     'category': 'Alimento para perro'
@@ -250,7 +250,7 @@ addItem({
 addItem({
     'id': 15, 'name': 'Alimento para perro de la marca NUPEC 2 Kg',
     'img': '../src/images/catalogo/alimentoparaperro5.jpg',
-    'description': 'alimento con el balance de vitaminas, minerales, grasas, proteínas y energía adecuados para esta etapa de vida que definirá su calidad de vida adulta.',
+    'description': 'Alimento con el balance de vitaminas, minerales, grasas, proteínas y energía adecuados para esta etapa de vida que definirá su calidad de vida adulta.',
     'price': 265,
     'pet': 'Perro',
     'category': 'Alimento para perro'
@@ -307,14 +307,14 @@ addItem({
     'id': 21, 'name': 'Camita P-rruna',
     'img': '../src/images/catalogo/DogBed1.png',
     'description': '¿Un día agotador? Dale el descanso que se merece a tu peludo con esta preciosa cama en forma de sandalia. Hecha con materiales 100% naturales, le dará a tu amig@ un descanso reparador.',
-    'price': 1314.00, 'pet': 'Perro', 'category': 'Juguetes para perro'
+    'price': 1314.00, 'pet': 'Perro', 'category': 'Accesorios para perro'
 })
 
 //22. Casita para perro una planta
 addItem({
     'id': 22, 'name': 'K-sita K9',
     'img': '../src/images/catalogo/DogHouse1.png',
-    'description': 'Pensado principalmente para cachorros, haz que éste pase horas de diversión masticando su juguete y no tu calzado diario. Precaución: exceso de dulzura al ver a tu amiguito pasándola bien.',
+    'description': '¿Tu peludo ya está listo para independizarse? Dale la mejor inversión de su vida, ¡una casa propia!',
     'price': 5163, 'pet': 'Perro', 'category': 'Accesorios para perro'
 })
 
@@ -330,16 +330,16 @@ addItem({
 // 24. Dispensador de snack para gato 
 addItem({
     'id': 24, 'name': 'Dispensador de snack para gato',
-    'img': 'https://www.petsonic.com/blog/wp-content/uploads/2018/10/juguete-gato-1.png',
+    'img': '../src/images/catalogo/dispensadorGato.png',
     'description': 'Logra que tu gatito se mantenga saludable y entretenido con este dispensador de bocadillos, que lo estimula física y mentalmente', 'price': 500,
     'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
 // 25. Tunel para gatos 
 addItem({
-    'id': 25, 'name': 'Tunel para gatos',
-    'img': 'https://aristopet.com/wp-content/uploads/2020/11/tunel-1.png',
-    'description': 'Dale un lugar seguro, obscuro y muy entretenido a tu gato, su instinto de cacería siempre estará en sus juegos con este tunel', 'price': 350,
+    'id': 25, 'name': 'Túnel para gatos',
+    'img': '../src/images/catalogo/tunelGato.png',
+    'description': 'Dale un lugar seguro, obscuro y muy entretenido a tu gato, su instinto de cacería siempre estará en sus juegos con este túnel', 'price': 350,
     'pet': 'Gato', 'category': 'Juguetes para gato'
 });
 
