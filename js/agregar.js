@@ -17,7 +17,7 @@ imagen.addEventListener("change", e =>{
 
 
 // Inicializa contador para artículos
-id = 1;
+id = 47;
 let articulos = [];
 
 // Éste arreglo lo que va a tener dentro son todas las listas de artículos 
@@ -48,7 +48,7 @@ class UI{
     '    <div class="card-body">\n' +
     '        <h5 class="card-title">'+articulo.name+'</h5>\n' +
     '        <p class="card-text text-justify">'+articulo.description.slice(0,70)+'...</p>\n'+
-    '        <p class="card-text text-justify"><small class="text-muted">'+ articulo.category +' para '+ articulo.pet.toLowerCase() +'</small></p>\n'+
+    '        <p class="card-text text-justify"><small class="text-muted">'+ articulo.category +'</small></p>\n'+
     '        <p class="text-right h5 text-success font-weight-bold">$'+ articulo.price +'</p>\n' +
     '        <a href="#" class="btn btn-primary btnCard" name="guardar">Guardar</a><button id="btnEliminar" class="btn btn-danger ml-2" style="border: none;" name="delete">Eliminar</button>\n' +
     '    </div>\n' +
