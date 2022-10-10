@@ -16,10 +16,24 @@
         <main>
 <div class="container-fluid">
 <div class="row">
+<!-- <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal"> -->
     <div class="col-md-5 articulosCarrito" style="margin:30px; border-radius: 20px;">
 <h1>Artículos agregados</h1>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Producto</th>
+        <th scope="col">Precio</th>
+      </tr>
+    </thead>
+    <tbody id="contenido">
+      
+      
+    </tbody>
+  </table> 
 
-<div class="card mb-3" style="max-width: 540px;">
+ <!-- <div class="card mb-3" style="max-width: 540px;">
     <div class="row no-gutters">
         <div class="col-md-4"
             style="background-image:url(../src/images/Logo.jpeg); background-position: center; background-repeat: no-repeat; background-size: 80%;">
@@ -75,8 +89,8 @@
             </div>
         </div>
     </div>
-</div>
-</div>
+</div> -->
+</div> 
     <div class="col-md-5 resumenCompra" style="margin:30px; border-radius: 20px;">
 <h1>Resumen de compra</h1>
 <p>En esta sección se irá generando una lista con los artículos que se encuentran en el carrito.
@@ -88,7 +102,6 @@
 <h1>Página en construcción, por favor continue revisando el catálogo con su lomito consentido</h1>
 <img src="https://i.etsystatic.com/23158037/r/il/68fa6a/2560753399/il_fullxfull.2560753399_ba3m.jpg" alt="" width="400px">
     </div>
-    
 </div>
 </div>
         </main>
@@ -96,7 +109,7 @@
 <footer></footer>
    
     <script src="../js/main.js"></script>
-    <script src="../js/contacto.js"></script>
+    <script src="../js/cart.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
