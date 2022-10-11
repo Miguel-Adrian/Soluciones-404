@@ -87,4 +87,15 @@ h1 {
      font-size: 15px; 
  }
  
- 
+ input{
+    background-color: #fffcf6;
+    font-family: "Lato";
+    border-radius: 5px;
+ }
+
+ label{
+    font-family: "Baloo 2";
+    font-size: large;
+    color: #5d2014;
+    box-shadow: none;
+ }
