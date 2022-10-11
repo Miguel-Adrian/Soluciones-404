@@ -3,73 +3,71 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Log</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./src/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="stylesheet" href="../estilos/navbarFooter.css">
     <link rel="stylesheet" href="../estilos/login.css">
-    
-    
-    <title>Login</title>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <header class="header"> </header>
-     <br>
-     <img src="../src/images/login/gatoLogin.png" alt="" class="rounded mx-auto d-block" height="250">
-     <br>
-   
-<main class="container" id="mainContainer">
-    <form class="col-md mb-3" id="registro"> <!--Formulario para registro de usuarios-->
-        <div class="form-group">
-            <h1>Regístrate</h1>
-        </div>
+    <header></header>
 
-
-    <div class="container" id = "alertaPass"></div>
-    <form id="registro"> <!--Formulario para registro de usuarios-->
+    <img src="../src/images/login/gatoLog.png" alt="" class="img-fluid mx-auto d-block mt-5" width="200">
+    <main class="container mx-auto p-5" id="mainContainer">
+        <h1>Iniciar sesión</h1>
     
-<div class="form-group">
-            <label for="newUserName">Nombre</label>
-            <input type="text" class="form-control" id="newUserName" placeholder="Escribe tu nombre" required>
-        </div>
+        <div class="container" id="alertaPass"></div>
+        <form onsubmit="inicioS()" id="registro">
+            <!--Formulario para registro de usuarios-->
+    
+            <div class="form-group" style="display:none;">
+                <label for="newUserName">Nombre</label>
+                <input type="text" class="form-control" id="newUserName" placeholder="Escribe tu nombre">
+            </div>
+            <div class="form-group" style="display:none;">
+                <label for="newUserLastName">Apellido</label>
+                <input type="text" class="form-control" id="newUserLastName" placeholder="Escribe tu apellido">
+            </div>
+            <div class="form-group">
+                <label for="newUserEmail">Correo electrónico</label>
+                <input type="email" class="form-control" id="newUserEmail" placeholder="Escribe tu correo electrónico">
+            </div>
+            <div class="form-group" style="display:none;">
+                <label for="newUserNumber">Número de teléfono</label>
+                <input type="email" class="form-control" id="newUserNumber" minlength="10" maxlength="10"
+                    placeholder="Escribe tu número telefonico">
+            </div>
+            <div class="form-group">
+                <label for="newUserPass">Contraseña</label>
+                <input type="password" class="form-control" id="newUserPass1" placeholder="Escribe tu contraseña">
+            </div>
+            <div class="form-group" style="display:none;">
+                <label for="newUserPass2">Confirmar contraseña</label>
+                <input type="password" class="form-control" id="newUserPass2" placeholder="Confirma tu contraseña">
+            </div>
+            <div class="form-group form-check" style="display:none;">
+                <input type="checkbox" class="form-check-input" id="tycCasilla">
+                <label class="form-check-label" for="tycCasilla">Acepto términos y condiciones</label>
+            </div>
+            <div class="mt-5">
+                <button type="submit" class="btn w-100" style="background-color: #fef9d6;" id="btnIniciar">Iniciar Sesión</button>
+            </div>
+        </form>
+    
+    </main>
 
-        <div class="form-group">
-            <label for="newUserLastName">Apellido</label>
-            <input type="text" class="form-control" id="newUserLastName" placeholder="Escribe tu apellido" required>
-        </div>
-        <div class="form-group">
-            <label for="newUserEmail">Correo electrónico</label>
-            <input type="email" class="form-control" id="newUserEmail" placeholder="Escribe tu correo electrónico" required>
-        </div>
-        <div class="form-group">
-            <label for="newUserNumber">Número de teléfono</label>
 
-            <input type="email" class="form-control" id="newUserNumber" minlength="10" maxlength="10" placeholder="Escribe tu número telefonico" required>
+    <footer class="mt-5"></footer>
 
-        </div>
-        <div class="form-group">
-            <label for="newUserPass">Contraseña</label>
-            <input type="password" class="form-control" id="newUserPass1" placeholder="Escribe tu contraseña" required>
-        </div>
-        <div class="form-group">
-            <label for="newUserPass2" >Confirmar contraseña</label>
-            <input type="password" class="form-control" id="newUserPass2" placeholder="Confirma tu contraseña" required>
-        </div>
-        <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="tycCasilla">
-            <label class="form-check-label" for="tycCasilla">Acepto términos y condiciones</label>
-        </div>
-        <div class="col-md mb-3">
-        <button type="button" class="btn" style="background-color: #6E3E22;" id="btnRegistrar">Registrarme</button>
-        </div>
-        
-        <div id="product-list" class="col-md-6"></div>
-      </div>
-    </form>
-
-</main>
-<footer></footer>
-
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="../js/login.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"

@@ -4,6 +4,13 @@ body{
     grid-template-rows: auto 1fr auto;
 }
 
+.articulosCarrito{
+    background-color:#FFE6A7;
+}
+
+.resumenCompra{
+    background-color: #FFe6A7;
+}
 h1 {
     text-align: center;
     padding: 0.5em;
@@ -13,21 +20,26 @@ h1 {
 }
 
 h2 {
+    margin-left: 100px;
     color: #7F3122;
+    margin-top: 55px;
     font-family: "Baloo 2";
+    font-size: 60px;
+    padding: 50px;
 }
 
 article h3 {
     margin-left: 40px;
     color: #7F3122;
     font-family: "Baloo 2";
+    font-weight: bold;
 }
 
 article p {
     margin-left: 40px;
     color: black;
     font-family: "Baloo 2";
-    font-weight: 400;
+    font-weight: bold;
 }
 
 section p {
@@ -36,15 +48,29 @@ section p {
     font-family: "Lato";
 }
 
-.cuerpoAbout{
-    margin-top: 10px;
+
+.p-2 .bd-highlight {
+    background-color: antiquewhite;
+}
+
+
+.cont2 {
+    margin-top: 20px;
+}
+
+.cont3 {
+    margin-top: 20px;
+}
+
+.cont4 {
+    margin-top: 20px;
 }
 
 /* article{ margin: 0.5em 3em; padding: 0.5em 2em; background-color:#F0BC56 } */
 
 #containerAbout{
     background-color: #FFE6A7;
-    border-radius: 10px;
+    border-radius: 20px;
     padding-bottom: 20px;
 }
 
@@ -61,26 +87,36 @@ section p {
     width: 280px;
     height: 280px;
     margin-top: -150px;
-    margin-left: 10%;
-    flex-wrap: wrap;
+    margin-left: 20%;
+
+}
+
+#tituloPrincipal{
+    font-weight: 1000;
+    font-size: 64px;
+    background-color: #F0BC56;
+    color: #6E3E22;
+    text-align: center;
+    font-family: 'Baloo 2';
+    margin-top: 60px;
 }
 
 .gatito img {
     width: 280px;
     height: 280px;
-    z-index: 1;
-    position: relative;
 }
 
 .parrafoabout {
+    background: #ffe7b7;
     border-radius: 20px;
     padding: 10px;
     margin: 20px;
 }
 
 #aboutparrafo{
-    margin: auto;
-    padding-top: 10px;
+    margin: 30px;
+    padding-top: 60px;
+    padding-bottom: 5%;
 }
 
 /* Estilos para las cards */
@@ -168,9 +204,9 @@ section p {
 
 .tituloQpets{
     font-weight: 1000;
-    font-size: 48px;
+    font-size: 64px;
     background: #FFE6A7;
-    color: #6E3E22;
+    color: #6F1D1B;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
@@ -185,17 +221,12 @@ section p {
     border-radius: 20px;
     margin: 15px;
     background-color: #F0BC56;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
-#tituloPrincipal{
-    font-weight: 1000;
-    font-size: 64px;
-    background-color: #F0BC56;
-    color: #6E3E22;
-    text-align: center;
-    font-family: 'Baloo 2';
-    margin-top: 60px;
+a{
+    text-decoration: none;
+    color: #FFe6A7;
 }
 
 .huellita{
@@ -203,11 +234,21 @@ section p {
     margin-left: -25px;
 }
 
-.bi{
+.bi-github{
     font-size: 32px;
     color:#6E3E22;
     justify-content: space-around;
+    padding-right: 8px;
 }
+
+.bi-linkedin{
+    font-size: 32px;
+    color:#6E3E22;
+    justify-content: space-around;
+    padding-left: 8px;
+}
+
+
 
 @media (min-width: 993px) {
     #tituloPrincipal{
@@ -233,12 +274,22 @@ section p {
 
 @media (max-width: 576px) {
     #containerAbout{
-        padding-left: 10%;
-        padding-right: 10%;
-        background-color: #FFFFFF;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: #FFE6A7;
+        width: 90%;
     }
 
     .p-2, .parrafoabout{
-        margin-bottom: 10%;
+        margin-bottom: 30%;
+    }
+
+    .huellita{
+        display: none;
+    }
+
+    #aboutparrafo{
+        visibility: hidden;
+        height:10px;
     }
 }
