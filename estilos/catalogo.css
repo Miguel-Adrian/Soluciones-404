@@ -12,7 +12,6 @@ h1 {
 #titulo{
     background-color:#ffedbe;
     margin-top: 80px;
-   
 }
 
 .btnCard{
@@ -55,14 +54,8 @@ body{
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
-  
-@media (max-width: 768px) {
-    .card-img-top{
-        height: auto;
-    }
-}
 
-.d-block w-100 slide{
+.d-block .w-100 slide{
     width: 100%;
     
 }
@@ -98,4 +91,17 @@ body{
 
 .btnCard{
     font-family: "Lato";
+}
+
+@media (max-width: 768px) {
+    .card-img-top{
+        height: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    #listaDeProductos{
+        margin-left: -75px;
+        margin-right: -75px;
+    }
 }

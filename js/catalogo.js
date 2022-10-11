@@ -14,7 +14,7 @@ let catAccesories = document.getElementById("customCheck10");
 
 
 function addItem(item){
-    const itemHTML = '<div class="'+getClassCategory(item.category)+' card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-4 mb-4 " style="max-width: 600px;">\n' +
+    const itemHTML = '<div class="'+getClassCategory(item.category)+' card col-xl-3 col-md-5 col-sm-12 mx-auto mx-md-1 mx-lg-2 mb-4 " style="max-width: 600px;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body" >\n' +
         '        <h5 class="card-title"><strong>'+item.name+'</h5></strong>\n' +
@@ -94,6 +94,7 @@ const fetchProductos = () => {
                     filtroBusqueda.forEach(element =>{
                         addItem(element);
                     })
+                    localStorage.removeItem('textoBuscar');
                 }
             }
         })
