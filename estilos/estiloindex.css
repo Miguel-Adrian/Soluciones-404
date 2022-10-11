@@ -62,7 +62,7 @@ section h1{
 #divGato{
     background-image:url(../src/images/indeximg/Gato.png);
     background-size: cover;
-    background-position: left;
+    background-position: right;
 }
 #divAccesorios{
     background-image:url(../src/images/indeximg/Accesorios.png);
@@ -72,7 +72,7 @@ section h1{
 #divJuguetes{
     background-image:url(../src/images/indeximg/Juguetes.png);
     background-size: cover;
-    background-position: left;
+    background-position: right;
 }
 #divAlimento{
     background-image:url(../src/images/indeximg/Alimento.png);
@@ -82,5 +82,5 @@ section h1{
 #divLimpieza{
     background-image:url(../src/images/indeximg/Aseo.png);
     background-size: cover;
-    background-position: left;
+    background-position: right;
 }

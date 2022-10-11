@@ -202,6 +202,11 @@ addEventListener("submit", function (e) {
             color: "#6E3E22",
             iconColor: "#6F1D1B"
         })
+
+        setTimeout(function() {
+            location.href = "../pages/login.html";
+        }, 3000);
+
     } else {
         return console.log("No se encontraron datos");
     }

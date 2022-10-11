@@ -13,10 +13,10 @@ window.addEventListener("load", function (e) {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav mx-auto navInfLink">
-            <a class="nav-item nav-link mx-auto" href="./catalogo.html" style="color:white">Catálogo</a>
-            <a class="nav-item nav-link mx-auto" href="./about.html" style="color:white">Acerca de nosotros</a>
-            <a class="nav-item nav-link mx-auto" href="./contacto.html" style="color:white">Contacto</a>
-            <a class="nav-item nav-link mx-auto" href="./login.html" tabindex="-1" aria-disabled="true"
+            <a class="nav-item nav-link mx-auto menuLink" href="./catalogo.html" style="color:white">Catálogo</a>
+            <a class="nav-item nav-link mx-auto menuLink" href="./about.html" style="color:white">Acerca de nosotros</a>
+            <a class="nav-item nav-link mx-auto menuLink" href="./contacto.html" style="color:white">Contacto</a>
+            <a class="nav-item nav-link mx-auto menuLink" href="./login.html" tabindex="-1" aria-disabled="true"
               style="color:white">Iniciar sesión</a>
           </div>
           <div class="form-inline justify-content-center">
@@ -61,12 +61,12 @@ window.addEventListener("load", function (e) {
                 <ul class="list-unstyled">
                 <li><strong>Compra</strong></li><br />
                 <li><strong>Perro</strong></li>
-                <li><a href="../pages/catalogo.html">Alimento</a></li>
-                <li><a href="../pages/catalogo.html">Accesorios</a></li>
+                <li><a href="../pages/catalogo.html" onclick="filtroPerro()">Alimento</a></li>
+                <li><a href="../pages/catalogo.html" onclick="filtroPerro()">Accesorios</a></li>
                 <br />
                 <li><strong>Gato</strong></li>
-                <li><a href="../pages/catalogo.html">Alimento</a></li>
-                <li><a href="../pages/catalogo.html">Accesorios</a></li>
+                <li><a href="../pages/catalogo.html" onclick="filtroGato()">Alimento</a></li>
+                <li><a href="../pages/catalogo.html" onclick="filtroGato()">Accesorios</a></li>
             </ul>
             </div>
             <div class="col-md-3 text-md-left text-center">
