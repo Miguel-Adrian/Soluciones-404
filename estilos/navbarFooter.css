@@ -42,15 +42,28 @@
 
 /* Header */
 
+
 nav {
     background-color: #6F1D1B;
 }
 
+.menuLink{
+    color:white;
+}
+.menuLink:hover{
 
+        transform: scale(1.05);
+        transition: all 200ms;
+        background-color:#862321;
+        border-radius: 12px;
+}
+
+/*
 .navInf a {
     color: white;
     font-family: 'Lato';
-}
+}*/
+
 
 .navInf img {
     height: 50px;

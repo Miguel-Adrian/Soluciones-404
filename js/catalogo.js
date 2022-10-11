@@ -28,13 +28,14 @@ let newCard = JSON.parse(localStorage.getItem(key));
        '        <p class="card-text text-justify"><small class="text-muted">'+item.category+'<small></p>\n'+
        '        <p class="text-right h5 text-success font-weight-bold">$'+item.price+'</p>\n' +
        '         <button type="button" class="btn btnCard  btn-warning" data-toggle="modal" data-target="#Modal_'+ item.id +'">\n' +
-       '         Ver más...<i class="bi bi-cart-plus"></i>\n' +
+       '         Ver más  <i class="bi bi-cart-plus"></i>\n' +
 
 /* 
        '        <a href="#" class="btn btnCard btn-warning"data-toggle="modal" data-target="#Modal_'+ item.id +' >Ver más...</a> \n' + */
        '    </div>\n' +
        '</div>\n' +
        '<br/>'+
+       /* Aquí empieza modal */
       '  <div class="modal fade" id="Modal_'+item.id+'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">\n' +
        '  <div class="modal-dialog">\n' +
        '  <div class="modal-content">\n' +
@@ -44,11 +45,12 @@ let newCard = JSON.parse(localStorage.getItem(key));
        '  <span aria-hidden="true">&times;</span>\n' +
        '  </button>\n' +
        '  </div>\n' +
-       '  <div class="modal-body" style="color:#6F1D1B">\n' +
-       '  '+item.description+'\n' +
-       '      <br><strong>Precio $'+item.price+'\n</strong> <br>  ' +
-
+        '  <div class="modal-body" style="color:#6F1D1B">\n' +
+        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
+        '  '+item.description+'\n' +
+        '      <br><br><h3><strong>Precio: $'+item.price.toFixed(2)+'\n</strong></h3> <br>  ' +
        '   </div>\n' +
+
        '   <div class="modal-footer">\n' +
        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
@@ -86,30 +88,30 @@ function addItem(item){
         '    </div>\n' +
         '</div>\n' +
         '<br/>'+
-       '  <div class="modal fade" id="Modal_'+item.id+'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">\n' +
-        '  <div class="modal-dialog">\n' +
-        '  <div class="modal-content">\n' +
-        '  <div class="modal-header">\n' +
-        '  <h5 class="modal-title" id="exampleModalLabel" style="color:#6F1D1B">'+item.name+'</h5>\n' +
-        '  <button type="button" class="close" style="color:#6F1D1B" data-dismiss="modal" aria-label="Close">\n' +
-        '  <span aria-hidden="true">&times;</span>\n' +
-        '  </button>\n' +
-        '  </div>\n' +
-        '  <div class="modal-body" style="color:#6F1D1B">\n' +
-        '  '+item.description+'\n' +
-        '      <br><strong>Precio $'+item.price.toFixed(2)+'\n</strong> <br>  ' +
-
-        '   </div>\n' +
-        '   <div class="modal-footer">\n' +
-        '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
-        '   <button value="'+ item.id +'" type="button" class="btn btnCard btnAddCart btn-secondary" data-dismiss="modal">Agregar\n ' +
-        '  <i class="bi bi-cart-plus"></i>  ' +
-        '  </button> ' +
-        '   </div>  \n' +
-        '   </div>  \n' +
-        '   </div>  \n' +
-        '   </div>  \n'; 
-      
+ /* Aquí empieza modal */
+ '  <div class="modal fade" id="Modal_'+item.id+'" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">\n' +
+ '  <div class="modal-dialog">\n' +
+ '  <div class="modal-content">\n' +
+ '  <div class="modal-header">\n' +
+ '  <h5 class="modal-title" id="exampleModalLabel" style="color:#6F1D1B">'+item.name+'</h5>\n' +
+ '  <button type="button" class="close" style="color:#6F1D1B" data-dismiss="modal" aria-label="Close">\n' +
+ '  <span aria-hidden="true">&times;</span>\n' +
+ '  </button>\n' +
+ '  </div>\n' +
+ '  <div class="modal-body" style="color:#6F1D1B">\n' +
+ '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
+ '  '+item.description+'\n' +
+ '      <br><br><h3><strong>Precio: $'+item.price.toFixed(2)+'\n</strong></h3> <br>  ' +
+ '   </div>\n' +
+ '   <div class="modal-footer">\n' +
+ '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
+ '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
+ '  <i class="bi bi-cart-plus"></i>  ' +
+ '  </button> ' +
+ '   </div>  \n' +
+ '   </div>  \n' +
+ '   </div>  \n' +
+ '   </div>  \n'; 
 
         const itemsContainer = document.getElementById("listaDeProductos");
         itemsContainer.innerHTML += itemHTML;

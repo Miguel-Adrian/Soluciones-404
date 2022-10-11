@@ -21,7 +21,35 @@ function inicioS(){ //función para LEER/RECUPERAR en el local storage desded el
     
         //console.log(user);
         //console.log(data);
-    
+        if (correo == 'soporteQpets@gmail.com' && pass1 == '12345'){
+
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: '¡Hola equipo!',
+                showConfirmButton: false,
+                timer: 2000,
+                color: "#6E3E22",
+                iconColor: "#6F1D1B"
+            })
+            setTimeout(function() {
+                location.href = "../pages/agregar.html";
+            }, 1500);
+            
+        } else {
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Los datos no coinciden',
+                showConfirmButton: false,
+                timer: 3000,
+                color: "#6E3E22",
+                iconColor: "#6F1D1B"
+            })
+        }
+
+
+
         if(correo == data.correo && pass1 == data.pass1){  //COMPARA los valores ingresados con los almacenados
                 Swal.fire({
                 position: 'center',
@@ -32,6 +60,10 @@ function inicioS(){ //función para LEER/RECUPERAR en el local storage desded el
                 color: "#6E3E22",
                 iconColor: "#6F1D1B"
             })
+
+            setTimeout(function() {
+                location.href = "../pages/index.html";
+            }, 2000);
     
         } else {
             Swal.fire({

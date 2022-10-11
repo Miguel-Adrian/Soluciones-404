@@ -65,6 +65,7 @@ class UI{
     
     resetForm(){
         document.getElementById("formulario").reset();
+        classList.remove("is-invalid");
     }
 
     deleteProduct(element){
