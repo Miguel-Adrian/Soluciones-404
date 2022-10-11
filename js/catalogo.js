@@ -26,7 +26,7 @@ let newCard = JSON.parse(localStorage.getItem(key));
        '        <h5 class="card-title"><strong>'+item.name+'</h5></strong>\n' +
        '        <p class="card-text text-justify">'+item.description.slice(0,70)+'...</p>\n'+
        '        <p class="card-text text-justify"><small class="text-muted">'+item.category+'<small></p>\n'+
-       '        <p class="text-right h5 text-success font-weight-bold">$'+item.price+'</p>\n' +
+       '        <p class="text-right h5 text-success font-weight-bold">$'+ parseFloat(item.price).toFixed(2)+'</p>\n' +
        '         <button type="button" class="btn btnCard  btn-warning" data-toggle="modal" data-target="#Modal_'+ item.id +'">\n' +
        '         Ver más  <i class="bi bi-cart-plus"></i>\n' +
 
@@ -48,12 +48,12 @@ let newCard = JSON.parse(localStorage.getItem(key));
         '  <div class="modal-body" style="color:#6F1D1B">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '  '+item.description+'\n' +
-        '      <br><br><h3><strong>Precio: $'+item.price.toFixed(2)+'\n</strong></h3> <br>  ' +
+        '      <br><br><h3><strong>Precio: $'+ parseFloat(item.price).toFixed(2)+'\n</strong></h3> <br>  ' +
        '   </div>\n' +
 
        '   <div class="modal-footer">\n' +
-       '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
-       '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
+       '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Cerrar</button>\n' +
+       '   <button value="'+ item.id +'" type="button" class="btn btnCard btnAddCart btn-secondary"data-dismiss="modal">Agregar\n ' +
        '  <i class="bi bi-cart-plus"></i>  ' +
        '  </button> ' +
        '   </div>  \n' +
@@ -104,8 +104,8 @@ function addItem(item){
  '      <br><br><h3><strong>Precio: $'+item.price.toFixed(2)+'\n</strong></h3> <br>  ' +
  '   </div>\n' +
  '   <div class="modal-footer">\n' +
- '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Close </button>\n' +
- '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Agregar\n ' +
+ '   <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal">Cerrar</button>\n' +
+ '   <button value="'+ item.id +'" type="button" class="btn btnCard btnAddCart btn-secondary"data-dismiss="modal">Agregar\n ' +
  '  <i class="bi bi-cart-plus"></i>  ' +
  '  </button> ' +
  '   </div>  \n' +
@@ -153,8 +153,8 @@ const fetchProductos = () => {
                     filtroBusqueda.forEach(element =>{
                         addItem(element);
                     })
-                    localStorage.removeItem('textoBuscar');
                 }
+                localStorage.removeItem('textoBuscar');
             }
         })
 }

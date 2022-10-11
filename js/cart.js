@@ -15,7 +15,7 @@ function traer() {
                             <td id="info">${dato.name}</td>
                             <td id="info">$${dato.price.toFixed(2)}</td>
                             
-                            <td> <a class="btn" id="bote"><img src="../src/images/carrito/trash3-fill.svg" alt=""name="borrarcar"></a></td>
+                            <td> <a class="btn" id="bote"><img src="../src/images/carrito/trash3-fill.svg" alt="" name="borrarcar"></a></td>
                         </tr>
                         `;
                     }
@@ -42,7 +42,7 @@ window.addEventListener("load", function (event) {
 
 class UI {
     deleteProduct(element){
-        if (element.name==="borrarcar") {
+        if (element.name === "borrarcar") {
            // console.log(element.parentElement);
           element.parentElement.parentElement.parentElement.remove();
           
