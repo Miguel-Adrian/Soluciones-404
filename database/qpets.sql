@@ -43,11 +43,9 @@ CREATE TABLE IF NOT EXISTS `qpetsdb`.`productos` (
   `descripcion` VARCHAR(500) NOT NULL,
   `precio` DECIMAL(6,2) NOT NULL,
   `imagen` MEDIUMTEXT NOT NULL,
-  `mascotas_mascota_id` INT NOT NULL,
-  `categorias_categoria_id` INT NOT NULL,
-  PRIMARY KEY (`producto_id`, `mascotas_mascota_id`, `categorias_categoria_id`),
-  INDEX `fk_productos_mascotas1_idx` (`mascotas_mascota_id` ASC) VISIBLE,
-  INDEX `fk_productos_categorias1_idx` (`categorias_categoria_id` ASC) VISIBLE)
+  `mascota_id` INT NOT NULL,
+  `categoria_id` INT NOT NULL,
+  PRIMARY KEY (`producto_id`, `mascota_id`, `categoria_id`))
 ENGINE = InnoDB;
 
 
@@ -55,11 +53,9 @@ ENGINE = InnoDB;
 -- Table `qpetsdb`.`mascotas_has_categorias`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `qpetsdb`.`mascotas_has_categorias` (
-  `mascotas_mascota_id` INT NOT NULL,
-  `categorias_categoria_id` INT NOT NULL,
-  PRIMARY KEY (`mascotas_mascota_id`, `categorias_categoria_id`),
-  INDEX `fk_mascotas_has_categorias_categorias1_idx` (`categorias_categoria_id` ASC) VISIBLE,
-  INDEX `fk_mascotas_has_categorias_mascotas1_idx` (`mascotas_mascota_id` ASC) VISIBLE)
+  `mascota_id` INT NOT NULL,
+  `categoria_id` INT NOT NULL,
+  PRIMARY KEY (`mascota_id`, `categoria_id`))
 ENGINE = InnoDB;
 
 
@@ -72,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `qpetsdb`.`usuarios` (
   `apellido_usuario` VARCHAR(45) NOT NULL,
   `email` VARCHAR(45) NOT NULL,
   `telefono` VARCHAR(12) NOT NULL,
-  `contraseña` VARCHAR(20) NOT NULL,
+  `contrasenia` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`usuario_id`))
 ENGINE = InnoDB;
 
@@ -84,9 +80,8 @@ CREATE TABLE IF NOT EXISTS `qpetsdb`.`carritos` (
   `carrito_id` INT NOT NULL AUTO_INCREMENT,
   `costo_total` DECIMAL(7,2) NOT NULL,
   `total_productos` INT NOT NULL,
-  `usuarios_usuario_id` INT NOT NULL,
-  PRIMARY KEY (`carrito_id`, `usuarios_usuario_id`),
-  INDEX `fk_carritos_usuarios1_idx` (`usuarios_usuario_id` ASC) VISIBLE)
+  `usuario_id` INT NOT NULL,
+  PRIMARY KEY (`carrito_id`, `usuario_id`))
 ENGINE = InnoDB;
 
 
@@ -94,14 +89,13 @@ ENGINE = InnoDB;
 -- Table `qpetsdb`.`carritos_has_productos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `qpetsdb`.`carritos_has_productos` (
-  `carritos_carrito_id` INT NOT NULL,
-  `carritos_usuarios_usuario_id` INT NOT NULL,
-  `productos_producto_id` INT NOT NULL,
-  `productos_mascotas_mascota_id` INT NOT NULL,
-  `productos_categorias_categoria_id` INT NOT NULL,
-  PRIMARY KEY (`carritos_carrito_id`, `carritos_usuarios_usuario_id`, `productos_producto_id`, `productos_mascotas_mascota_id`, `productos_categorias_categoria_id`),
-  INDEX `fk_carritos_has_productos_productos1_idx` (`productos_producto_id` ASC, `productos_mascotas_mascota_id` ASC, `productos_categorias_categoria_id` ASC) VISIBLE,
-  INDEX `fk_carritos_has_productos_carritos1_idx` (`carritos_carrito_id` ASC, `carritos_usuarios_usuario_id` ASC) VISIBLE)
+  `cantidad_producto` INT NOT NULL,
+  `carrito_id` INT NOT NULL,
+  `usuario_id` INT NOT NULL,
+  `producto_id` INT NOT NULL,
+  `mascota_id` INT NOT NULL,
+  `categoria_id` INT NOT NULL,
+  PRIMARY KEY (`carrito_id`, `usuario_id`, `producto_id`, `mascota_id`, `categoria_id`))
 ENGINE = InnoDB;
 
 
