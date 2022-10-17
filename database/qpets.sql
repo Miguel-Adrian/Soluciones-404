@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `qpetsdb`.`productos` (
   `nombre_producto` VARCHAR(100) NOT NULL,
   `descripcion` VARCHAR(500) NOT NULL,
   `precio` DECIMAL(6,2) NOT NULL,
-  `imagen` MEDIUMTEXT NOT NULL,
+  `imagen` VARCHAR(255) NOT NULL,
   `mascota_id` INT NOT NULL,
   `categoria_id` INT NOT NULL,
   PRIMARY KEY (`producto_id`, `mascota_id`, `categoria_id`))
