@@ -1,6 +1,9 @@
 -- Usuarios
 INSERT INTO `qpetsdb`.`usuarios` (`nombre_usuario`, `apellido_usuario`, `email`, `telefono`, `contrasenia`) VALUES ('Master', 'Q-Pets', 'soporteQpets@gmail.com', '529999999999', 'Pa$$w0rd');
-
+INSERT INTO `qpetsdb`.`usuarios` (`nombre_usuario`, `apellido_usuario`, `email`, `telefono`, `contrasenia`) VALUES ('Sunny', 'Orange', 'sunnyorange@gmail.com', '525583580974', 'Sun342h');
+INSERT INTO `qpetsdb`.`usuarios` (`nombre_usuario`, `apellido_usuario`, `email`, `telefono`, `contrasenia`) VALUES ('Moro', 'Cat', 'gatitos@gmail.com', '526678456372', 'ar3n3r0s');
+INSERT INTO `qpetsdb`.`usuarios` (`nombre_usuario`, `apellido_usuario`, `email`, `telefono`, `contrasenia`) VALUES ('Leonora', 'Pardo', 'gatitosesponjados@gmail.com', '523453678987', 'c0lit4sfelices');
+INSERT INTO `qpetsdb`.`usuarios` (`nombre_usuario`, `apellido_usuario`, `email`, `telefono`, `contrasenia`) VALUES ('El', 'Ruffs', 'elruffs@gmail.com', '529874637457', 'p3rr1t0sun1d0s');
 
 -- Mascotas
 INSERT INTO `qpetsdb`.`mascotas` (`nombre_mascota`) VALUES ('Perro');
