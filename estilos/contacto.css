@@ -79,3 +79,24 @@ main .form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder
     color: #FFE6A7;
     border: none;
 }
+
+.form-check a{
+    text-decoration: underline;
+    color: #6E3E22;
+    font-size:medium;
+}
+
+.form-check a:hover{
+    text-decoration: underline;
+    color: #6E3E22;
+    font-size:large;
+    transition: all 300ms;
+    border-radius: 15px;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 10px;
+}

@@ -25,11 +25,6 @@
     }
 }
 
-.container {
-    width: 65%;
-    padding: 5% 10%;
-}
-
 h1 {
     text-align: center;
     padding: 0.5em;
@@ -40,7 +35,8 @@ h1 {
 }
 
 .btns{
-    font-family: "Lato"
+    font-family: "Lato";
+    margin-bottom: 1em;
 }
 
 .btn{
@@ -68,7 +64,7 @@ h1 {
  }
  
  .table{
-    
+     background-color: #ffedbe;
      border: #7F3122;
  
  }
@@ -98,4 +94,12 @@ h1 {
     font-size: large;
     color: #5d2014;
     box-shadow: none;
+ }
+
+ #totalCarrito{
+    font-size: 24px;
+    color: #5d2014;
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: center;
  }

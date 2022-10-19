@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-    margin-left: 100px;
+    text-align: center;
     color: #7F3122;
     margin-top: 55px;
     font-family: "Baloo 2";
@@ -107,7 +107,6 @@ section p {
 }
 
 .parrafoabout {
-    background: #ffe7b7;
     border-radius: 20px;
     padding: 10px;
     margin: 20px;

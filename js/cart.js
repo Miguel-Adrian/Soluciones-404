@@ -1,4 +1,5 @@
 let contenido = document.getElementById("contenido");
+let totalCarrito = 0.0;
 
 function traer() {
     fetch('../src/json/productos.json')
@@ -13,12 +14,15 @@ function traer() {
                             <th scope="row" id="info"><img src="${dato.img}" alt="${dato.name}" 
                             style="width: 100px; height: 100px;"></th>
                             <td id="info">${dato.name}</td>
-                            <td id="info">$${dato.price.toFixed(2)}</td>
+                            <td id="info">$${parseFloat(dato.price).toFixed(2)}</td>
                             
-                            <td> <a class="btn" id="bote"><img src="../src/images/carrito/trash3-fill.svg" alt="" name="borrarcar"></a></td>
+                            <td> <a class="btn"><img class="bote" value="${dato.id}" src="../src/images/carrito/trash3-fill.svg" alt="" name="borrarcar"></a></td>
                         </tr>
                         `;
+                        totalCarrito += parseFloat(dato.price);
                     }
+                    // document.getElementById("totalCarrito").innerHTML =
+                    // `<i class="bi bi-cart-check-fill"></i> Total: $${totalCarrito.toFixed(2)}`
                 })
             })
         })
@@ -38,23 +42,27 @@ window.addEventListener("load", function (event) {
     traer();
 })
 
-
-
+let filtroEliminar = [];
 class UI {
     deleteProduct(element){
         if (element.name === "borrarcar") {
-           // console.log(element.parentElement);
-          element.parentElement.parentElement.parentElement.remove();
-          
+            // console.log(element.parentElement);
+            filtroEliminar = localStorage.getItem('cartIds').split(",")
+            .filter(item => parseInt(item) != element.value);
+            localStorage.setItem('cartIds', filtroEliminar);
+            element.parentElement.parentElement.parentElement.remove();
         }
-
-
     }
 }
 
-document.getElementById("card").addEventListener("click", function(e) {
-  let ui = new UI();
-  ui.deleteProduct(e.target)
+document.getElementById("card").addEventListener("click", function(event) {
+//   let ui = new UI();
+//   ui.deleteProduct(e.target)
+if (event.target.name === "borrarcar") {
+    // console.log(element.parentElement);
+    filtroEliminar = localStorage.getItem('cartIds').split(",")
+    .filter(item => parseInt(item) != event.target.value);
+    localStorage.setItem('cartIds', filtroEliminar);
+    event.target.parentElement.parentElement.parentElement.remove();
+}
 })
-
-

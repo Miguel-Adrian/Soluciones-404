@@ -79,11 +79,28 @@ button:hover{
     transform: scale(1.02);
     border-color: #7F3122;
 }
-.linkNuevaCuenta{
+.linkNuevaCuenta, .form-check a{
     font-size:medium;
 }
-.linkNuevaCuenta:hover{
+.linkNuevaCuenta:hover, .form-check a:hover{
     font-size:large;
     transition: all 300ms;
     border-radius: 15px;
+}
+
+.form-check a{
+    text-decoration: underline;
+    color: #6E3E22;
+}
+
+.form-check a:hover{
+    text-decoration: underline;
+    color: #6E3E22;
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+    position: relative;
+    bottom: 1px;
+    margin-right: 10px;
 }
