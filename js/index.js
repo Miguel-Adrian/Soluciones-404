@@ -1,3 +1,9 @@
+window.addEventListener("keyup", event => {
+    if (event.key === "Enter" && event.target.id === 'theSearchBar') {
+        localStorage.setItem('textoBuscar', event.target.value.toLowerCase());
+        window.location.assign("../pages/catalogo.html");
+    }
+})
 
 function filtroPerro() {
     localStorage.setItem("textoBuscar", "perro");
