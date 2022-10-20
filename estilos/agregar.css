@@ -60,16 +60,16 @@ main form .form-control:focus{
     color: white;
 }
 
-.form-control::placeholder, .custom-select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+main .form-control::placeholder, .custom-select::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: white;
     opacity: 1; /* Firefox */
 }
 
-.form-control:-ms-input-placeholder, .custom-select:-ms-input-placeholder{ /* Internet Explorer 10-11 */
+main .form-control:-ms-input-placeholder, .custom-select:-ms-input-placeholder{ /* Internet Explorer 10-11 */
     color: white;
 }
 
-.form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder { /* Microsoft Edge */
+main .form-control::-ms-input-placeholder, .custom-select::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
 }
 
@@ -92,3 +92,33 @@ h3{
     }
 }
 
+/* ----------Estilo para input de agregar imagen de producto--------- */
+.contenedor-btn-file input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+.contenedor-btn-file {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    background-color: #fff1c0;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+}
+
+.contenedor-btn-file label {
+    color: #6E3E22;
+    padding: 5px;
+    font-size: 15px;
+    font-family: 'Baloo 2';
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+/* ------Cierra estilo para input de agregar imagen de producto------ */

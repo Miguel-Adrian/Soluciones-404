@@ -22,31 +22,35 @@
         <div id="titulo">
             <h1 class="text-center p-3 font-weight-bold">Artículos Agregados</h1>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid mx-auto">
             <div class="row mx-auto">
                 <!-- <button type="button" class="btn btnCard btn-secondary"data-dismiss="modal"> -->
                 <div class="col-md-6 articulosCarrito col" style="margin:30px; border-radius: 20px;" id="card">
                     <div class="wrapper">
-                    <table class="table table-borderless" style="background-color:#ffedbe ;">
-                        <thead>
-                            <tr>
-                                <th scope="col"></th>
-                                <th scope="col" class="tt1">Producto</th>
-                                <th scope="col" class="tt1">Precio</th>
-                            </tr>
-                        </thead>
-                        <tbody id="contenido">
-                        </tbody>
-                    </table>
+                        <div class="table-responsive">
+                            <table class="table table-borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col" class="tt1">Producto</th>
+                                        <th scope="col" class="tt1">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="contenido">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="totalCarrito">
+                    </div>
                 </div>
-                </div>
-                <div class="col-md-4 resumenCompra col" style="margin:30px; border-radius: 20px;">
+                <div class="col-md-4 resumenCompra" style="margin:0px;">
                     <!-- <h1>Resumen de compra</h1> -->
-                    <div class="wrapper">
-                        <div class="container mx-auto">
+                    <div id="contMenu" class="wrapper">
+                        <div class="container-fluid mx-auto">
                             <form action="">
                                 <h1>
-                                    <i class="fas fa-shipping-fast"></i>
+                                    <i class="bi bi-truck"></i>
                                     Detalles de envío
                                 </h1>
                                 <div class="name">
@@ -60,7 +64,7 @@
                                     </div>
                                 </div>
                                 <div class="street">
-                                    <label for="name">Calle</label>
+                                    <label for="name">Calle y número</label>
                                     <input class="form-control" type="text" name="address" id="addrCarr">
                                 </div>
                                 <div class="address-info">
@@ -78,7 +82,7 @@
                                     </div>
                                 </div>
                                 <h1>
-                                    <i class="far fa-credit-card"></i> Información de pago
+                                    <i class="bi bi-credit-card"></i> Información de pago
                                 </h1>
                                 <div class="cc-num">
                                     <label for="card-num">No. de tarjeta</label>
@@ -96,13 +100,16 @@
                                 </div>
                                 <div class="btns">
                                     <button type="button" class="btn mt-5" style="color:white;">Comprar</button>
-                                    <button type="button" class="btn mt-2" style="color:white;">Volver al catálogo</button>
+                                    <br>
+                                    <button type="button" class="btn mt-2" style="color:white;">Volver al
+                                        catálogo</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
     <footer></footer>
 

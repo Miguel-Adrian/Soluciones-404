@@ -14,7 +14,14 @@ imagen.addEventListener("change", e =>{
     reader.readAsDataURL(imgFile);
 })
     
+//------------------ Agregar nombre de archivo seleccionado----------------------\\
 
+let archivo = document.querySelector('#campoImagen');
+archivo.addEventListener('change', ()=>{
+    document.querySelector('#nombre').innerText=archivo.files[0].name.slice(0,30);
+});
+
+//------------------ Agregar nombre de archivo seleccionado----------------------\\
 
 // Inicializa contador para artículos
 id = 47;
