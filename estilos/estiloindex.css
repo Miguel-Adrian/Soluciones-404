@@ -84,3 +84,51 @@ section h1{
     background-size: cover;
     background-position: right;
 }
+
+@media (min-width: 1024px){
+
+    .textBackground{
+        margin-bottom: 250px;
+    }
+}
+
+@media (min-width: 768px){
+
+    .textBackground{
+        opacity: 1;
+    }
+    .textBackground:hover{
+        width:100%;
+        background-color: rgba(67, 40, 24, 0.5);
+        transition: all 300ms;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 425px){
+
+    .textBackground{
+        margin-bottom: 280px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 375px){
+
+    .textBackground{
+        margin-bottom: 280px;
+        margin-right: -10px;
+        margin-left: -12px;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 320px){
+
+    .textBackground{
+        margin-bottom: 210px;
+        margin-right: -10px;
+        margin-left: -12px;
+        opacity: 1;
+    }
+}
